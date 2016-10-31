@@ -1,0 +1,37 @@
+Introduction to QGIS Course on Thurs 1st Oct
+
+Hi,
+
+Thank you for signing up to attend the Introduction to QGIS course on Tues 1st Nov. This email includes details of the times and locations of the course. If you have any questions, please contact me (nick@clearmapping.co.uk) or Management Services (soesms@liverpool.ac.uk).
+
+Registration will take place from 10am in the PC Suite 1, University of Liverpool in London, 33 Finsbury Square, London, EC2A 1AG. Details of how to get here are online at: https://www.liverpool.ac.uk/maps/london-map/. 
+
+The session will start officially at 10:15am. If you are going to be later than this, please let me know. (A full schedule is included at the end of this email). In the afternoon, there is an opportunity to spend some time working on your own data. If you have any data you are working on, please send me a sample (so I know what type of data to expect) and bring it along and I can have some time with you on a one-to-one basis. 
+
+If you are not from the University of Liverpool, please bring photo ID to access the building. Reception will have a list of participants, and they will be able to issue you with a day pass. Please also have proof of student or staff status to show me when I register you (campus card or similar is fine). 
+
+I would like to share the name, email address and organisation of everyone attending the course with the rest of the participants. The course is a great networking opportunity, and I would like you all to be able to make the most of it. If you do not wish your name and email to be shared in this way, please let me know. 
+
+If you have any learning requirements or dietary preferences you have not already mentioned, please let myself or Management Services know ASAP. 
+
+If you have any problems on the day, or can't find the room, my mobile number is 07717745715. 
+
+I'm looking forward to seeing you on Tuesday.
+
+Best wishes,
+Nick.
+
+PS We still have a number of spaces available, so if you have any colleagues who wish to come along, they can still sign up.
+
+Schedule:
+•       10:00am – 10:15am – Registration & Refreshments
+•       10:15am - 10:30am – What is GIS?
+•       10:30am - 11:15am – Practical 1 Intro to QGIS 
+•       11:15am - 11:45am – Classification
+•       11:45am - 12:30pm – Practical 1 Intro to QGIS ctd.
+•       12:30pm - 1:30pm – Lunch
+•       1:30pm - 1:45pm – Recap and Map Design
+•       1:45pm - 3:00pm – Practical 2 Tiger Map 
+•       3:00pm - 3:15pm – Coffee
+•       3:15pm - 4pm/4:30pm – Practical 2 Bring your own data
+
