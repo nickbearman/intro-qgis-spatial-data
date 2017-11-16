@@ -1,12 +1,11 @@
 .Rproj.user
 .Rhistory
 .RData
-~$actical-1.docx
-~$presentation.pptx
 practicals/prac1
-~$actical-2.docx
-~$ndout-QGIS.docx
 practicals/prac2/
 Thumbs.db
-practicals/Practical-1.pdf
-practicals/Practical-2.pdf
+*.pdf
+*.log
+glossary.synctex.gz
+intro-qgis-spatial-data.Rproj
+presentation-qgis.odp
