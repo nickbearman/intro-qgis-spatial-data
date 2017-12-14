@@ -1,4 +1,4 @@
-# Introduction to QGIS: Understanding and Presenting Spatial Data
+# [Introduction to QGIS: Understanding and Presenting Spatial Data](#README)
 
 Material for 1 day course on Using GIS and Understanding and Presenting Spatial Data.
 
