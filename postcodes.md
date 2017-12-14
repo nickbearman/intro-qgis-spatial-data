@@ -48,4 +48,4 @@ blah for spacing
   
   
   
-*This was written by Dr. Nick Bearman (nick@clearmapping.co.uk). This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/deed.en. The latest version of the PDF is available from https://github.com/nickbearman/intro-qgis-spatial-data. This version was created on 19th November 2017. *
+*This was written by Dr. Nick Bearman (nick@clearmapping.co.uk). Thanks to Chris Bell for providing the geocoding resource at https://www.doogal.co.uk. This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/deed.en. The latest version of the PDF is available from https://github.com/nickbearman/intro-qgis-spatial-data. This version was created on 19th November 2017. *
