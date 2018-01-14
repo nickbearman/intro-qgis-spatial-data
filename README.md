@@ -9,7 +9,7 @@ The material for this workshop is available here:
 - [The PDF file for Practical 2 (PDF 1.3MB)](https://github.com/nickbearman/intro-qgis-spatial-data/releases/download/5.2/Practical-2.pdf)
 - [The data used for Practical 2 (Zip, 5.1MB)](https://github.com/nickbearman/intro-qgis-spatial-data/blob/master/practicals/prac2.zip?raw=true)
 - [The presentation given by Nick (PDF, 17.4MB)](https://github.com/nickbearman/intro-qgis-spatial-data/releases/download/5.2/presentation-qgis.pdf) 
-- [The session handout (PDF, 132KB)](https://github.com/nickbearman/intro-qgis-spatial-data/releases/download/5.2/Handout-QGIS-Liverpool.pdf) 
+- [The session handout (PDF, 132KB)](https://github.com/nickbearman/intro-qgis-spatial-data/releases/download/5.2/Handout-QGIS-Southampton.pdf) 
 - [The classification exercise (PDF, 108KB)](https://github.com/nickbearman/intro-qgis-spatial-data/releases/download/5.2/classification-exercise-QGIS-NB.pdf) 
 - [The QGIS Glossary and Helpsheet (PDF, 91KB)](https://github.com/nickbearman/intro-qgis-spatial-data/releases/download/5.2/glossary.pdf) 
 
