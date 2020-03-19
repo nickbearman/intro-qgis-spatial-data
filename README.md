@@ -1,21 +1,16 @@
 # Introduction to QGIS: Understanding and Presenting Spatial Data
 
-Material for 1 day course on Using GIS and Understanding and Presenting Spatial Data.
+This is the material for my  1 day course on **Introduction to QGIS: Understanding and Presenting Spatial Data**. More details on my courses are available at http://www.geospatialtrainingsolutions.co.uk
 
 The material for this workshop is available here:  
-
-- [The PDF file for Practical 1 (PDF, 1.0MB)](https://github.com/nickbearman/intro-qgis-spatial-data/releases/download/5.2/Practical-1.pdf)
-- [The data used for Practical 1 (Zip, 3.5MB)](https://github.com/nickbearman/intro-qgis-spatial-data/blob/master/practicals/prac1.zip?raw=true)
-- [The PDF file for Practical 2 (PDF 1.3MB)](https://github.com/nickbearman/intro-qgis-spatial-data/releases/download/5.2/Practical-2.pdf)
-- [The data used for Practical 2 (Zip, 5.1MB)](https://github.com/nickbearman/intro-qgis-spatial-data/blob/master/practicals/prac2.zip?raw=true)
-- [The presentation given by Nick (PDF, 17.4MB)](https://github.com/nickbearman/intro-qgis-spatial-data/releases/download/5.2/presentation-qgis.pdf) 
-- [The session handout (PDF, 132KB)](https://github.com/nickbearman/intro-qgis-spatial-data/releases/download/5.2/Handout-QGIS-Southampton.pdf) 
-- [The classification exercise (PDF, 108KB)](https://github.com/nickbearman/intro-qgis-spatial-data/releases/download/5.2/classification-exercise-QGIS-NB.pdf) 
-- [The QGIS Glossary and Helpsheet (PDF, 91KB)](https://github.com/nickbearman/intro-qgis-spatial-data/releases/download/5.2/glossary.pdf) 
+- [The PDF of the handout with the practical instructions (PDF)](https://github.com/nickbearman/intro-qgis-spatial-data/blob/master/workbook.pdf)
+- [The session handout (PDF)](https://github.com/nickbearman/intro-qgis-spatial-data/blob/master/Handout-QGIS.pdf) 
+- [The classification exercise (PDF)](https://github.com/nickbearman/intro-qgis-spatial-data/blob/master/classification-exercise-QGIS-NB.pdf) 
+- [The QGIS Glossary and Helpsheet (PDF, 91KB)](https://github.com/nickbearman/intro-qgis-spatial-data/blob/master/glossary.pdf) 
 
 Additional helpsheets:
-- [Working with Address & Postcode data (PDF, 137KB](https://github.com/nickbearman/intro-qgis-spatial-data/releases/download/5.1/postcodes.pdf)
+- [Working with Address & Postcode data (PDF, 137KB](https://github.com/nickbearman/intro-qgis-spatial-data/blob/master/postcodes.pdf)
 
-This material was developed using QGIS 2.18.6.
+This material was developed using QGIS 3.10.2.
 
 Material will be updated periodically, usually in line with courses run by Nick Bearman. 
