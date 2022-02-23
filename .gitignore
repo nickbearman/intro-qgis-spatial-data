@@ -1,34 +1,11 @@
 .Rproj.user
 .Rhistory
 .RData
-practicals/prac1
-practicals/prac2/
-Thumbs.db
 *.log
 glossary.synctex.gz
-intro-qgis-spatial-data.Rproj
-presentation-qgis.odp
-postcodes.utf8.md
-example-addresses-no-spaces-coords.csv
-example-addresses-no-spaces.csv
-.Rproj.user (Selective Sync Conflict 1)
-.Rproj.user (Selective Sync Conflict 2)
-.Rproj.user (Selective Sync Conflict 3)
-.Rproj.user (Selective Sync Conflict 4)
-.Rproj.user (Selective Sync Conflict 5)
-.Rproj.user (Selective Sync Conflict 6)
-.Rproj.user (Selective Sync Conflict)
-01-intro-to-qgis-spatial-data.Rproj
+intro-to-qgis-spatial-data.Rproj
 *.lnk
 01-outline-notes.txt
-tmp
-workbook.Rmd
-workbook-wiserd.Rmd
-*.docx
-postcodes.md
-.Rproj.user (Selective Sync Conflict 14)
-.Rproj.user (Selective Sync Conflict 12)
-.Rproj.user (Selective Sync Conflict 10)
 workbook-p1-p2.pdf
 workbook-p3-p4.pdf
 data/prac1/
