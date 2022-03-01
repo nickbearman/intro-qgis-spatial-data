@@ -34,7 +34,7 @@ File management is very important, create a new folder in your **Documents** fol
 - Open the Matrix discussion room and find the `prac1.zip` file.  
 - Download it and save the file in the new folder you created.  
 - As there are several files they have been compressed into a single zip file, and you will need to first copy this and then extract the data files. Choose somewhere sensible to extract the files to.  
-- Start QGIS by clicking on Start, then type **QGIS** and select **QGIS Desktop 3.22.0**. *Your version number might vary, **QGIS Desktop** is the key bit.*  
+- Start QGIS by clicking on Start, then type **QGIS** and select **QGIS Desktop 3.22.4**. *Your version number might vary, **QGIS Desktop** is the key bit.*  
 
 Let's start off by creating a blank map and adding some data. 
 
@@ -131,7 +131,8 @@ We have already added polygon data and line data, and now we are going to look a
 -	Check that **X** field is set to `Longitude` and **Y** field is set to `Latitude`.  
 - Make sure that **Geometry CRS** is set to `EPSG:4326 - WGS 84`.  
 -	Click **Add**, and **Close**.  
--	Depending on the settings, QGIS may ask what coordinate system the coordinates are in. Make sure **Coordinate Reference System** `WGS 84 - Authority ID EPSG:4326` is selected (type the ID number **4326** in the filter box if needed), and click **OK**.  
+
+*QGIS may ask what coordinate system the coordinates are in. Make sure **Coordinate Reference System** `WGS 84 - Authority ID EPSG:4326` is selected (type the ID number **4326** in the filter box if needed), and click **OK**.*  
 
 You should now see the 15 cities added to the map. Update the symbols to a colour that fits in with your existing map. 
 
@@ -167,10 +168,10 @@ Now that we've identified the two fields in our datasets that we will use to mak
 -	Right-click on the table we have just added (`pop2015`) and **Open Attribute Table** to check that the data appears correctly (if you have all *null* values there has been a problem importing your data, try adding it again). You should see both fields with data populated.  
 - Close the attribute table when you have finished viewing the data  
 -	Now we will join this table layer with your spatial data. Right-click on the `world_countries` layer, select **Properties** and click on **Joins** ![](images/joins.png){ height=20 }.  
--	Click on the plus button ![](images/plus.png){ height=20 } to create a new join. The **Add Vector Join** dialogue box will now open  
--	Make sure that `pop2015` is selected in the **Join layer** dropdown box  
--	`Name` should be selected in the **Join field** dropdown box  
--	`NAME` should also be selected in the **Target field** dropdown box  
+-	Click on the **Add new join** button ![](images/plus.png){ height=20 } to create a new join. The **Add Vector Join** dialogue box will now open  
+-	Make sure that in the **Join layer** dropdown box `pop2015` is selected  
+-	In the **Join field** dropdown box `Name` should be selected  
+-	In the **Target field** dropdown box `NAME` should also be selected  
 
 ![](images/add-vector-join.png){ width=30% }
 
@@ -247,9 +248,9 @@ What else might be wrong with the data we have calculated?
 Currently we are comparing the increase in numbers of people between 2005 and 2015 in each country. It might make more sense to compare the % increase. Calculate this and then show this on a map. Why is this a more logical way of representing this data?
 
 ## Adding a Basemap (optional exercise)
-We have the option of adding a base map to the data we have in QGIS. We can do this through a plugin called QuickMapServices. To install it, click **Plugins > Manage and Install Plugins.**. Search for `QuickMapServices`. Then select the plugin and click **Install Plugin**. Once installed, try **Web > QuickMapServices > OSM > OSM Standard** to begin.  
+We have the option of adding a base map to the data we have in QGIS. We can do this through XYZ Tiles (within the Browser panel). 
 
-We can also get OpenStreetMap data through XYZ Tiles (within the Browser panel). 
+An alternative option is to use a plugin called QuickMapServices. To install it, click **Plugins > Manage and Install Plugins.**. Search for `QuickMapServices`. Then select the plugin and click **Install Plugin**. Once installed, try **Web > QuickMapServices > OSM > OSM Standard** to begin.  
 
 \newpage
 
