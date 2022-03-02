@@ -1,9 +1,9 @@
 ---
 title: 'Introduction to QGIS: Spatial Data and Spatial Analysis'
 output:
-  pdf_document: default
   html_document:
     df_print: paged
+  pdf_document: default
 date: 'Practicals 3 & 4: Tue 22nd and Wed 23rd March 2022'
 ---
 
@@ -18,14 +18,17 @@ We are going to start with a quick recap of QGIS, including loading data and cre
 
 We are working with the IMD (Index of Multiple Deprivation) data again, but this time at the Local Authority level. 
 
-- Open **QGIS** and use the **Open Data Source Manager** ![](images/open-data-source-manager.png){ height=20 } 
+- Open **QGIS** and start a new project.  
+- Open the **Open Data Source Manager** ![](images/open-data-source-manager.png){ height=20 } 
 
 - Add the 
 `Local_Authority_Districts_April_2019_Boundaries_Southern` layer from the `prac2-data.gpkg` geopackage we used in the previous session. 
 
 - To get the IMD data for each Local Authority, go to https://www.gov.uk/government/statistics/english-indices-of-deprivation-2019 (or search for `IMD Local Authority`).  
 
-- Download the entry for **File 10: local authority district summaries**.  
+- Download the entry for **File 10: local authority district summaries**. 
+
+<!-- Last checked 2022-03-02 -->
 
 - Open this file in Excel to have a look at it. Note the different tabs along the bottom - we want to use the **IMD** tab later. 
 
@@ -51,6 +54,12 @@ We are working with the IMD (Index of Multiple Deprivation) data again, but this
 
 The join that we have made is not permanent; it is a temporary link between the two datasets. To make the Join permanent we need to save a new copy of the local authorities layer. Try this, based on what you can remember from the previous sessions. You can always go back and check the notes if you need to! Try saving this as a new GeoPackage. 
 
+- Save our joined layer as a new layer in a GeoPackage.  
+
+- Remember to choose the GeoPackage file name and the layer name:
+
+![](images/save-layer-geopackage.png){ width=50% }
+
 Now our data is in, and joined to our spatial data, we can create a choropleth map. Remember how important the classification process is - which classification method we choose can have a big impact on the map we create. 
 
 - Open the **Layer Properties** window and the **Symbology** tab of the layer.  
@@ -61,7 +70,7 @@ Now our data is in, and joined to our spatial data, we can create a choropleth m
 
 ### Optional Exercises
 
-- If you have time, try loading in the Style template that we used before  `imd-d-style.qml`.  
+- If you have time, try loading in the Style template that we used before  `prac2-imd-d-style.qml`.  
 
 - Try adding the football stadium data on top of the IMD data.  
 
@@ -80,6 +89,7 @@ Now our data is in, and joined to our spatial data, we can create a choropleth m
 
 We are now going to join some more tabular data - populations this time. We need to download some data to begin with. 
 
+- Continue with your existing QGIS project.  
 - Do a Google search for `mid year population estimates lad`.  
 - One of the first hits should be **Estimates of the population for the UK, England and Wales** at the ONS. Go to this link.  
 - The web address of this is https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationestimatesforukenglandandwalesscotlandandnorthernireland.  
@@ -97,11 +107,12 @@ We are now going to join some more tabular data - populations this time. We need
 - Right click on the `MYE2 - Persons` layer and choose Properties. Go to the ![](images/fields.png){ height=20 } **Fields** option.  
 - This list all the columns in the data set and what data types they are.  
 - We need to update the field names and types but at the moment, editing is disabled ![](images/editing-disabled.png){ height=20 } because QGIS can't edit XLSX files.  
-- Save this layer (`MYE2 - Persons`) into either the geopackage you saved in the previous practical, or save it to a new geopackage ((**right-click > Export > Save Features As...**))  
+- Save this layer (`MYE2 - Persons`) into the geopackage you created in practical 3a ((**right-click > Export > Save Features As...**)).  
+- *As this is only a table of data, it won't have a valid projection, so QGIS listing CRS: Invalid Projection is fine.* 
 
 <!-- Be clearer this is just a table we are saving - it won't have a CRS --> 
 
-- Return to the **Fields** window and now we should be able to edit ![](images/edit-icon.png){ height=20 } .  
+- Return to the **Fields** window (within **Properities**) and now we should be able to edit ![](images/edit-icon.png){ height=20 } .  
 - Click the **Edit** ![](images/edit-icon.png){ height=20 } icon and change `Field1` to `LAcode` and `Field4` to `Pop2019`.  
 - Untoggle Editing ![](images/untoggle-editing.png){ height=20 } and choose **Save** when prompted.   
 
@@ -116,12 +127,12 @@ The `Pop2019` column contains population data, but QGIS thinks it is a String (t
 - Make sure we have our new MidYearEstimates layer in the **Input Layer** box.  
 - Change our **Pop2019** field from `Text (string` to `Decimal number (double)`.  
 - Click **Run**.  
-- It may give a warning message - we need to check the output.  
+- *If it gives us an error message this may not be a problem - check the output.*  
 - When it has finished running, click **Close**.  
 
 This has added a new layer called **Refactored**. It has a little memory chip icon ![](images/temporary-layer.png){ height=20 } next to it, which means it isn't saved anywhere. 
 
-- Use the **Fields** view in **Properties** to check that the **Refactored** layer now has the population data in the correct data type.  
+- Use the **Fields** view in **Properties** to check that the **Refactored** layer now has the population data in the correct data type. Also check in the **Attribute Table** that the data look sensible.    
 - Also use the **Fields** window to delete the extra columns - we should be left with `fid`, `LAcode` and `Pop2019`. Remember to turn **Editing** off.  
 - Right click on the layer and choose **Export > Save Features As...** and save it in our GeoPackage. This will make the layer permanent and removed the temporary layer icon.  
 
@@ -163,11 +174,13 @@ Using our Local Authority datasets, we are going to complete some calculations o
 - Do a Google search for `os open data`.  
 - **OS OpenData download - OS data downloads | OS Data Hub** should be the first hit - go to this page.   The web address is https://osdatahub.os.uk/downloads/open.  
 - Search (or scroll down) to find **OS Open Greenspace** and click the link.  
-- Choose **Select custom area:**  
+- Choose **Set a custom area:**  
 - Click on the **SU** entry on the map of the British Isles to select the SU tile of data and click **Save selection**.  
 - Set the **Data format:** to `ESRI Shapefile`.  
-- Click the link **OS Open Greenspace - ESRI® Shapefile SU (2.27 MB)** to download.  
+- Click the link **OS Open Greenspace - ESRI® Shapefile SU (2.3 MB)** to download.  
 - Unzip the data and have a look at the files - in the data folder there should be two shape files `SU_AccessPoint.shp` and `SU_GreenspaceSite.shp`.  
+
+<!-- Last checked 2022-03-02 -->
 
 Now we can move to QGIS. Reopen your existing project from the previous practical, and save as a new project.  
 
@@ -178,9 +191,9 @@ Now we can move to QGIS. Reopen your existing project from the previous practica
 - Zoom in and have a look at the points. It may be useful to add the OSM Basemap layer, like we did yesterday.  
 
 
-By default, the OSM Standard basemap uses the WGS84 / Pseudo Mercator projection. Most of the data we will be using will be in British National Grid. QGIS will automatically re-project GIS data if it knows what the coordinate system is. QGIS has a 'Project CRS' which is what the data are shown in the main window. Depending on your settings, this may be set to **EPSG:3857** (WGS 84 / Pseudo Mercator).  
+By default, the OSM Standard basemap uses the WGS84 / Pseudo Mercator projection. Most of the data we will be using will be in British National Grid. QGIS will automatically re-project GIS data if it knows what the coordinate system is. QGIS has a 'Project CRS' which is what the data are shown in the main window. Depending on your settings, this may be set to **EPSG:3857** (WGS 84 / Pseudo Mercator) or **EPSG:4326** (WGS 84).  
 
-- If the CRS symbol ![Project CRS](images/project-crs-3857.png){ height=20 } at the bottom right hand side of the QGIS window says **EPSG:3857**, click on it.  
+- If the CRS symbol ![Project CRS](images/project-crs-3857.png){ height=20 } at the bottom right hand side of the QGIS window says **EPSG:3857** or **EPSG:4326**, click on it.  
 - Type `27700` in the **Filter** box and select **OSGB 1936 / British National Grid** - **EPSG:27700**.  
 - Click **OK**. Now QGIS will re-project everything to British National Grid (27700).  
 
@@ -189,8 +202,7 @@ Now we are going to group the data within each Local Authority. First, we will u
 - Click **Processing > Toolbox**.  
 - Type `point in polygons` in the search box.  
 - Double-click **Vector analysis tools > Count points in polygons**.  
-- Set **Polygons** to your Local Authority districts layer.   
-- *(or `Local_Authority_Districts_April_2019_Boundaries_Southern`).*  
+- Set **Polygons** to your Local Authority districts layer *(which should have IMD and population data in it).*
 - Set **Points** to `SU_AccessPoint`.  
 - Click **Run**.  
 - This has created a new layer called `Count`.  
@@ -236,7 +248,7 @@ What might be a better calculation is to look at number of greenspace access poi
 - Click **Multiply** `*` and type in `1000`. This will then calculate the number of greenspace access points per 1000 people.  
 - The Expression box should contain something like this:  
 `  "NUMPOINTS"  /  "prac3-data-nb MYE2 - Persons Refactored_Pop2019"  * 1000 `.  
-- It should give you a preview value for **Arun** of `1.21`.  
+- It should give you a preview value for **Arun** of `1.225`.  
 - Click **OK**.  
 - Save the data.  
    
@@ -259,14 +271,14 @@ This is a lighter touch practical. You will need to work out some of the steps f
 
 We will be combining the layers using the Union tool, and we need to do some preparation for this. 
 
-- Open up your project file from the previous practical, and save it as a new file.  
+- Open up your project file from the previous practical, and save it as a new file (e.g. `prac4-NB-v1.qgz`).  
 - Add the `SU_GreenspaceSite.shp` to our project.  Now is also a good time to remove any layers we don't need, for example many of the CSV datasets we joined.  
-- It is always good practice to work on a copy of your data, so take a copy of our geopackage from the previous practical, save it in the `prac4` folder. I have called mine `prac4-data.gpkg`. 
+- It is always good practice to work on a copy of your data, so take a copy of our geopackage from the previous practical, save it in the `prac4` folder. I have called mine `prac4-data.gpkg`.  
 - Then we can add the greenspace area data to this prac4-data.gpkg geopackage.  
-- To do this, right click on the layer, choose **Export > Save Features As**.  
+- To do this, right click on the layer (`SU_GreenspaceSite`), choose **Export > Save Features As**.  
 - Select the `prac4-data.gpkg` geopackage.  
 - Call the layer `SU_GreenspaceSite` and choose **OK**.  
-- It will appear as `prac4-data SU_GreenspaceSite`.  
+- It will appear as `prac4-data — SU_GreenspaceSite`.  
 
 The greenspace layer and the LA layer don't cover the same area, so we need to remove the local authorities for which we don't have complete greenspace data. 
 
@@ -281,23 +293,23 @@ There are various ways of doing this - the easiest is manually!
 
 ![](images/edited-las.png){ width=60% }
 
-- We also need to do one final bit of preparation on the local authority data - add the area.  
+- We also need to do one final bit of preparation on the local authority data - calculate and add the area to the attribute table.  
 - Open the attribute table for the `prac4-lad-imd-pop-SUgreenspace` layer.  
 - Turn on **Editing** ![](images/edit-icon.png){ height=20 } and click **Add Field** (![Add Column](images/add-column.png){ height=20 }).  
 - Set the **Name** to `LAarea`.  
 - Set **Type** to `Decimal number (real)`.  
-- Set **Length** to `10` and **Prevision** to `4`.  
+- If you have the option, set **Length** to `10` and **Precision** to `4`. *If you don't have these options, that is fine.*    
 - Click **OK**.  
 - Click **Field Calculator** (![Field Calculator](images/field-calculator.png){ height=20 }).  
 - Choose **Update existing field** and set to `LAarea`.  
 - Expand **Geometry** and double-click `$area`. This will add the area in square meters (as our coordinate system is BNG).  
-- This should come out (as a preview)  at `634273162` (m) for Basingstoke and Deane.    
+- This should come out (as a preview)  at `634273160` (m) for Basingstoke and Deane.    
 - Add `/ 10000` to our expression to divide this by 10,000, to get 63,427 hectares.  
 - Click **OK** to apply the calculation across all the rows.  
 
 - Make sure to turn Editing off ![](images/edit-icon.png){ height=20 } and save your edits.  
 
-- In the greenspace layer add a new column called `greenspace`.  
+- In the `prac4-data — GreenspaceSite` layer add a new column called `greenspace`.  
 - Use **New Field** ![](images/new-field.png){ height=20 } and set the data type to **Whole number (integer)**.  
 - Then use **Field Calculator** ![Field Calculator](images/field-calculator.png){ height=20 } to set all the entries in this column to `1`.   
 - Find and open the **Union** tool in the **Processing Toolbox**.  
@@ -309,36 +321,48 @@ There are various ways of doing this - the easiest is manually!
 
 Now we have an attribute table split by Local Authority and greenspace. Within each Local Authority we have one polygon that is non greenspace (where `greenspace` is NULL) and one or more polygons that are greenspace (where `greenspace` is `1`). The next step is to calculate the area for each polygon. 
 
-*We do have quite a few completely blank rows (with greenspace data but no LSOA data). These are the greenspace areas that are outside our local authority data. Try selecting one and using the Zoom To function.*
+*We do have quite a few completely blank rows (with greenspace data but no Local Authority data). These are the greenspace areas that are outside our local authority data. Try selecting one and using the Zoom To function.*
 
-- Save this as a new layer called `greenspace-LAs`. It won't save in the geopackage (because `fid` is not unique, one of the requirements), so save it as an ESRI Shapefile.  
+- Save this as a new layer called `greenspace-LAs`. You will get this error message if you save it in a GeoPackage:
+
+![](images/save-error.png){ width=50% }
+
+*It won't save in the geopackage (because `fid` is not unique, one of the requirements). We could save it as an ESRI Shapefile which will be fine. The better way is to remove and recalculate the `fid` field, which will then be unique, so we can save it in a geopakcage.*
+
+- Open the Attribute Table for the `Union` layer and delete the `fid` field. Then try saving again.  
+_ You might then also get this error:
+
+![](images/save-error-overwrite-layer.png){ width=50% }
+
+- This is saying this layer already exists in the geopackage (as we saved it earlier, but it didn't save properly because of the error). Click **Overwrite Layer** to overwrite this with the new (correct) layer. 
+- **Be careful because you could overwrite the whole geopackage!**
+
 - Open the attribute table for the `greenspace-LAs` layer.  
 - Turn on **Editing** ![](images/edit-icon.png){ height=20 } and click **Add Field** (![Add Column](images/add-column.png){ height=20 }).  
 - Set the **Name** to `area`.  
 - Set **Type** to `Decimal number (real)`.  
-- Set **Length** to `10` and **Prevision** to `4`.  
+- Set **Length** to `10` and **Prevision** to `4` *if you have them*.   
 - Click **OK**.  
 - Click **Field Calculator** (![Field Calculator](images/field-calculator.png){ height=20 }).  
 - Choose **Update existing field** and set to `area`.  
 - Expand **Geometry** and double-click `$area`. This will add the area in square meters (as our coordinate system is BNG).  
-- This should come out (as a preview)  at `93762.20` (m).  
-- Add `/ 10000` to our expression to divide this by 10,000, to get 9.37 hectares.  
+- Add `/ 10000` to our expression to divide this by 10,000, to get the value in  hectares.  
 - Click **OK** to apply the calculation across all the rows.  
 - Turn Editing off.  
 
 Now we can merge the polygons so we have a dataset that lists each Local Authority area twice, once with greenspace and once without. 
 
 - Make sure everything is de-selected (by clicking ![Deselect Data](images/deselect.png){ height=20 })  
-- Use the **Dissolve** tool from **Processing Toolbox** (**under Vector geometry**).  
+- Use the **Dissolve** tool from **Processing Toolbox** (under **Vector geometry**).  
 - Set **Input** to `greenspace-LAs`.  
 - Click the Browse ![](images/browse.png){ height=20 } button next to **Dissolve field(s)**.  
 - Select `lad19cd` and `greenspace`. Choose **OK**.  
 - **Run**.  
 - Look at the new layer, `Dissolved`. Has it done what we wanted it to?  
-- Save as `dissolved-greenspace-LAs.shp`.  
+- Save as `dissolved-greenspace-LAs`.  
 - Open the attribute table and use **Select features using an expression** ![](images/select-features-expression.png){ height=20 } to select the rows where `greenspace = 1`.  
-- Save this as CSV file (*right-click > Export > Save Selected Features As*) called `greenspace-LAs-pc.csv`. Remember to tick the **Save only selected features** checkbox.  
-- In the CSV file, use **Field Calculator** to create a new field (`pc_greenspace`) and calculate the percentage of greenspace (`("area"  /  "LAarea" ) * 100`).  
+- Save this as a new layer `dissolved-greenspace-LAs-single` using **Save Selected Features As...**.  
+- Use **Field Calculator** to create a new field (`pc_greenspace`) and calculate the percentage of greenspace (`("area"  /  "LAarea" ) * 100`). 
 
 <!-- check field format, some are text for area etc. -->
 
@@ -353,5 +377,9 @@ We could perform a similar process, but with the greenspace buffered. This would
 
 ----
 
-*This practical was written using QGIS 3.16.0 on Windows 10, and tested in QGIS 3.10.11, last updated on 23/02/2022 by Dr Nick Bearman, [nick@geospatialtrainingsolutions.co.uk](nick@geospatialtrainingsolutions.co.uk).*
+*This practical was written using QGIS 3.22 on Windows 10, last updated on 02/03/2022 by Dr Nick Bearman, [nick@geospatialtrainingsolutions.co.uk](nick@geospatialtrainingsolutions.co.uk).*
 
+This work (Introduction to QGIS: Spatial Data and Spatial Analysis by Nick Bearman) is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/. <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1">
+
+
+The latest version of the PDF is available from https://github.com/nickbearman/intro-qgis-spatial-data. This is v6.0 and this was created on `r format(Sys.time(), '%d %B %Y')`. 

@@ -1,9 +1,9 @@
 ---
 title: 'Introduction to QGIS: Spatial Data and Spatial Analysis'
 output:
-  pdf_document: default
   html_document:
     df_print: paged 
+  pdf_document: default
 date: "Practicals 1 & 2: Tue 15th & Wed 16th March 2022"
 ---
 
@@ -278,7 +278,7 @@ We will create the map from scratch and add elements such as north arrow, legend
 - Select **GeoPackage** ![](images/geopackage.png){ height=20 } on the left.  
 - Click **New** and then select the `prac2-data.gpkg` file.  
 - Make sure that `prac2-data.gpkg` is selected in the list and click **Connect**.  
-- Select the `IMD-2019-Southern` layer and choose **Add**. Then choose **Close**.  
+- Select the `LSOA-IMD-2019-Southern` layer and choose **Add**. Then choose **Close**.  
 
 This shows the data very well, but it isn't that obvious where the data is, particularly if you zoom in. We can add a base map to this.  
 
@@ -290,7 +290,7 @@ This shows the data very well, but it isn't that obvious where the data is, part
 
 *If this doesn't work, try this approach:*
 
-*If you need to install the **QuickMapServices** *plugin*:				   
+*If you need to install the **QuickMapServices** *plugin:				   
 - *Click **Plugins > Manage and Install Plugins...**  
 - *Type `quick` in the search bar at the top, and select **QuickMapServices** from the list below. *  
 - *Choose **Install Plugin**. *  
@@ -315,7 +315,7 @@ The default colours for the IMD data aren't that great, but fortunately we have 
 
 - Right click on the `LSOA-IMD-2019-Southern` layer, choose **Properties > Symbology**.  
 - At the bottom of the **Symbology** window choose ![](images/style.png){ height=20 } **Style > Load Style...**.   
-- In the **Database Styles Manager** window, under **Load Style** choose **from file** and then click the Browse ![](images/browse.png){ height=20 } button and select the  `prac2-imd-d-style.qml` file.  
+- In the **Database Styles Manager** window, under **Load style** choose **From File** and then click the Browse ![](images/browse.png){ height=20 } button and select the  `prac2-imd-d-style.qml` file.  
 - Your window should look similar to this: 
 
 
@@ -337,7 +337,7 @@ We can also add some outlines for the Local Authority Districts.
 ![](images/simple-fill.png){ width=60% }
 
 - Open the Local Authority layer **Properties** again and this time choose **Labels** ![](images/labels.png){ height=20 }  
-- Change **No labels** to **Single labels**.  
+- Change **No Labels** to **Single Labels**.  
 - Set **Value** to `lad19nm` and choose **OK**.  
 - *If nothing appears, make sure you have selected `lad19nm`*.  
 
@@ -398,7 +398,7 @@ Now we are going to add the main map for Isle of Wight.
 - Click the **Deselect Features** ![](images/deselect.png){ height=20 } so we don't have anything selected any more.  
 - We are going to copy the style from the main LA layer to the new one we have just created.  
 - Right-click on the `Local_Authority_Districts_April_2019_Boundaries_Southern` layer and choose **Style > Copy Style > All Style Categories**.  
-- Right-click on the `prac2-data LA-Isle-of-Wight` layer, choose **Style > Paste Style > All Style Categories**.  
+- Right-click on the `prac2-data — LA-Isle-of-Wight` layer, choose **Style > Paste Style > All Style Categories**.  
 - Turn off the `Local_Authority_Districts_April_2019_Boundaries_Southern` layer.  
 - Go back to the layout window, make sure the Isle of Wight map is selected, and click **Refresh** ![](images/update-map-preview.png){ height=20}.  
 - If it doesn't look quite right, try experimenting with some other options. If you are happy with it, select the **Lock layers** and **Lock styles for layers** options.  
@@ -414,8 +414,8 @@ Have a go at following the same steps as we did for the Isle of Wight for the **
 - Choose **Add Item > Add Legend**. Click in the lower-right area of the map. You may need to click **OK**.  
 - By default the legend includes all of the visible layers, and will automatically update if we change the layers.  
 - In the **Item Properties** window, under **Legend Items** untick **Auto update**.  
-- Select the `prac2-data LA-Isle-of-Wight` layer and click the minus ![](images/minus.png){ height=20 } button to remove it.  
-- Repeat this for the `prac2-data LA-Winchester` layer.  
+- Select the `prac2-data — LA-Isle-of-Wight` layer and click the minus ![](images/minus.png){ height=20 } button to remove it.  
+- Repeat this for the `prac2-data — LA-Winchester` layer.  
 - Select the `Local_Authority_Districts_April_2019_Boundaries_Southern` layer and choose the **Edit Item** ![](images/rename.png){ height=20 } button. Change the label to `Local Authority boundaries`.  
 - Repeat the same process to update the colours to `1 More deprived` and `10 Less deprived`.  
 - Replace the title of `LSOA-IMD-2019-Southern` with `IMD Deprivation Decile`.  
@@ -485,7 +485,7 @@ What if we have some UK postcodes data like the list shown below? How do we get 
 
 There are a couple of ways of doing this. The first one is using a website called www.doogal.co.uk which will geocode the addresses we have. Geocoding takes text based information (a postcode in this case), and returns a set of coordinates. We can then use the coordinates to add these data to our GIS. 
   
-- Open the `example-addresses.csv` file from `prac2.zip` and have a look at the data.  
+- Open the `postcode-input-file.csv` file from `prac2.zip` and have a look at the data.  
 - Go to `https://www.doogal.co.uk/BatchGeocoding.php`  
 - Copy and paste the text from `Postcode` column into the 'Postcodes' box on the webpage  
 - Hit **Geocode**  
@@ -495,7 +495,7 @@ There are a couple of ways of doing this. The first one is using a website calle
   -->
     
 - Wait a short time while the geocoding takes place  
-- When it comes up **Complete** just below the window, check the map to see that some icons have appeared on it.  
+- When it finishes, check the map to see that some icons have appeared on it.  
 - Click on the **Text** tab to file the data with coordinates.  
 - Click **'Download text'** 
 - Save the file (`locations.csv`) somewhere you can find it later 
@@ -520,7 +520,7 @@ The next step is to add the data to QGIS.
 ![Create a Layer from a Delimited Text File](images/add-delimited-text-layer.png){ width=60% }
 
 
-- Click **Ok** 
+- Click **OK** 
 
 - Check the data - do they look sensible for the addresses? *(You may need to add some base map data)* 
   
@@ -542,7 +542,13 @@ The GeoPackage version is much much larger, but contains all the data in one geo
 
 ----
 
-*This practical was written using QGIS 3.16.0 on Windows 10, and tested in QGIS 3.10.11, last updated on 23/02/2022 by Dr Nick Bearman, [nick@geospatialtrainingsolutions.co.uk](nick@geospatialtrainingsolutions.co.uk). Thanks to Chris Bell for providing the geocoding resource at https://www.doogal.co.uk.*
+*This practical was written using QGIS 3.22 on Windows 10, last updated on 02/03/2022 by Dr Nick Bearman, [nick@geospatialtrainingsolutions.co.uk](nick@geospatialtrainingsolutions.co.uk). Thanks to Chris Bell for providing the geocoding resource at https://www.doogal.co.uk.*
+
+This work (Introduction to QGIS: Spatial Data and Spatial Analysis by Nick Bearman) is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/. <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1">
+
+
+The latest version of the PDF is available from https://github.com/nickbearman/intro-qgis-spatial-data. This is v6.0 and this was created on `r format(Sys.time(), '%d %B %Y')`. 
+
 
 
 
