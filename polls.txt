@@ -1,0 +1,66 @@
+Polls
+
+Session 1
+
+Have you installed QGIS successfully?
+Yes 
+No
+
+Which operating system are you using?
+Windows?
+OSX / Mac?
+Other?
+
+How many classes did you choose?
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+Which colour scheme did you pick?
+Greens
+Purples
+Blues
+Oranges
+Dark Blues
+Dark Greens
+Something else
+
+Session 2
+
+Which is better?
+The Mercator projection
+The Gall-Peters projection
+The Polar projection
+None are best, it depends what you are trying to show on the map
+
+/poll "Which is better?" "The Mercator projection" "The Gall-Peters projection" "The Polar projection" "None are best, it depends what you are trying to show on the map" anonymous
+
+What is most important to remember when performing an attribute join?
+There must be the same number of columns in both data sets
+The attributes must be similar
+The attributes must be exactly the same
+The data must be in the same language
+
+/poll "What is most important to remember when performing an attribute join?" "There must be the same number of columns in both data sets" "The attributes must be similar" "The attributes must be exactly the same" "The data must be in the same language" anonymous
+
+What do we need to remember when looking at a map:
+The map is the best representation of the data
+We need to critically analyse the map to see whether it is representing the data fairly
+QGIS will only allow us to create the best choropleth map
+There is no way to mis represent spatial data
+
+/poll "What do we need to remember when looking at a map:" "The map is the best representation of the data" "We need to critically analyse the map to see whether it is representing the data fairly" "QGIS will only allow us to create the best choropleth map" "There is no way to misrepresent spatial data" anonymous
+
+What coordinate system are these coordinates likely to be in? 52°N 37’ 30.32’’ 1°E 14’ 2.05’’ 
+British National Grid (Eastings & Northings) EPSG = 27700
+UTM (Universal Transverse Mercator) Zone 37 N EPSG = 32630
+Latitude and Longitude (WGS 1984) EPSG = 4326
+
+/poll "What coordinate system are these coordinates likely to be in? 52°N 37’ 30.32’’ 1°E 14’ 2.05’’" "British National Grid (Eastings & Northings) EPSG = 27700" "UTM (Universal Transverse Mercator) Zone 37 N EPSG = 32630" "Latitude and Longitude (WGS 1984) EPSG = 4326" anonymous
