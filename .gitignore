@@ -1,11 +1,8 @@
 .Rproj.user
 .Rhistory
 .RData
-*.log
-glossary.synctex.gz
 intro-to-qgis-spatial-data.Rproj
 *.lnk
-01-outline-notes.txt
 workbook-p1-p2.pdf
 workbook-p3-p4.pdf
 data/prac1/
