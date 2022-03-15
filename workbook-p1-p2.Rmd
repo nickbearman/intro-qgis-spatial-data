@@ -18,7 +18,7 @@ date: "Practicals 1 & 2: Tue 15th & Wed 16th March 2022"
 | Understand how to add data with a latitude & longitude coordinate | 
 | Join tabular data to spatial data | 
 | Understand how to undertake simple calculations | 
-| Understanding how to classify data for representation on a map | 
+| Understand how to classify data for representation on a map | 
 
 Several conventions have been adopted in the following instructions:
 
