@@ -70,9 +70,9 @@ Now our data is in, and joined to our spatial data, we can create a choropleth m
 
 ### Optional Exercises
 
-- If you have time, try loading in the Style template that we used before  `prac2-imd-d-style.qml`.  
-
 - Try adding the football stadium data on top of the IMD data.  
+
+- Try loading in the Style template that we used before  `prac2-imd-d-style.qml` on to the LA-with-IMD layer. *Remember the option is under Properties > Symbology > Style > Load Style.... You will also need to update the column used for `Value`.*   
 
 - How would you produce a map, showing both the IMD data and the football stadiums? What about showing context to people using the map can orientate themselves?  
 
@@ -197,12 +197,12 @@ By default, the OSM Standard basemap uses the WGS84 / Pseudo Mercator projection
 - Type `27700` in the **Filter** box and select **OSGB 1936 / British National Grid** - **EPSG:27700**.  
 - Click **OK**. Now QGIS will re-project everything to British National Grid (27700).  
 
-Now we are going to group the data within each Local Authority. First, we will use **Point-in-Polygons** to count how access points to greenspace there are in each Local Authority. 
+Now we are going to group the data within each Local Authority. First, we will use **Point-in-Polygon** analysis to count how access points to greenspace there are in each Local Authority polygon. 
 
 - Click **Processing > Toolbox**.  
-- Type `point in polygons` in the search box.  
+- Type `count points` in the search box.  
 - Double-click **Vector analysis tools > Count points in polygons**.  
-- Set **Polygons** to your Local Authority districts layer *(which should have IMD and population data in it).*
+- Set **Polygons** to your Local Authority districts layer *(which should have IMD and population data in it).*  
 - Set **Points** to `SU_AccessPoint`.  
 - Click **Run**.  
 - This has created a new layer called `Count`.  
