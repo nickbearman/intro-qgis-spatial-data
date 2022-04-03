@@ -250,6 +250,11 @@ Currently we are comparing the increase in numbers of people between 2005 and 20
 ## Adding a Basemap (optional exercise)
 We have the option of adding a base map to the data we have in QGIS. We can do this through XYZ Tiles (within the Browser panel). 
 
+We can also add Google Maps imagery to this as well (although this is not officially supported, and may break). 
+- In the Browser window, right-click on **XYZ Tiles** and choose **New Connection...**  
+- In Name type `Google Maps`  
+- In URL paste in `http://mt0.google.com/vt/lyrs=y&hl=en&x={x}&y={y}&z={z}&s=Ga` *(or copy and paste from the PDF)* 
+
 An alternative option is to use a plugin called QuickMapServices. To install it, click **Plugins > Manage and Install Plugins.**. Search for `QuickMapServices`. Then select the plugin and click **Install Plugin**. Once installed, try **Web > QuickMapServices > OSM > OSM Standard** to begin.  
 
 \newpage
