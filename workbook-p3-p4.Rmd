@@ -4,7 +4,7 @@ output:
   html_document:
     df_print: paged
   pdf_document: default
-date: 'Practicals 3 & 4: Tue 22nd and Wed 23rd March 2022'
+date: 'Practicals 3 & 4: Thu 9th June 2022'
 ---
 
 
@@ -325,7 +325,7 @@ Now we have an attribute table split by Local Authority and greenspace. Within e
 
 - Save this as a new layer called `greenspace-LAs`. You will get this error message if you save it in a GeoPackage:
 
-![](images/save-error.png){ width=50% }
+![](images/save-error.png){ width=40% }
 
 *It won't save in the geopackage (because `fid` is not unique, one of the requirements). We could save it as an ESRI Shapefile which will be fine. The better way is to remove and recalculate the `fid` field, which will then be unique, so we can save it in a geopakcage.*
 
@@ -377,7 +377,7 @@ We could perform a similar process, but with the greenspace buffered. This would
 
 ----
 
-*This practical was written using QGIS 3.22 on Windows 10, last updated on 02/03/2022 by Dr Nick Bearman, [nick@geospatialtrainingsolutions.co.uk](nick@geospatialtrainingsolutions.co.uk).*
+*This practical was written using QGIS 3.22 on Windows 10, last updated on 04/06/2022 by Dr Nick Bearman, [nick@geospatialtrainingsolutions.co.uk](nick@geospatialtrainingsolutions.co.uk).*
 
 This work (Introduction to QGIS: Spatial Data and Spatial Analysis by Nick Bearman) is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/. <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1">
 
