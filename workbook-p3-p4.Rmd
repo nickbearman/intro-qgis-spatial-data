@@ -124,8 +124,9 @@ The `Pop2019` column contains population data, but QGIS thinks it is a String (t
 
 - Type `Refactor` in the search box.  
 - Double click on **Refactor fields** *it might take a little while to load*.  
+- Increase the size of the **Refactor Fields** window so you can see the different sections clearly.  
 - Make sure we have our new MidYearEstimates layer in the **Input Layer** box.  
-- Change our **Pop2019** field from `Text (string` to `Decimal number (double)`.  
+- Change our **Pop2019** field from `Text (string)` to `Decimal number (double)`.  
 - Click **Run**.  
 - *If it gives us an error message this may not be a problem - check the output.*  
 - When it has finished running, click **Close**.  
