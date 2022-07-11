@@ -51,10 +51,10 @@ The data must be in the same language
 /poll "What is most important to remember when performing an attribute join?" "There must be the same number of columns in both data sets" "The attributes must be similar" "The attributes must be exactly the same" "The data must be in the same language" anonymous
 
 What do we need to remember when looking at a map:
-The map is the best representation of the data
+This map is the best representation of the data
 We need to critically analyse the map to see whether it is representing the data fairly
 QGIS will only allow us to create the best choropleth map
-There is no way to mis represent spatial data
+There is no way to misrepresent spatial data
 
 /poll "What do we need to remember when looking at a map:" "The map is the best representation of the data" "We need to critically analyse the map to see whether it is representing the data fairly" "QGIS will only allow us to create the best choropleth map" "There is no way to misrepresent spatial data" anonymous
 
