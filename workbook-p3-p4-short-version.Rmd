@@ -76,7 +76,10 @@ Now we are going to group the data within each Local Authority. First, we will u
 - This has created a new layer called `Count`.  
 - Some of the layers should have points in - remember, the SU grid square doesn't cover all of the local authorities, so some will be blank and some will be incomplete.  
 - You can sort the `NUMPOINTS` column by clicking on the column header. It will sort it first ascending, then if you click again, descending.  
-- If the calculation has worked, save this as a new layer.  
+- If the calculation has worked, save this as a new GeoPackage layer.  
+- Remember to choose the GeoPackage file name and the layer name:
+
+![](images/save-layer-geopackage.png){ width=50% }
 
 Have a go at symbolising this data. 
 
@@ -141,7 +144,8 @@ We will be combining the layers using the Union tool, and we need to do some pre
 
 - Open up your project file from the previous practical, and save it as a new file (e.g. `prac4-NB-v1.qgz`).  
 - Add the `SU_GreenspaceSite.shp` to our project.  Now is also a good time to remove any layers we don't need, for example many of the CSV datasets we joined.  
-- It is always good practice to work on a copy of your data, so take a copy of our geopackage from the previous practical, save it in the `prac4` folder. I have called mine `prac4-data.gpkg`.  
+- It is always good practice to work on a copy of your data, so take a copy of our geopackage from the previous practical (by copying it in Windows Explorer / My Computer / Finder) and save it in the `prac4` folder. I have called mine `prac4-data.gpkg`.  
+- Then add your new GeoPackage to QGIS.  
 - Then we can add the greenspace area data to this prac4-data.gpkg geopackage.  
 - To do this, right click on the layer (`SU_GreenspaceSite`), choose **Export > Save Features As**.  
 - Select the `prac4-data.gpkg` geopackage.  
