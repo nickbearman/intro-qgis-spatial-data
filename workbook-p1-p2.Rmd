@@ -238,7 +238,7 @@ There are a number of things you can change to alter the classification:
 2.	Try changing the number of classes.  
 3.	Try changing the colours used - how does this impact the message of the map? (ColorBrewer can be accessed through **Color ramp > Create New Color Ramp > Catalog: ColorBrewer**).  
 4.	Try changing the class boundaries - use the **Histogram** tool in QGIS, click **Load Values** to show the histogram.  
-5.  Can you use a bivariate colour scheme to show increases or decreases in a different colour? 																					 
+5.  Can you use a diverging colour scheme to show increases or decreases in a different colour? 																					 
 
 Once you have finished, remember to save your QGIS Project. 
 
