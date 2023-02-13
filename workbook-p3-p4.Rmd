@@ -34,7 +34,7 @@ We are working with the IMD (Index of Multiple Deprivation) data again, but this
 
 - Close Excel.  
 
-- In QGIS open the **Open Data Source Manager** ![](images/open-data-source-manager.png){ height=20 } and browse to the Excel file you have just downloaded.  
+- In QGIS open the **Open Data Source Manager** ![](images/open-data-source-manager.png){ height=20 } and use the **Browser** option ![](images/data-source-manager-browser.png){ height=20 } to browse to the Excel file you have just downloaded. *If you are lost, go to **Home > Documents** and go from there.*   
 - Expand the `File_10_-_IoD2019_Local_Authority_District_Summaries__lower-tier__` file and double click on `IMD`.  
 - Close the **Data Source Manager**.  
 - Right click on both of the layers you have just added and **Open Attribute Table**.  
@@ -112,7 +112,7 @@ We are now going to join some more tabular data - populations this time. We need
 
 <!-- Be clearer this is just a table we are saving - it won't have a CRS --> 
 
-- Return to the **Fields** window (within **Properities**) and now we should be able to edit ![](images/edit-icon.png){ height=20 } .  
+- Return to the **Fields** window (within **Properties**) and now we should be able to edit ![](images/edit-icon.png){ height=20 } .  
 - Click the **Edit** ![](images/edit-icon.png){ height=20 } icon and change `Field1` to `LAcode` and `Field4` to `Pop2019`.  
 - Untoggle Editing ![](images/untoggle-editing.png){ height=20 } and choose **Save** when prompted.   
 
