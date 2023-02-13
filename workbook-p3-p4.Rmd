@@ -1,10 +1,10 @@
 ---
 title: 'Introduction to QGIS: Spatial Data and Spatial Analysis'
 output:
+  pdf_document: default
   html_document:
     df_print: paged
-  pdf_document: default
-date: 'Practicals 3 & 4: Thu 9th June 2022'
+date: 'Practicals 3 & 4: Mon 13th & Tue 14th March 2023'
 ---
 
 
@@ -58,7 +58,7 @@ The join that we have made is not permanent; it is a temporary link between the 
 
 - Remember to choose the GeoPackage file name and the layer name:
 
-![](images/save-layer-geopackage.png){ width=50% }
+![](images/save-layer-geopackage.png){ width=40% }
 
 Now our data is in, and joined to our spatial data, we can create a choropleth map. Remember how important the classification process is - which classification method we choose can have a big impact on the map we create. 
 
@@ -79,6 +79,8 @@ Now our data is in, and joined to our spatial data, we can create a choropleth m
 *If you get to the end of the recap, and are happy with what we have covered, please carry on with the next practical. If some things are unclear, then please ask for help.*
 
 ----
+
+\newpage
 
 # Practical 3b: Joining Population Data
 
@@ -178,7 +180,7 @@ Using our Local Authority datasets, we are going to complete some calculations o
 - Choose **Set a custom area:**  
 - Click on the **SU** entry on the map of the British Isles to select the SU tile of data and click **Save selection**.  
 - Set the **Data format:** to `ESRI Shapefile`.  
-- Click the link **OS Open Greenspace - ESRI® Shapefile SU (2.3 MB)** to download.  
+- Click the link **OS Open Greenspace - ESRI® Shapefile SU (2.32 MB)** to download.  
 - Unzip the data and have a look at the files - in the data folder there should be two shape files `SU_AccessPoint.shp` and `SU_GreenspaceSite.shp`.  
 
 <!-- Last checked 2022-03-02 -->
@@ -378,9 +380,9 @@ We could perform a similar process, but with the greenspace buffered. This would
 
 ----
 
-*This practical was written using QGIS 3.22 on Windows 10, last updated on 04/06/2022 by Dr Nick Bearman, [nick@geospatialtrainingsolutions.co.uk](nick@geospatialtrainingsolutions.co.uk).*
+*This practical was written using QGIS 3.22 on Windows 11, last updated on 13/02/2023 by Dr Nick Bearman, [nick@geospatialtrainingsolutions.co.uk](nick@geospatialtrainingsolutions.co.uk).*
 
 This work (Introduction to QGIS: Spatial Data and Spatial Analysis by Nick Bearman) is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/. <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1">
 
 
-The latest version of the PDF is available from https://github.com/nickbearman/intro-qgis-spatial-data. This is v6.0 and this was created on `r format(Sys.time(), '%d %B %Y')`. 
+The latest version of the PDF is available from https://github.com/nickbearman/intro-qgis-spatial-data. This is v6.1 and this was created on `r format(Sys.time(), '%d %B %Y')`. 
