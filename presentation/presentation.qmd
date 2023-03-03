@@ -1,0 +1,690 @@
+---
+title: "Introduction to QGIS and Spatial Analysis"
+subtitle: "Tue 7th March"
+author: "Nick Bearman"
+format: 
+  revealjs
+    
+---
+
+##
+
+![](images/ncrm-welcome-slide-1.png)
+
+##
+
+![](images/ncrm-welcome-slide-2.png)
+
+## What are we covering?
+
+-   What is GIS and spatial data?
+-   Be able to set up QGIS and add data
+-   Join tabular data to spatial data
+-   Understand how to classify data for representation on a map
+-   Understand how to add data with a latitude & longitude coordinate
+-   Next steps
+
+![](images/qgis-screenshot.png){.absolute bottom="0" right="0" width="550"}
+
+
+## What are we covering?
+ - Point in Polygon Analysis
+ - Spatial Overlays
+ 
+ ![](images/point-in-polygon-spatial-overlays.png){.absolute bottom="0" width="1024"}
+ 
+ <!--
+## Housekeeping
+
+-   Introductions
+    -   Name / background / area of interest
+    -   Have you done any GIS before? (no is fine!)
+    -   What are you hoping to achieve in the next 1h25m?
+     -   What you would like from the course -->
+
+## Housekeeping
+
+-   Have presentation and practical sessions
+    -   Ask questions as we go along
+    -   Think about how you could use these techniques with your own data
+ 
+<!-- -   No fire alarm planned -->
+<!-- -   Be aware of trailing wires -->
+<!-- -   Photos for social media -->
+
+-   Presentations, handouts and data on OneDrive
+    <!-- -   tinyurl.com/methodsconqgis -->
+
+<!-- 
+## Outline
+
+-   1345 - 1400 Introduction
+-   1400 - 1410 Colouring in exercise
+-   1410 - 1420 Visualisation discussion
+-   1420 - 1430 Presentation on GIS
+-   1430 - 1450 Practical in QGIS
+-   1450 - 1500 Coordinate Systems & Next Steps
+-   1510 Finish
+-->
+
+## Outline
+
+- 10:00am – 10:45am: What is GIS and Spatial Data?
+- 10:45am – 11:30am: Practical 1
+- 11:30am – 11:45am: break
+- 11:45am – 12:15pm: Classification discussion
+- 12:15pm – 1:00pm: Practical 1
+
+## Housekeeping - Practicals
+
+- Work through the workbook (questions, optional exercises)
+- Will split into groups of ~4-5 people (breakout rooms)
+- Ask your group colleagues questions
+-  Post in Matrix/Element
+- Use the ‘Ask for help’ button in the Breakout room
+- I will ‘walk around’ and see how people are getting on
+- Can share screens – in groups, or individually
+
+## Any Questions?
+
+- ?
+
+## What is GIS?
+
+-   Geographic Information Systems
+-   Turning (spatial) data into information ![](images/turning-data-into-information.png)
+-   Using this information to answer (research) questions
+    -   *"How have housing conditions changed in the past ten years?"*
+
+## What can a GIS can answer?
+
+![](images/types-of-questions-a-gis-can-answer.jpg)\
+<font size="2">Kraak & Ormeling (2003) p.7.</font>
+
+## What is GIS?
+
+![](images/what-is-gis.png)\
+<font size="2">http://www.flickr.com/photos/dsleeter_2000/3097476532 & ESRI Course "Teaching with GIS"</font>
+
+## GIS
+
+-   Nearly all human activities & decisions involve geography
+    -   the "**where?**"
+-   Working with geographic information is **different** to working with a **CSV** file
+-   This is why we need specialized **GIS** software to:
+    -   **organize** and **store**
+    -   **access** and **retrieve**
+    -   **present** and **manage** spatial data
+-   But ultimately to apply to the solution of our **problem**
+
+## GIS can be applied to many many many different areas
+
+------------------------------------------------------------------------
+
+
+![](images/kenya-vegetation.png)
+
+<font size="2">Kenya Vegetation Figure 1 - http://pvanb.wordpress.com/2010/06/10/clickfu-in-qgis/</font>
+
+------------------
+
+### Census 2011
+
+ ![](images/census-2021.png)
+
+
+<font size="2">http://www.alex-singleton.com/r/2014/02/05/2011-census-open-atlas-project-version-two/</font>
+---
+
+
+![](images/africa-poverty.png)
+
+<font size="2">http://pvanb.wordpress.com/2012/05/09/poverty-maps-on-harvestchoice/ </font>
+
+---
+
+## GIS: Systems and Science
+
+::: {.fragment}
+- Geographical Information **Systems** 
+  - The methods, process and technology we use
+:::
+
+::: {.fragment}
+- Geographical Information **Science** <!-- .element: class="fragment" -->
+  - The science behind the technology
+  - Including development of new technology, <br> methods and processes
+:::
+
+::: {.fragment}
+ ![](images/ijgis.png){.absolute bottom="0" right="0" width="250"} 
+:::
+ 
+::: {.fragment}
+- Geographic*al* / Geographic 
+:::
+ 
+::: {.fragment}
+- Geographic Data Science
+:::
+ 
+---
+
+## GIS Software
+
+![](images/gis-software.png)\
+
+- QGIS has as many features as ArcGIS
+- ArcGIS is probably slightly more polished
+- QGIS is free (as is R)
+- QGIS is increasingly popular in not for profit sector, academic and commercial
+- *All can be useful*
+
+## Projections and Coordinate Systems
+
+## Projections
+
+- Projection - going from a sphere to a flat surface
+
+ ![](images/globe-to-mercator-projection.png)
+
+
+<font size="2">http://www.primap.com/wsen/Maps/MapCollection/WorldMaps/Globe-(Europe-centered)-Vegetation-4000x4000.html
+</font>
+
+## Projections
+
+- Projection - going from a sphere to a flat surface
+
+![](images/peeling-an-orange.png)
+
+
+<font size="2">http://www.hdwallpapersos.com/orange-fruit-hd-wallpapers.html | Top: http://krygier.owu.edu/krygier_html/geog_353/geog_353_lo /geog_353_lo05.html
+</font>
+
+## Mercator Projection
+
+
+
+![](images/mercator-projection.png)
+
+<!-- 
+This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license. http://en.wikipedia.org/wiki/File:Mercator_projection_SW.jpg
+-->
+
+##
+
+![](images/mercator-gall-peters.png)
+
+<!--
+This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license. http://en.wikipedia.org/wiki/File:Gall%E2%80%93Peters_projection_SW.jpg
+
+This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license. http://en.wikipedia.org/wiki/File:Mercator_projection_SW.jpg
+
+-->
+
+##
+
+![](images/mercator-globe.png)
+
+##
+
+![](images/mercator-2.png)
+
+##
+
+![](images/mercator-comparision.png)
+
+##
+
+![](images/mercator-comparision-1.png)
+
+##
+
+![](images/mercator-comparision-2.png)
+
+##
+
+![](images/mercator-comparision.png)
+
+##
+
+![](images/ch2-projections.png)
+
+## Why are Projections important?
+
+1. The map(s) may not be as they appear
+
+## Why are Projections important?
+
+1. The map(s) may not be as they appear
+2. Data may appear in the wrong place
+
+##
+
+![](images/base-map.png)
+
+
+##
+
+![](images/base-map-uk-data.png)
+
+## Why are Projections important?
+
+1. The map(s) may not be as they appear
+2. Data may appear in the wrong place
+3. Projections are closely related to Coordinate Systems
+
+## Coordinate Systems
+
+Latitude and Longitude (WGS 1984)
+
+*52°N 37' 30.32'' (52.6250) 1°E 14' 2.05'' (1.2339)*
+
+ ![](images/lat-lng.png)
+
+## Coordinate Systems
+
+British National Grid  
+
+*Easting: 619301	Northing: 307416* 
+
+
+![](images/bng.png)		
+
+## Coordinate Systems
+
+ UTM (Universal Transverse Mercator)
+
+ *621160.98, 3349893.53 meters, Zone 31 N*
+
+ ![](images/utm.png)
+
+## Coordinate Systems
+
+ UTM (Universal Transverse Mercator)  
+
+ *621160.98, 3349893.53 meters, Zone 31 N*  
+
+ ![](images/utm-europe.png) 
+ 
+ 
+## Geographic and Projected Coordinate Systems
+
+We can split these coordinate systems into two groups:
+
+- Geographic Coordinate Systems
+- Projected Coordinate Systems
+
+## Geographic and Projected Coordinate Systems
+
+- **Geographic Coordinate Systems**
+  - Where on the Earth’s surface something is
+  - 52°N 37’ 30.32’’ (52.6250)	1°E 14’ 2.05’’ (1.2339) 
+  - Usually in angular units (degrees)
+- **Projected Coordinate Systems**
+  - How we show this on a printed/flat map
+  - Easting: 619301	Northing: 307416
+  - Usually in linear units (meters)
+
+## Geographic and Projected Coordinate Systems
+
+- **Geographic Coordinate Systems**
+  - Latitude and Longitude (WGS 1984)
+  - 52.6250°	1.2339°
+- **Projected Coordinate Systems**
+  - British National Grid (Eastings & Northings)
+    - Easting: 619301	Northing: 307416
+  - UTM (Universal Transverse Mercator)
+    - 621160.98, 3349893.53 meters, Zone 14 N
+
+## Geographic and Projected Coordinate Systems
+
+- **Geographic Coordinate Systems**
+  - Latitude and Longitude (WGS 1984)
+  - 52.6250°	1.2339° **EPSG: 4326**
+- **Projected Coordinate Systems**
+  - British National Grid (Eastings & Northings)
+    - Easting: 619301	Northing: 307416 **EPSG: 27700**
+  - UTM (Universal Transverse Mercator)
+    - 621160.98, 3349893.53 meters, Zone 14 N **EPSG: depends on zone**
+
+- https://epsg.org/
+- https://epsg.io/ 
+
+## Geographic and Projected Coordinate Systems
+
+- Why is it important?
+  - Some data uses WGS84, some BNG, some UTM
+  - GB ONS (LSOA) / OS and many others use BNG (Eastings/Northings)
+  - Need to convert between the two
+- Most of the time QGIS converts automatically
+
+
+
+## Which system to use?
+
+- For Global data, projections are key
+  - WGS 84 EPSG:4326
+  - Try WGS 84 / Equal Earth Greenwich EPSG:8857
+
+- For Local data, projections are less important
+  - We are using Projected Coordinate System
+  
+  
+- We can convert data between projection systems
+
+
+
+---
+
+
+ ![](images/joining-1.png)
+
+---------------
+
+![](images/joining-2.png)
+
+----------------
+
+![](images/joining-3.png)
+
+-------------------
+
+![](images/joining-4.png)
+
+## Attribute Join
+
+- The attribute is key
+- It must match **exactly**
+	- “Gambia, The” ≠ “The Gambia”
+	- “USA” ≠ “The United States”
+	- “UK” ≠ “Great Britain”
+	- “UK” ≠ “UK ”
+	
+	
+## Attribute Join
+
+- Codes (ISO3) can help
+
+![](images/iso-codes.png){.absolute left="0"}
+
+::: footer
+https://twitter.com/zevross/status/1118967279864242176</font>
+:::
+
+## Attribute Join 
+
+- Is an issue in many different places  
+
+ ![](images/irish-names.png){.absolute}  	
+ 
+
+## QGIS Practical
+
+- Short Demo
+
+::: fragment
+- (Primarily) self-led practical  
+- Good to explore the options
+- Ask questions as we go through
+- Try things
+:::
+ 
+## QGIS Practical 
+
+QGIS follow on screen
+
+make a folder, 
+download and save practical (PDF / HTML), 
+download zip file from Slack, 
+extract, 
+open QGIS, 
+load World countries, 
+pan, zoom
+
+## Outline
+
+- 10:00am – 10:45am: What is GIS and Spatial Data?
+- 10:45am – 11:30am: Practical 1
+- 11:30am – 11:45am: break
+- 11:45am – 12:15pm: Classification discussion
+- 12:15pm – 1:00pm: Practical 1
+
+## GIS can do many things
+
+## Visualsation is key
+
+- how do we show data on a map? 
+
+<!--
+## Classification
+
+- Colour in the map to show the Total Vaccinations per 100 data
+  - *10 min*
+
+
+![](images/map.png){.absolute bottom="0" right="0" width="750"}
+
+::: footer
+Remember to show in the table which colours represent which countries!
+:::
+
+
+## Classification
+
+- Colour in the map to show the Total Vaccinations per 100 data
+- Discuss your choices
+
+
+## Classification
+
+- Colour in the map to show the Total Vaccinations per 100 data
+- Discuss your choices
+  - Colours
+  - Classification (how you grouped the data)
+
+--> 
+
+## Classification
+
+![](images/classification-exercise-map.png)
+
+## Classification
+
+- Go to www.colorbrewer2.org
+
+![](images/color-brewer-screenshot.png)
+
+## Classification
+
+![](images/classification-exercise-map.png)
+
+- Go to www.colorbrewer2.org
+- How many classes would you use to categorise the data?
+- What are those classes?
+- What colour scheme would you use? Why?
+
+## Classification
+
+- Polls
+- How many classes?
+- What are those classes?
+- Which colour scheme?
+
+## Classification - Classes
+
+- How many classes we choose is important
+  - Max of 5-7
+- What those classes are is important as well 
+  - Equal Interval: 0-10, 10-20, 20-30, ….
+  - Quantiles: first 10 data points, second 10 data points, ….
+  - Natural Breaks / Jenks / Fisher
+  - Standard Deviation: mean-1SD to mean, mean to mean+1SD, mean+1SD to mean+2SD, …
+  - Unique
+  
+## Classification  
+  
+![](images/classification-options.png)
+
+::: footer
+Figure 11 https://gistbok.ucgis.org/bok-topics/statistical-mapping-enumeration-normalization-classification
+:::
+
+## Classification  
+  
+![](images/data-distribution.png)
+
+## Classification  
+  
+![](images/covid-example.png)
+
+
+::: footer
+James Cheshire (UCL) wrote an article about the press conference announcing the second lockdown in the UK (31/10/2020)
+
+https://theconversation.com/next-slide-please-data-visualisation-expert-on-whats-wrong-with-the-uk-governments-coronavirus-charts-149329
+
+https://jcheshire.com/resources/different-maps-same-data/
+:::
+
+
+---  
+  
+![](images/qgis-symbology-histogram.png)
+
+## Classification  - Colours
+
+- As well as classes, colours are important
+- How do you choose the colours?
+- Why is this important?
+- Output
+- User
+- Colorbrewer.org
+
+![](images/color-brewer-screenshot.png){.absolute bottom="0" right="0" width="600"}
+
+---
+
+![](images/color-brewer-in-qgis.png)
+
+
+
+
+## Classification
+
+- Cartography is a Science and an Art
+- Be creative
+- There is no ‘right’ answer
+- A bit like cookery
+- But we have covered some ‘rules of thumb’
+
+
+## Before we continue with the practical
+
+- NULL values
+
+## NULL Values
+
+![](images/null-values-1.png)
+
+## NULL Values
+
+![](images/null-values-2.png)
+
+##
+
+![](images/calculating-new-values.png)
+
+
+##
+
+![](images/calculating-new-values-pc.png)
+
+
+##
+
+- Null Values
+
+- Saving files
+
+
+## Saving Files
+
+![](images/saving-files-1.png)
+
+## Saving Files
+
+![](images/saving-files-2.png)
+
+
+## Saving Files
+
+![](images/saving-files-3.png)
+
+
+
+
+## Glossary
+
+![](images/glossary.png)
+
+
+## Outline
+
+- 10:00am – 10:45am: What is GIS and Spatial Data?
+- 10:45am – 11:30am: Practical 1
+- 11:30am – 11:45am: break
+- 11:45am – 12:15pm: Classification discussion
+- 12:15pm – 1:00pm: Practical 1
+
+
+
+
+## Adding Delimited Text Layers
+
+- If we have coordinates for data, we can add them to QGIS
+
+![](images/world-cities-csv-excel.png){.absolute bottom="50" left="0" width="350"}
+
+
+![](images/world-cities.png){.absolute .fragment bottom="150" right="0" width="700"}
+
+
+## Geocoding
+
+- Can also do this with address data
+- Postcodes -> coordinates -> plot on map
+
+## Next Session
+
+- Everyone post a question in Matrix that you have about GIS or todays work
+
+- Next session tomorrow 10am
+
+- More on Cartography and Map Design (beyond colours)
+
+- If you are working with some of your own data, bring it along
+
+<!-- 
+## Next Steps
+
+- Repeat this material in 2-3 weeks / 2-3 months
+- Lots of free tutorials available online
+- GIS Training Courses
+  - [www.geospatialtrainingsolutions.co.uk](www.geospatialtrainingsolutions.co.uk)
+- Books:
+  - GIS: Research Methods, £13, available today
+  - QGIS Map Design | 
+  - An Introduction to R for Spatial Analysis and Mapping
+  - Cartography: An Introduction
+  
+## Thank you & questions
+
+- Repeat this material in 2-3 weeks / 2-3 months
+- GIS Training Courses
+  - [www.geospatialtrainingsolutions.co.uk](www.geospatialtrainingsolutions.co.uk)
+- Books:
+  - GIS: Research Methods, £13, available today
+  
+-->
