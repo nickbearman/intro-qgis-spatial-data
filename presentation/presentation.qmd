@@ -322,10 +322,26 @@ We can split these coordinate systems into two groups:
   - Where on the Earth’s surface something is
   - 52°N 37’ 30.32’’ (52.6250)	1°E 14’ 2.05’’ (1.2339) 
   - Usually in angular units (degrees)
+
+## Geographic and Projected Coordinate Systems
+
+ ![](images/distance-lines-longitude.jfif){width="500"}  
+ 
+ <font size="2">Thanks to [@RickyAngueira](https://twitter.com/RickyAngueira) from [#30DayMapChallenge on Twitter](https://twitter.com/RickyAngueira/status/1594030866132410368?t=Mljsd9aPHr7IzLTrp3o45A&s=09). 
+</font>
+  
+
+## Geographic and Projected Coordinate Systems
+
+- **Geographic Coordinate Systems**
+  - Where on the Earth’s surface something is
+  - 52°N 37’ 30.32’’ (52.6250)	1°E 14’ 2.05’’ (1.2339) 
+  - Usually in angular units (degrees)
 - **Projected Coordinate Systems**
   - How we show this on a printed/flat map
   - Easting: 619301	Northing: 307416
   - Usually in linear units (meters)
+
 
 ## Geographic and Projected Coordinate Systems
 
