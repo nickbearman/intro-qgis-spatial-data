@@ -84,6 +84,7 @@ format:
 - Use the ‘Ask for help’ button in the Breakout room
 - I will ‘walk around’ and see how people are getting on
 - Can share screens – in groups, or individually
+- Poll - All setup ok?
 
 ## Any Questions?
 
@@ -512,11 +513,11 @@ Remember to show in the table which colours represent which countries!
 
 ![](images/color-brewer-screenshot.png)
 
-## Classification
+## Classification {.smaller}
 
-![](images/classification-exercise-map.png)
+![](images/classification-exercise-map.png){.absolute bottom="0" width="1000"}
 
-- Go to www.colorbrewer2.org
+- Go to [www.colorbrewer2.org](http://www.colorbrewer2.org)
 - How many classes would you use to categorise the data?
 - What are those classes?
 - What colour scheme would you use? Why?
