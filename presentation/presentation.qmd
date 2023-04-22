@@ -144,6 +144,15 @@ format:
 
 ---
 
+## Weather
+
+![](images/weather.png)
+
+<font size="2">Tomorrows Weather - https://dominicroye.github.io/en/2023/tomorrows-weather/?utm_source=puntofisso&utm_medium=email</font>
+
+
+---
+
 ## GIS: Systems and Science
 
 ::: {.fragment}
