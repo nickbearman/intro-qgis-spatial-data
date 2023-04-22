@@ -1,12 +1,16 @@
 ---
-title: "Introduction to QGIS and Spatial Analysis"
-subtitle: "Tue 7th March"
+title: "Introduction to QGIS and Census Data"
+subtitle: "Tue 25th April"
 author: "Nick Bearman"
 format: 
   revealjs
     
 ---
 
+
+## Welcome!
+
+ <!-- 
 ##
 
 ![](images/ncrm-welcome-slide-1.png)
@@ -15,23 +19,27 @@ format:
 
 ![](images/ncrm-welcome-slide-2.png)
 
+-->
+
+
 ## What are we covering?
 
 -   What is GIS and spatial data?
 -   Be able to set up QGIS and add data
--   Join tabular data to spatial data
+-   Join tabular data to spatial data & Census data
 -   Understand how to classify data for representation on a map
 -   Understand how to add data with a latitude & longitude coordinate
 -   Next steps
 
 ![](images/qgis-screenshot.png){.absolute bottom="0" right="0" width="550"}
-
+<!--
 
 ## What are we covering?
  - Point in Polygon Analysis
  - Spatial Overlays
  
  ![](images/point-in-polygon-spatial-overlays.png){.absolute bottom="0" width="1024"}
+ -->
  
  <!--
 ## Housekeeping
@@ -66,7 +74,7 @@ format:
 -   1450 - 1500 Coordinate Systems & Next Steps
 -   1510 Finish
 -->
-
+<!--
 ## Outline
 
 - 10:00am – 10:45am: What is GIS and Spatial Data?
@@ -74,13 +82,26 @@ format:
 - 11:30am – 11:45am: break
 - 11:45am – 12:15pm: Classification discussion
 - 12:15pm – 1:00pm: Practical 1
+-->
+
+## Outline
+
+- 10:00am – 10:40am: What is GIS and Spatial Data?
+- 10:40am – 11:30am: Practical 1: Intro to QGIS
+- 11:30am – 12:00pm: Classification discussion
+- 12:00pm – 12:30pm: Practical 1 ctd.
+- 12:30pm - 1:30pm: Lunch
+- 1:30pm – 2:00pm: Recap & Cartography / Map Design
+- 2:00pm – 4:00pm: Practical 2: Making a Map
+- 3:15pm – 3:30pm: break
+- 4:00pm - 4:30pm: P2 & Working with your own data
 
 ## Housekeeping - Practicals
 
 - Work through the workbook (questions, optional exercises)
 - Will split into groups of ~4-5 people (breakout rooms)
 - Ask your group colleagues questions
--  Post in Matrix/Element
+<!-- -  Post in Matrix/Element -->
 - Use the ‘Ask for help’ button in the Breakout room
 - I will ‘walk around’ and see how people are getting on
 - Can share screens – in groups, or individually
@@ -364,19 +385,16 @@ We can split these coordinate systems into two groups:
   - UTM (Universal Transverse Mercator)
     - 621160.98, 3349893.53 meters, Zone 14 N
 
-## Geographic and Projected Coordinate Systems
+## Coordinate Systems
 
-- **Geographic Coordinate Systems**
-  - Latitude and Longitude (WGS 1984)
+- **Geographic** : Latitude and Longitude (WGS 1984)
   - 52.6250°	1.2339° **EPSG: 4326**
 - **Projected Coordinate Systems**
   - British National Grid (Eastings & Northings)
     - Easting: 619301	Northing: 307416 **EPSG: 27700**
   - UTM (Universal Transverse Mercator)
     - 621160.98, 3349893.53 meters, Zone 14 N **EPSG: depends on zone**
-
-- https://epsg.org/
-- https://epsg.io/ 
+- https://epsg.org/ | https://epsg.io/ 
 
 ## Geographic and Projected Coordinate Systems
 
@@ -426,7 +444,6 @@ We can split these coordinate systems into two groups:
 	- “Gambia, The” ≠ “The Gambia”
 	- “USA” ≠ “The United States”
 	- “UK” ≠ “Great Britain”
-	- “UK” ≠ “UK ”
 	
 	
 ## Attribute Join
