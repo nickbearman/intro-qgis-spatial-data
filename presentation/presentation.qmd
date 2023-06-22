@@ -198,6 +198,10 @@ format:
 ::: {.fragment}
 - Geographic Data Science
 :::
+
+::: {.fragment}
+- GeoAI
+:::
  
 ---
 
