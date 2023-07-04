@@ -1,6 +1,6 @@
 ---
 title: "Introduction to QGIS and Census Data"
-subtitle: "Tue 25th April"
+subtitle: "Mon 10th July 2023"
 author: "Nick Bearman"
 format: 
   revealjs
@@ -60,9 +60,8 @@ format:
 <!-- -   Be aware of trailing wires -->
 <!-- -   Photos for social media -->
 
--   Presentations, handouts and data on OneDrive
-    <!-- -   tinyurl.com/methodsconqgis -->
-
+<!-- -   Presentations, handouts and data on OneDrive -->
+    
 <!-- 
 ## Outline
 
@@ -84,6 +83,7 @@ format:
 - 12:15pm – 1:00pm: Practical 1
 -->
 
+<!--
 ## Outline
 
 - 10:00am – 10:40am: What is GIS and Spatial Data?
@@ -102,6 +102,7 @@ format:
 - Will split into groups of ~4-5 people (breakout rooms)
 - Ask your group colleagues questions
 <!-- -  Post in Matrix/Element -->
+<!-- 
 - Use the ‘Ask for help’ button in the Breakout room
 - I will ‘walk around’ and see how people are getting on
 - Can share screens – in groups, or individually
@@ -110,6 +111,7 @@ format:
 ## Any Questions?
 
 - ?
+-->
 
 ## What is GIS?
 
