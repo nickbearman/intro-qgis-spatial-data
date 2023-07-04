@@ -181,6 +181,7 @@ Using our Local Authority datasets, we are going to complete some calculations o
 - Click on the **SU** entry on the map of the British Isles to select the SU tile of data and click **Save selection**.  
 - Set the **Data format:** to `ESRI Shapefile`.  
 - Click the link **OS Open Greenspace - ESRI® Shapefile SU (2.32 MB)** to download.  
+- Unzip the data and have a look at the files
 - Unzip the data and have a look at the files - in the data folder there should be two shape files `SU_AccessPoint.shp` and `SU_GreenspaceSite.shp`.  
 
 <!-- Last checked 2022-03-02 -->
@@ -204,14 +205,14 @@ Now we are going to group the data within each Local Authority. First, we will u
 
 - Click **Processing > Toolbox**.  
 - Type `count points` in the search box.  
-- Double-click **Vector analysis tools > Count points in polygons**.  
+- Double-click **Vector analysis > Count points in polygons**.  
 - Set **Polygons** to your Local Authority districts layer *(which should have IMD and population data in it).*  
 - Set **Points** to `SU_AccessPoint`.  
 - Click **Run**.  
 - This has created a new layer called `Count`.  
-- Some of the layers should have points in - remember, the SU grid square doesn't cover all of the local authorities, so some will be blank and some will be incomplete.  
-- You can sort the `NUMPOINTS` column by clicking on the column header. It will sort it first ascending, then if you click again, descending.  
-- If the calculation has worked, save this as a new layer.  
+- Some of the rows in this layer will have points in - remember, the SU grid square doesn't cover all of the local authorities, so some will be blank and some will be incomplete.  
+- You can sort the `NUMPOINTS` column by clicking on the column header. It will sort it first ascending, then if you click again, descending. *Note there are some entries with a 0 value in them. These are the local authorities outside the SU grid square.*  
+- If the calculation has worked, save this as a new GeoPackage layer.  
 
 Have a go at symbolising this data. 
 
@@ -221,10 +222,10 @@ We can also use some of the graphing options within QGIS to explore this data.
 - Search for **Data Plotly**  
 - Click **Install Plugin**.  
 - Click **Close**.  
-- Click **Plugins > DataPlotly > DataPlotly**.  
+- Click **Plugins > DataPlotly > DataPlotly** or click the Plotly icon ![](images/plotly.png){ height=20 }.   
 - If it opens a tiny window in the bottom left hand corner, drag the window to the middle of the screen and make it bigger.
 - Make sure **Plot type** is set to `Scatter Plot`.  
-- Set **Layer** to `Count` (or your new layer if you saved it).  
+- Set **Layer** to `LA-IMD-pop-count` (or `Count` if you didn't save your new layer).  
 - Set **X field** to `NUMPOINTS`.  
 - Set **Y field** to `IMD_IMD - Average score`.  
 - Choose **Create Plot** *it might take a few seconds to run*.  
@@ -241,7 +242,7 @@ What might be a better calculation is to look at number of greenspace access poi
 - Open the attribute table for the layer we are using and click the Editing icon ![](images/edit-icon.png){ height=20 }.  
 - Click **New Field** (![Field Calculator](images/new-field.png){ height=20 })  
 - Set **Name** to `GreenAccessPerPop`  
-- Set **Type** to `Decimal Number (real)`  
+- Set **Type** to `Decimal number (real)`  
 - Click **OK**.  
 - Click **Field Calculator** ![Field Calculator](images/field-calculator.png){ height=20 }.  
 - Choose **Update existing field** and set to `GreenAccessPerPop`.  
@@ -250,8 +251,8 @@ What might be a better calculation is to look at number of greenspace access poi
 - Double-click our **Pop2019** field. *Expand the section of the window if you need to*.  
 - Click **Multiply** `*` and type in `1000`. This will then calculate the number of greenspace access points per 1000 people.  
 - The Expression box should contain something like this:  
-`  "NUMPOINTS"  /  "prac3-data-nb MYE2 - Persons Refactored_Pop2019"  * 1000 `.  
-- It should give you a preview value for **Arun** of `1.225`.  
+`   "NUMPOINTS"  /  "Pop2019"  * 1000 `.   
+- It should give you a preview value for **Arun** of `1.237`.  
 - Click **OK**.  
 - Save the data.  
    
@@ -340,19 +341,6 @@ _ You might then also get this error:
 - This is saying this layer already exists in the geopackage (as we saved it earlier, but it didn't save properly because of the error). Click **Overwrite Layer** to overwrite this with the new (correct) layer. 
 - **Be careful because you could overwrite the whole geopackage!**
 
-- Open the attribute table for the `greenspace-LAs` layer.  
-- Turn on **Editing** ![](images/edit-icon.png){ height=20 } and click **Add Field** (![Add Column](images/add-column.png){ height=20 }).  
-- Set the **Name** to `area`.  
-- Set **Type** to `Decimal number (real)`.  
-- Set **Length** to `10` and **Prevision** to `4` *if you have them*.   
-- Click **OK**.  
-- Click **Field Calculator** (![Field Calculator](images/field-calculator.png){ height=20 }).  
-- Choose **Update existing field** and set to `area`.  
-- Expand **Geometry** and double-click `$area`. This will add the area in square meters (as our coordinate system is BNG).  
-- Add `/ 10000` to our expression to divide this by 10,000, to get the value in  hectares.  
-- Click **OK** to apply the calculation across all the rows.  
-- Turn Editing off.  
-
 Now we can merge the polygons so we have a dataset that lists each Local Authority area twice, once with greenspace and once without. 
 
 - Make sure everything is de-selected (by clicking ![Deselect Data](images/deselect.png){ height=20 })  
@@ -364,8 +352,23 @@ Now we can merge the polygons so we have a dataset that lists each Local Authori
 - Look at the new layer, `Dissolved`. Has it done what we wanted it to?  
 - Save as `dissolved-greenspace-LAs`.  
 - Open the attribute table and use **Select features using an expression** ![](images/select-features-expression.png){ height=20 } to select the rows where `greenspace = 1`.  
-- Save this as a new layer `dissolved-greenspace-LAs-single` using **Save Selected Features As...**.  
-- Use **Field Calculator** to create a new field (`pc_greenspace`) and calculate the percentage of greenspace (`("area"  /  "LAarea" ) * 100`). 
+- Save this as a new layer `dissolved-greenspace-LAs-single` using **Save Selected Features As...**.  																																	  
+- Open the attribute table for the `dissolved-greenspace-LAs` layer.  
+- Turn on **Editing** ![](images/edit-icon.png){ height=20 } and click **Add Field** (![Add Column](images/add-column.png){ height=20 }).  
+- Set the **Name** to `greenspace-area`.  
+- Set **Type** to `Decimal number (real)`.  
+- Set **Length** to `10` and **Prevision** to `4` *if you have them*.   
+- Click **OK**.  
+- Click **Field Calculator** (![Field Calculator](images/field-calculator.png){ height=20 }).  
+- Choose **Update existing field** and set to `area`.  
+- Expand **Geometry** and double-click `$area`. This will add the area in square meters (as our coordinate system is BNG).  
+- Add `/ 10000` to our expression to divide this by 10,000, to get the value in  hectares.  
+- Click **OK** to apply the calculation across all the rows.  
+- Turn Editing off.  
+
+Now we have the total LA area (`LAarea`) and the greenspace area (`greenspace-area`). 
+
+- Use **Field Calculator** to create a new field (`pc_greenspace`) and calculate the percentage of greenspace (`("greenspace-area"  /  "LAarea" ) * 100`). 
 
 <!-- check field format, some are text for area etc. -->
 
@@ -380,7 +383,7 @@ We could perform a similar process, but with the greenspace buffered. This would
 
 ----
 
-*This practical was written using QGIS 3.22 on Windows 11, last updated on 13/02/2023 by Dr Nick Bearman, [nick@geospatialtrainingsolutions.co.uk](nick@geospatialtrainingsolutions.co.uk).*
+*This practical was written using QGIS 3.22 on Windows 11, last updated on 04/07/2023 by Dr Nick Bearman, [nick@geospatialtrainingsolutions.co.uk](nick@geospatialtrainingsolutions.co.uk).*
 
 This work (Introduction to QGIS: Spatial Data and Spatial Analysis by Nick Bearman) is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/. <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1">
 
