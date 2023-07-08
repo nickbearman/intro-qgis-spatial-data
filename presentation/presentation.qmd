@@ -193,6 +193,12 @@ format:
  ![](images/ijgis.png){.absolute bottom="0" right="0" width="250"} 
 :::
  
+ 
+
+---
+
+## GIS: Terminology
+
 ::: {.fragment}
 - Geographic*al* / Geographic 
 :::
