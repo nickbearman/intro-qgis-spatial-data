@@ -53,7 +53,7 @@ Using our Local Authority datasets, we are going to complete some calculations o
 
 <!-- Last checked 2022-03-02 -->
 
-Now we can move to QGIS. Reopen your existing project from the previous practical, and save as a new project.  
+Now we can move to QGIS and start a new project.  
 
 - Select from the menu **Layer > Add Layer > Add Vector Layer** ![Add Vector Layer tool](images/add-vector.png){ height=20 }.  
 - **Browse** ![Add Vector Layer tool](images/browse.png){ height=20 } to the `SU_AccessPoint.shp` file and add it.  
@@ -99,8 +99,6 @@ We can also use some of the graphing options within QGIS to explore this data.
 - Set **X field** to `NUMPOINTS`.  
 - Set **Y field** to `IMD_IMD - Average score`.  
 - Choose **Create Plot** *it might take a few seconds to run*.  
-
-*If `IMD_IMD - Average score` isn't visible, you may have not done a join correctly earlier on. Try a different field, and try re-doing the join. If you need it, the layer `prac3-data-nb lad-imd-pop-SUgreenspace` will all the information is available in the `prac3-complete.gpkg` GeoPackage - ask me for it.*
 
 If you end up with multiple sets of points on your plot, you can use the ![](images/clean-plot-canvas.png){ height=20 } button on the main Plotly page ![](images/main-plotly-page.png){ height=20 } to clear the plot and start again. 
 
