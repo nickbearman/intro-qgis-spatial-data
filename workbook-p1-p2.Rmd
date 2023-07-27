@@ -316,7 +316,7 @@ This shows the data very well, but it isn't that obvious where the data is, part
 
 Now we can see the base map through the IMD data. You may have to experiment with different values of opacity to be able to see both easily. 
 
-The default colours for the IMD data aren't that great, but fortunately we have a Style file, created by Alasdair Rae (see https://imd2019.group.shef.ac.uk/ for more details). 
+The default colours for the IMD data aren't that great, but fortunately we have a Style file, created by Alasdair Rae (see https://www.sheffield.ac.uk/usp/research/projects/english-indices-deprivation-2019 for more details). 
 
 - Right click on the `LSOA-IMD-2019-Southern` layer, choose **Properties > Symbology**.  
 - At the bottom of the **Symbology** window choose ![](images/style.png){ height=20 } **Style > Load Style...**.   
