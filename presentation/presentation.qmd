@@ -1,6 +1,6 @@
 ---
-title: "Introduction to QGIS and Census Data"
-subtitle: "Mon 10th July 2023"
+title: "Introduction to QGIS: Spatial Data and Spatial Analysis"
+subtitle: "Tue 27th Feb 2024"
 author: "Nick Bearman"
 format: 
   revealjs
@@ -8,10 +8,8 @@ format:
 ---
 
 
-## Welcome!
+## 
 
- <!-- 
-##
 
 ![](images/ncrm-welcome-slide-1.png)
 
@@ -19,50 +17,39 @@ format:
 
 ![](images/ncrm-welcome-slide-2.png)
 
--->
+
 
 
 ## What are we covering?
 
 -   What is GIS and spatial data?
 -   Be able to set up QGIS and add data
--   Join tabular data to spatial data & Census data
+-   Join tabular data to spatial data
 -   Understand how to classify data for representation on a map
 -   Understand how to add data with a latitude & longitude coordinate
--   Next steps
+<!-- -   Next steps -->
 
 ![](images/qgis-screenshot.png){.absolute bottom="0" right="0" width="550"}
-<!--
+
 
 ## What are we covering?
  - Point in Polygon Analysis
  - Spatial Overlays
+ - Next steps
  
  ![](images/point-in-polygon-spatial-overlays.png){.absolute bottom="0" width="1024"}
- -->
+
  
- <!--
+<!-- 
 ## Housekeeping
 
 -   Introductions
     -   Name / background / area of interest
     -   Have you done any GIS before? (no is fine!)
-    -   What are you hoping to achieve in the next 1h25m?
-     -   What you would like from the course -->
+    -   What are you hoping to achieve in the course? 
+-->
 
-## Housekeeping
-
--   Have presentation and practical sessions
-    -   Ask questions as we go along
-    -   Think about how you could use these techniques with your own data
- 
-<!-- -   No fire alarm planned -->
-<!-- -   Be aware of trailing wires -->
-<!-- -   Photos for social media -->
-
-<!-- -   Presentations, handouts and data on OneDrive -->
-    
-<!-- 
+<!-- afternoon 
 ## Outline
 
 -   1345 - 1400 Introduction
@@ -73,7 +60,7 @@ format:
 -   1450 - 1500 Coordinate Systems & Next Steps
 -   1510 Finish
 -->
-<!--
+<!-- Morning -->
 ## Outline
 
 - 10:00am – 10:45am: What is GIS and Spatial Data?
@@ -81,9 +68,9 @@ format:
 - 11:30am – 11:45am: break
 - 11:45am – 12:15pm: Classification discussion
 - 12:15pm – 1:00pm: Practical 1
--->
 
-<!--
+
+<!-- All day
 ## Outline
 
 - 10:00am – 10:40am: What is GIS and Spatial Data?
@@ -95,6 +82,20 @@ format:
 - 2:00pm – 4:00pm: Practical 2: Making a Map
 - 3:15pm – 3:30pm: break
 - 4:00pm - 4:30pm: P2 & Working with your own data
+-->
+
+## Housekeeping
+
+-   Have presentation and practical sessions
+    -   Ask questions as we go along
+    -   Think about how you could use these techniques with your own data
+ 
+<!-- -   No fire alarm planned -->
+<!-- -   Be aware of trailing wires -->
+<!-- -   Photos for social media -->
+
+- Presentations, handouts and data on OneDrive
+    
 
 ## Housekeeping - Practicals
 
@@ -102,7 +103,7 @@ format:
 - Will split into groups of ~4-5 people (breakout rooms)
 - Ask your group colleagues questions
 <!-- -  Post in Matrix/Element -->
-<!-- 
+
 - Use the ‘Ask for help’ button in the Breakout room
 - I will ‘walk around’ and see how people are getting on
 - Can share screens – in groups, or individually
@@ -111,7 +112,7 @@ format:
 ## Any Questions?
 
 - ?
--->
+
 
 ## What is GIS?
 
@@ -134,7 +135,7 @@ format:
 
 -   Nearly all human activities & decisions involve geography
     -   the "**where?**"
--   Working with geographic information is **different** to working with a **CSV** file
+-   Working with geographic information is **different** to working with a **CSV** or **Excel** file
 -   This is why we need specialized **GIS** software to:
     -   **organize** and **store**
     -   **access** and **retrieve**
@@ -152,14 +153,30 @@ format:
 
 ------------------
 
-### Census 2011
+### Census 2021
 
- ![](images/census-2021.png)
+::: columns
+:::: {.column width="50%"}
+
+![](images/census-2021.png)
 
 
-<font size="2">http://www.alex-singleton.com/r/2014/02/05/2011-census-open-atlas-project-version-two/</font>
+<font size="2">https://www.ons.gov.uk/visualisations/censuspopulationchange/E08000012/</font>
+
+::::
+
+:::: {.column width="50%"}
+
+![](images/census-2021-liverpool.png)
+
+<font size="2">https://www.ons.gov.uk/census/maps/choropleth/population/median-age/median-age/median-age?lad=E08000012</font>
+
+::::
+:::
+
 ---
 
+## Poverty in Africa
 
 ![](images/africa-poverty.png)
 
@@ -217,10 +234,10 @@ format:
 
 ![](images/gis-software.png)\
 
-- QGIS has as many features as ArcGIS
-- ArcGIS is probably slightly more polished
+- QGIS has as many features as ArcGIS Pro
+- ArcGIS Pro is probably slightly more polished
 - QGIS is free (as is R)
-- QGIS is increasingly popular in not for profit sector, academic and commercial
+- QGIS is popular in not for profit sector, academic and commercial
 - *All can be useful*
 
 ## Projections and Coordinate Systems
@@ -473,7 +490,15 @@ https://twitter.com/zevross/status/1118967279864242176</font>
 - Is an issue in many different places  
 
  ![](images/irish-names.png){.absolute}  	
- 
+<!-- Morning -->
+## Outline
+
+- ~~10:00am – 10:45am: What is GIS and Spatial Data?~~
+- 10:45am – 11:30am: Practical 1
+- 11:30am – 11:45am: break
+- 11:45am – 12:15pm: Classification discussion
+- 12:15pm – 1:00pm: Practical 1
+
 
 ## QGIS Practical
 
@@ -498,15 +523,15 @@ open QGIS,
 load World countries, 
 pan, zoom
 
-<!-- 
+<!-- Morning -->
 ## Outline
 
-- 10:00am – 10:45am: What is GIS and Spatial Data?
-- 10:45am – 11:30am: Practical 1
+- ~~10:00am – 10:45am: What is GIS and Spatial Data?~~
+- ~~10:45am – 11:30am: Practical 1~~
 - 11:30am – 11:45am: break
 - 11:45am – 12:15pm: Classification discussion
 - 12:15pm – 1:00pm: Practical 1
--->
+
 
 ## GIS can do many things
 
@@ -549,7 +574,7 @@ Remember to show in the table which colours represent which countries!
 
 ## Classification
 
-- Go to www.colorbrewer2.org
+- Go to [www.colorbrewer2.org](http://www.colorbrewer2.org)
 
 ![](images/color-brewer-screenshot.png)
 
@@ -686,6 +711,16 @@ https://jcheshire.com/resources/different-maps-same-data/
 
 ![](images/glossary.png)
 
+<!-- Morning -->
+## Outline
+
+- ~~10:00am – 10:45am: What is GIS and Spatial Data?~~
+- ~~10:45am – 11:30am: Practical 1~~
+- ~~11:30am – 11:45am: break~~
+- ~~11:45am – 12:15pm: Classification discussion~~
+- 12:15pm – 1:00pm: Practical 1
+
+<!-- All day
 ## Outline
 
 - 10:00am – 10:40am: What is GIS and Spatial Data?
@@ -697,18 +732,7 @@ https://jcheshire.com/resources/different-maps-same-data/
 - 2:00pm – 4:00pm: Practical 2: Making a Map
 - 3:15pm – 3:30pm: break
 - 4:00pm - 4:30pm: P2 & Working with your own data
-
-##
-
-
-
-## Outline
-
-- 10:00am – 10:45am: What is GIS and Spatial Data?
-- 10:45am – 11:30am: Practical 1
-- 11:30am – 11:45am: break
-- 11:45am – 12:15pm: Classification discussion
-- 12:15pm – 1:00pm: Practical 1
+-->
 
 
 
@@ -759,4 +783,4 @@ https://jcheshire.com/resources/different-maps-same-data/
 - Books:
   - GIS: Research Methods, £13, available today
   
--->
+-->-->
