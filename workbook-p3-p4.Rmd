@@ -4,7 +4,7 @@ output:
   pdf_document: default
   html_document:
     df_print: paged
-date: 'Practicals 3 & 4: Mon 13th & Tue 14th March 2023'
+date: 'Practicals 3 & 4: Mon 4th & Tue 5th March 2024'
 ---
 
 
@@ -180,9 +180,9 @@ Using our Local Authority datasets, we are going to complete some calculations o
 - Choose **Set a custom area:**  
 - Click on the **SU** entry on the map of the British Isles to select the SU tile of data and click **Save selection**.  
 - Set the **Data format:** to `ESRI Shapefile`.  
-- Click the link **OS Open Greenspace - ESRI® Shapefile SU (2.32 MB)** to download.  
+- Click the link **OS Open Greenspace - ESRI® Shapefile SU (2.34 MB)** to download.  
 - Unzip the data and have a look at the files
-- Unzip the data and have a look at the files - in the data folder there should be two shape files `SU_AccessPoint.shp` and `SU_GreenspaceSite.shp`.  
+- In the `data` folder there should be two shape files `SU_AccessPoint.shp` and `SU_GreenspaceSite.shp`.  
 
 <!-- Last checked 2022-03-02 -->
 
@@ -213,6 +213,9 @@ Now we are going to group the data within each Local Authority. First, we will u
 - Some of the rows in this layer will have points in - remember, the SU grid square doesn't cover all of the local authorities, so some will be blank and some will be incomplete.  
 - You can sort the `NUMPOINTS` column by clicking on the column header. It will sort it first ascending, then if you click again, descending. *Note there are some entries with a 0 value in them. These are the local authorities outside the SU grid square.*  
 - If the calculation has worked, save this as a new GeoPackage layer.  
+- Remember to choose the GeoPackage file name and the layer name:
+
+![](images/save-layer-geopackage.png){ width=50% }													 
 
 Have a go at symbolising this data. 
 
@@ -223,7 +226,7 @@ We can also use some of the graphing options within QGIS to explore this data.
 - Click **Install Plugin**.  
 - Click **Close**.  
 - Click **Plugins > DataPlotly > DataPlotly** or click the Plotly icon ![](images/plotly.png){ height=20 }.   
-- If it opens a tiny window in the bottom left hand corner, drag the window to the middle of the screen and make it bigger.
+- If it opens a tiny window in the bottom left hand corner, drag the window to the middle of the screen and make it bigger.  
 - Make sure **Plot type** is set to `Scatter Plot`.  
 - Set **Layer** to `LA-IMD-pop-count` (or `Count` if you didn't save your new layer).  
 - Set **X field** to `NUMPOINTS`.  
@@ -277,7 +280,8 @@ We will be combining the layers using the Union tool, and we need to do some pre
 
 - Open up your project file from the previous practical, and save it as a new file (e.g. `prac4-NB-v1.qgz`).  
 - Add the `SU_GreenspaceSite.shp` to our project.  Now is also a good time to remove any layers we don't need, for example many of the CSV datasets we joined.  
-- It is always good practice to work on a copy of your data, so take a copy of our geopackage from the previous practical, save it in the `prac4` folder. I have called mine `prac4-data.gpkg`.  
+- It is always good practice to work on a copy of your data, so take a copy of our geopackage from the previous practical (by copying it in Windows Explorer / My Computer / Finder) and save it in the `prac4` folder. I have called mine `prac4-data.gpkg`.  
+- Then add your new GeoPackage to QGIS.  
 - Then we can add the greenspace area data to this prac4-data.gpkg geopackage.  
 - To do this, right click on the layer (`SU_GreenspaceSite`), choose **Export > Save Features As**.  
 - Select the `prac4-data.gpkg` geopackage.  
@@ -383,7 +387,7 @@ We could perform a similar process, but with the greenspace buffered. This would
 
 ----
 
-*This practical was written using QGIS 3.22 on Windows 11, last updated on 04/07/2023 by Dr Nick Bearman, [nick@geospatialtrainingsolutions.co.uk](nick@geospatialtrainingsolutions.co.uk).*
+*This practical was written using QGIS 3.28 on Windows 11, last updated on 08/02/2024 by Dr Nick Bearman, [nick@nickbearman.com](mailto:nick@nickbearman.com).*
 
 This work (Introduction to QGIS: Spatial Data and Spatial Analysis by Nick Bearman) is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/. <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1">
 

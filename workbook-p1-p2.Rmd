@@ -4,7 +4,7 @@ output:
   pdf_document: default
   html_document:
     df_print: paged 
-date: "Practicals 1 & 2: Tue 7th & Wed 8th March 2023"
+date: "Practicals 1 & 2: Tue 27th & Wed 28th February 2024"
 ---
 
 <!-- title: "Introduction to QGIS: Understanding and Presenting Spatial Data" -->
@@ -36,7 +36,7 @@ File management is very important, so do spend a bit of time making sure you are
 - Open the OneDrive site and find the `prac1.zip` file.  
 - Download it and save the file in the new folder you created.  
 - As there are several files they have been compressed into a single zip file, and you will need to first copy this and then extract the data files. Choose somewhere sensible to extract the files to.  
-- Start QGIS by clicking on Start, then type **QGIS** and select **QGIS Desktop 3.22.16**. *Your version number might vary, **QGIS Desktop** is the key bit.*  
+- Start QGIS by clicking on Start, then type **QGIS** and select **QGIS Desktop 3.28.15**. *Your version number might vary, **QGIS Desktop** is the key bit.*  
 
 Let's start off by creating a blank map and adding some data. 
 
@@ -256,7 +256,7 @@ We can also add Google Maps imagery to this as well (although this is not offici
 
 - In the Browser window, right-click on **XYZ Tiles** and choose **New Connection...**  
 - In Name type `Google Maps`  
-- In URL paste in `http://mt0.google.com/vt/lyrs=y&hl=en&x={x}&y={y}&z={z}&s=Ga` *(or copy and paste from the PDF)* 
+- In URL paste in `http://mt0.google.com/vt/lyrs=y&hl=en&x={x}&y={y}&z={z}&s=Ga` *(or copy and paste from the workbook)* 
 
 An alternative option is to use a plugin called QuickMapServices. To install it, click **Plugins > Manage and Install Plugins.**. Search for `QuickMapServices`. Then select the plugin and click **Install Plugin**. Once installed, try **Web > QuickMapServices > OSM > OSM Standard** to begin.  
 
@@ -547,7 +547,7 @@ The GeoPackage version is much much larger, but contains all the data in one geo
 
 ----
 
-*This practical was written using QGIS 3.22 on Windows 11, last updated on 13/02/2023 by Dr Nick Bearman, [nick@geospatialtrainingsolutions.co.uk](nick@geospatialtrainingsolutions.co.uk). Thanks to Chris Bell for providing the geocoding resource at https://www.doogal.co.uk.*
+*This practical was written using QGIS 3.28 on Windows 11, last updated on 08/02/2024 by Dr Nick Bearman, [nick@nickbearman.com](mailto:nick@nickbearman.com). Thanks to Chris Bell for providing the geocoding resource at https://www.doogal.co.uk.*
 
 This work (Introduction to QGIS: Spatial Data and Spatial Analysis by Nick Bearman) is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/. <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1">
 
