@@ -783,4 +783,44 @@ https://jcheshire.com/resources/different-maps-same-data/
 - Books:
   - GIS: Research Methods, £13, available today
   
--->-->
+-->
+
+## Day 2
+
+## 
+
+![](images/ncrm-welcome-slide-1.png)
+
+##
+
+![](images/ncrm-welcome-slide-2.png)
+
+## Recap Quiz
+
+## Outline
+
+- 10:00am – 10:20am: Recap and Cartography / Map Design
+- 10:20am – 11:30am: Practical 2a
+- 11:30am – 11:45am: break
+- 11:45am – 1:00pm: Practical 2b & Working with your own data
+
+## Spatial Data
+
+- Data is crucial to GIS
+- ~50% of time doing a GIS project is spent finding data or getting data into the right format!
+- Finding data can be a real pain
+- Previous work **should** reference where they get data from 
+- If not, it’s a reasonable question to ask the author
+- There is no one list of data, but some useful sources
+
+## Spatial Data - Is it any use?
+
+- Location (where does it cover?)
+- Variables / columns (what does it cover?)
+- How old is the data? (when does it cover?)
+- What projection & coordinate system is the data in?
+- What scale is the data at?
+
+## Scale
+
+
