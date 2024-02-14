@@ -1507,9 +1507,9 @@ OS Code-Point Open
 
 - Everyone post a question in Matrix that you have about GIS or todays work
 
-- Next session tomorrow 10am
+- Next session Monday 4th March, 10am
 
-- More on Cartography and Map Design (beyond colours)
+- More on Spatial Analysis
 
 - If you are working with some of your own data, bring it along
 
