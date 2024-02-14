@@ -734,24 +734,6 @@ https://jcheshire.com/resources/different-maps-same-data/
 - 4:00pm - 4:30pm: P2 & Working with your own data
 -->
 
-
-
-
-## Adding Delimited Text Layers
-
-- If we have coordinates for data, we can add them to QGIS
-
-![](images/world-cities-csv-excel.png){.absolute bottom="50" left="0" width="350"}
-
-
-![](images/world-cities.png){.absolute .fragment bottom="150" right="0" width="700"}
-
-
-## Geocoding
-
-- Can also do this with address data
-- Postcodes -> coordinates -> plot on map
-
 ## Next Session
 
 - Everyone post a question in Matrix that you have about GIS or todays work
@@ -821,6 +803,735 @@ https://jcheshire.com/resources/different-maps-same-data/
 - What projection & coordinate system is the data in?
 - What scale is the data at?
 
-## Scale
+## Scale {.smaller}
+
+::: columns
+:::: {.column width="33%"}
+![](images/lego-bus-1.png)
+- Small number of bricks
+- Low level of detail
+
+<font size="2">*https://www.youtube.com/watch?v=TcGIL21yqS4&list=PLwLYQ8o7Is3R3-6hTWzg2CK_iaxg5tsoZ&index=5&t=0s*</font>
+
+::::
+:::: {.column width="33%"}
+![](images/lego-bus-2.png)
+
+- Medium number of bricks
+- Medium level of detail
+
+<font size="2">*https://www.amazon.co.uk/LEGO-Creator-London-40220-361329/*</font>
+::::
+:::: {.column width="33%"}
+![](images/lego-bus-3.png)
+
+- Large number of bricks
+- Large level of detail
+
+<font size="2">*https://www.lego.com/en-gb/product/london-bus-10258*</font>
+::::
+:::
+
+## {.smaller}
+
+::: columns
+:::: {.column width="30%"}
+
+Worldwide
+
+1:100,000,000  
+1:100m    
+
+ (1cm = 1000km)
+
+unit on map*
+:
+units in real world
+
+*usually printed map, adapted for screen, some variation depending on monitor size, resolution…*
+
+::::
+
+:::: {.column width="70%"}
+
+![](images/world.png)
+
+::::
+:::
+
+## {.smaller}
+
+::: columns
+:::: {.column width="30%"}
+
+Large Country/Continent
+
+Brazil / South America
+
+1:30,000,000	  1:30m    
+
+(1cm = 300km)
+
+::::
+
+:::: {.column width="70%"}
+
+![](images/south-america.png)
+
+::::
+:::
+
+## {.smaller}
+
+::: columns
+:::: {.column width="30%"}
+
+Small Country
+
+UK
+
+1:8,000,000	  1:8m    
+
+(1cm = 80km)
 
 
+::::
+
+:::: {.column width="70%"}
+
+![](images/uk.png)
+
+::::
+:::
+
+## {.smaller}
+
+::: columns
+:::: {.column width="30%"}
+
+Local / City
+
+Hull	
+
+1: 100,000	1:100k    
+
+1cm = 1 km
+
+
+
+::::
+
+:::: {.column width="70%"}
+
+![](images/hull.png)
+
+::::
+:::
+
+## {.smaller}
+
+::: columns
+:::: {.column width="30%"}
+
+Local / City
+
+Hull	
+
+1: 50,000	1:50k    
+
+1cm = 0.5 km
+
+![](images/landranger.png)
+
+
+::::
+
+:::: {.column width="70%"}
+
+![](images/hull2.png)
+
+::::
+:::
+
+## 
+
+![](images/world.png){ width="20%" }
+![](images/south-america.png){ width="20%" }
+![](images/uk.png){ width="20%" }
+![](images/hull.png){ width="20%" }
+
+![](images/scale-range.png)
+
+##
+
+![](images/lod-range.png)
+
+
+![](images/lego-bus-1.png){ width="30%" }
+![](images/lego-bus-2.png){ width="30%" }
+![](images/lego-bus-3.png){ width="30%" }
+
+## {.smaller}
+
+![](images/world.png){ width="20%" }
+![](images/south-america.png){ width="20%" }
+![](images/uk.png){ width="20%" }
+![](images/hull.png){ width="20%" }
+
+![](images/scale-range.png){ width="80%" }
+
+![](images/lod-range.png){ width="80%" }
+
+
+![](images/lego-bus-1.png){ width="15%" }
+![](images/lego-bus-2.png){ width="15%" }
+![](images/lego-bus-3.png){ width="15%" }
+
+Depends on size
+
+## File Size
+
+::: columns
+:::: {.column width="50%"}
+
+- More bricks = more data
+- More data = bigger file
+- In GIS, this is how much 
+detail there is
+- More detail means we can 
+use it as a larger scale
+- Generalisation
+
+::::
+:::: {.column width="50%"}
+
+![](images/ch10-simplification.png){ width="80%"}
+
+::::
+:::
+
+## 
+
+::: columns
+:::: {.column width="50%"}
+
+![](images/ch10-simplification.png)
+
+::::
+:::: {.column width="50%"}
+
+::: {.fragment}
+
+- Is the detail important?
+
+- Depends what you are going todo with the data
+
+:::
+
+::::
+:::
+
+## Static Data
+
+::: columns
+:::: {.column width="70%"}
+
+![](images/ch2-scale.png)
+
+::::
+:::: {.column width="30%"}
+
+- Static data
+- No extra detail
+
+:::
+
+::::
+:::
+
+##
+
+![](images/world.png){ width="20%" }
+![](images/south-america.png){ width="20%" }
+![](images/uk.png){ width="20%" }
+![](images/hull.png){ width="20%" }
+
+![](images/scale-range.png)
+
+- Dynamic data
+- Extra detail on demand
+
+## Static vs Dynamic
+
+- Dynamic data
+  - Dynamic scale - pulls in additional data (from internet)
+  - Not editable / usable for analysis (no attribute table)
+  - Useful if data changes
+- Static data
+  - Fixed scale - can’t get additional data (need another file)
+  - Editable and usable for analysis (attribute table)
+  - Does not update
+
+
+
+
+## Saving Files
+
+![](images/saving-files-1.png)
+
+## Saving Files
+
+![](images/saving-files-2.png)
+
+
+## Saving Files
+
+![](images/saving-files-3.png)
+
+## Shapefiles {.smaller}
+
+![](images/shapefiles.png)
+
+- `.shp` the geometry (polygons) themselves 
+- `.shx` extra geometry information
+- .`dbf` attribute information (dBase IV format)
+- `.prj` projection & coordinate system info
+- `.qpj` QGIS version of projection & coordinate system information *[(more gory details)](https://gis.stackexchange.com/questions/55545/qpj-files-on-esri-software)*
+
+- *[https://en.wikipedia.org/wiki/Shapefile](https://en.wikipedia.org/wiki/Shapefile)*
+
+## Shapefiles
+
+- (One of) the most common spatial data file formats
+- ESRI 1990s, closed, 
+- → [opened July 1998](https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/whitepapers/pdfs/shapefile.pdf)
+
+## Geopackage
+
+![](images/geopackage.png){.absolute right="0" top="0"}
+
+- Everything is contained in a single file
+- Easier file management with GeoPackage 
+- No multiple files! 
+- Many layers in one file
+- Faster work-flow than with shapefiles
+- There are nearly no limitations on field names (10 char in shapefile)
+
+## Geopackage
+
+![](images/geopackage.png){.absolute right="0" top="0"}
+
+- *An aside*
+- *GeoPackages are databases*
+- *Each layer is a table within the database*
+- *Makes moving to PostGIS / PostgreSQL databases much easier*
+
+## File Formats
+
+- Mainly been using shapefiles
+- They are just one of many formats
+- You will come across more:
+  - GeoPackage
+  - GeoJSON
+  - GML
+  - And many others! 
+- QGIS can read (most) of them
+
+## Cartography and Map Design
+
+- By the end of this practical you will be able to:
+  - Understand how to design and produce a publication-ready map in QGIS 
+  - Be able to add maps, scale bar, legends and labels to a map 
+  - Know why scale is important in map design 
+  - Know how to save and export maps as PDFs or images
+
+##
+
+![](images/imd-map.png)
+
+## IMD – Index of Multiple Deprivation
+
+
+![](images/imd-overview.png){width=600}
+
+![](images/imd-domains.png){width=600}
+
+![](images/imd-england-map.png){.absolute right=0 bottom=0 height=600}
+
+<font size="2">https://assets.publishing.service.gov.uk/media/5d8b399a40f0b609946034a4/IoD2019_Infographic.pdf</font>
+
+
+## IMD – Index of Multiple Deprivation
+
+
+![](images/imd-overview.png){width=600}
+
+- Score - *Low to High*
+
+- Decile - *1 to 10*
+
+- Rank - *1st to 32,844th*
+
+![](images/imd-england-map.png){.absolute right=0 bottom=0 height=600}
+
+## 
+
+![](images/uk-geographies.png)
+
+<font size=2>https://geoportal.statistics.gov.uk/documents/db2a0b3bee594f96a4869644fc32395b/explore</font>
+
+## 
+
+![](images/uk-geographies-2.png)
+
+## 
+
+![](images/uk-geographies-lad.png)
+
+
+## 
+
+![](images/uk-geographies-lsoa.png)
+
+
+## 
+
+![](images/imd-map.png)
+
+Local Authorities Districts
+
+LSOAs
+
+## Map Design
+
+What makes a good map?
+
+## Map Design
+
+- Clear
+- Title (caption), legend, scale bar, N arrow
+- Copyright / acknowledgements
+- Data source
+
+## Copyright / Acknowledgements
+
+- Some data we must show copyright:
+  - OS Open Data:
+    - Contains National Statistics data © Crown copyright and database right 2024. 
+  - IMD Data:
+    - MHCLD, 2019.
+
+## Data source
+
+- It is also good practice to acknowledge where data came from
+- Exactly the same as referencing in an academic article
+
+## Map Design
+
+- What makes a good map?
+- Darkes and Spence’s (2017) Cartography: An Introduction
+- Examples
+- Good and bad
+- Rules of thumb
+- [Second edition £12.99](https://www.cartography.org.uk/product-page/cartography-an-introduction-second-edition)
+
+- [First edition free!](https://www.cartography.org.uk/thematic-mapping)
+
+![](images/cartography-an-introduction.png){.absolute right=0 bottom=0 width=400}
+
+## *~~Classification~~* Cartography
+
+- Cartography is a Science and an Art
+- Be creative
+- There is no ‘right’ answer
+- A bit like cookery 
+- But there are some ‘rules of thumb’
+- Borrow other people’s ideas
+- Develop my design
+
+
+##
+
+![](images/imd-map.png)
+
+## Outline
+
+- ~~10:00am – 10:20am: Recap and Cartography / Map Design~~
+- 10:20am – 11:30am: Practical 2a
+- 11:30am – 11:45am: break
+- 11:45am – 1:00pm: Practical 2b & Working with your own data
+
+## Practical 2a: Making a Map
+
+![](images/imd-map.png)
+
+## Outline
+
+- ~~10:00am – 10:20am: Recap and Cartography / Map Design~~
+- ~~10:20am – 11:30am: Practical 2a~~
+- 11:30am – 11:45am: break
+- 11:45am – 1:00pm: Practical 2b & Working with your own data
+
+## Break
+
+## Outline
+
+- ~~10:00am – 10:20am: Recap and Cartography / Map Design~~
+- ~~10:20am – 11:30am: Practical 2a~~
+- ~~11:30am – 11:45am: break~~
+- 11:45am – 1:00pm: Practical 2b & Working with your own data
+
+## Data Types: Vector & Raster
+
+:::{.columns}
+:::: {.column width="50%"}
+- Vector Data
+  - Points
+  - Lines
+  - Polygons
+::::
+:::: {.column width="50%"}
+![](images/vector-data.png)
+::::
+:::
+
+## Data Types: Vector {.smaller}
+
+:::{.columns}
+:::: {.column width="50%"}
+- Points
+  - Locations
+  - Street addresses
+  - POIs
+- Lines
+  - Roads
+  - Rivers
+  - Railways
+- Polygons
+  - Building footprints
+  - Lakes
+  - Admin areas (LSOA)
+  - Countries
+::::
+:::: {.column width="50%"}
+![](images/vector-data.png)
+::::
+:::
+
+## Data Types: Raster
+
+:::{.columns}
+:::: {.column width="50%"}
+![](images/raster-numbers.png)
+::::
+:::: {.column width="50%"}
+![](images/raster-grid.png)
+::::
+:::
+
+## Data Types: Raster
+
+:::{.columns}
+:::: {.column width="50%"}
+![](images/raster-numbers.png){width=250}
+![](images/raster-grid.png){width=250}
+::::
+:::: {.column width="50%"}
+- Elevation
+- Temperature
+- Population density
+- Land cover
+- Light reflectance (satellite or aerial imagery)
+::::
+:::
+
+## Data Types: Vector & Raster
+
+:::{.columns}
+:::: {.column width="50%"}
+![](images/vector-data.png)
+::::
+:::: {.column width="50%"}
+![](images/raster-numbers.png){width=250}
+![](images/raster-grid.png){width=250}
+::::
+:::
+
+## File Types
+
+|            | Vector | Raster |
+|------------|--------|--------|
+| Shapefile  |   X    |        |
+| GeoTiff    |        |   X    |
+| ASCII Grid |        |   X    |
+| GeoPackage |   X    |   X    |
+| GeoJSON    |   X    |        |
+| ...        |        |        |
+
+## File Management
+
+- File / Data Management is key
+- Spatial data generates lots of files
+- Having a system is crucial
+-  Particularly if you have multiple people working on the same project
+
+## Working with your own data
+
+- Data is crucial to GIS
+- ~50% of time doing a GIS project is spent finding data or getting data into the right format!
+- Finding data can be a real pain
+- Previous work **should** reference where they get data from 
+- If not, it’s a reasonable question to ask the author
+- 95% of the time you won’t have spatial data ready to go
+
+## Working with your own data
+
+- 95% of the time you won’t have spatial data ready to go
+
+- You may have to join your own data to existing spatial data
+  - e.g. population data
+
+- Existing spatial data can come from various locations
+
+## Working with your own data
+
+Spatial data can come from various locations
+
+- [Ordnance Survey / OS Open Data](https://osdatahub.os.uk/downloads/open)
+- [Census & Census Boundary]( https://borders.ukdataservice.ac.uk)
+- [EuroStat](https://ec.europa.eu/eurostat)
+- [Free GIS Data, Robert Wilson](http://freegisdata.rtwilson.com/)
+- [GeoBoundaries.org](https://GeoBoundaries.org)
+- [OpenStreetMap](http://openstreetmap.org)
+- Google Search – shapefile / GIS
+
+## Working with your own data
+
+- 95% of the time you won’t have spatial data ready to go
+
+- You may have to join your own data to existing spatial data
+  - e.g. population data (pop table + Geo  boundaries)
+
+- Or create the shapefiles yourself
+  - How do you do this?
+  - Depends on points, lines and polygons
+
+## Working with your own data
+
+:::{.columns}
+:::: {.column width="40%"}
+
+![](images/vector-data.png){}
+
+::::
+:::: {.column width="60%"}
+
+- Points
+  - Easy, `world-cities.csv` 
+  - Using coordinates
+
+- Lines & Polygons
+  - Harder
+  - Not common to create new data (digitizing)
+  - Common to combining existing data to create new data
+  
+::::
+:::
+
+## Practical 2b: Creating Data
+
+![](images/data-with-coordinates.png)
+
+## Practical 2b: Creating Data
+
+- What if we don't have coordinates?
+
+- Geocoding
+
+  - Postcode -> coordinates
+  
+![](images/postcodes.png)
+
+## Practical 2b: Creating Data
+
+- What if we don't have coordinates?
+
+- Geocoding
+
+  - Postcode -> coordinates
+  
+  - Online - Doogal
+  - Small amounts of data
+
+## Practical 2b: Creating Data
+
+- Geocoding
+
+  - Postcode -> coordinates
+  
+  - Offline or large amounts of data
+  
+:::{.columns}
+:::: {.column width="40%"}
+
+![](images/postcodes.png)
+
+::::
+:::: {.column width="60%"}
+
+OS Code-Point Open
+
+![](images/codepoint.png)
+  
+::::
+:::
+
+## Practical 2b: Creating Data
+
+- Continue with Practical 2: Making a Map
+
+- Try working with some of your own data
+
+- Try Practical 2b: Coordinates & Postcodes
+
+## Outline
+
+- ~~10:00am – 10:20am: Recap and Cartography / Map Design~~
+- ~~10:20am – 11:30am: Practical 2a~~
+- ~~11:30am – 11:45am: break~~
+- 11:45am – 1:00pm: Practical 2b & Working with your own data
+
+## Wrap Up
+
+## Next Session
+
+- Everyone post a question in Matrix that you have about GIS or todays work
+
+- Next session tomorrow 10am
+
+- More on Cartography and Map Design (beyond colours)
+
+- If you are working with some of your own data, bring it along
+
+<!--
+
+## Next Steps
+
+- Repeat this material in 2-3 weeks / 2-3 months
+- Lots of free tutorials available online
+- GIS Training Courses
+  - [www.geospatialtrainingsolutions.co.uk](www.geospatialtrainingsolutions.co.uk)
+- Books:
+  - GIS: Research Methods, £13, available today
+  - QGIS Map Design
+  - An Introduction to R for Spatial Analysis and Mapping
+  - Cartography: An Introduction
+  
+## Thank you & questions
+
+- Repeat this material in 2-3 weeks / 2-3 months
+- GIS Training Courses
+- Books:
+  - GIS: Research Methods, £13, available today
+  
+-->

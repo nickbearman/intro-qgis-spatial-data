@@ -456,7 +456,7 @@ To export a copy of your map:
 
 \newpage
 
-# Practical 2b: Data with coordinates
+# Practical 2b: Creating Data
 
 | **Learning outcomes:**  | 
 |---|
