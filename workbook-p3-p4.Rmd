@@ -1,9 +1,12 @@
 ---
 title: 'Introduction to QGIS: Spatial Data and Spatial Analysis'
 output:
-  pdf_document: default
   html_document:
-    df_print: paged
+    df_print: default 
+    toc: TRUE
+    toc_float: TRUE
+    self_contained: TRUE
+  pdf_document: default
 date: 'Practicals 3 & 4: Mon 4th & Tue 5th March 2024'
 ---
 
@@ -68,7 +71,7 @@ Now our data is in, and joined to our spatial data, we can create a choropleth m
 - The click **Classify**, you will see the 5 classes for this data set appear in the window.  
 - Click **Apply** or **OK**, and QGIS will update the map. 
 
-### Optional Exercises
+### Optional exercises
 
 - Try adding the football stadium data on top of the IMD data.  
 
@@ -170,7 +173,7 @@ Try symbolising the different data - IMD and population on the map. What colours
 | Be able to complete point in polygon anaylsis in QGIS |
 | Understand how to create graphs in QGIS |
 
-## Point in Polygon Analysis
+## Point in polygon analysis
 
 Using our Local Authority datasets, we are going to complete some calculations on Greenspace access and area.
 
@@ -265,7 +268,7 @@ Try symbolising this data and/or graphing the data - do you see any patterns her
 \newpage
 
 
-# Practical 4: Spatial Overlay - Greenspace and Local Authorities
+# Practical 4: Spatial Overlays
 
 | **Learning outcomes:**  | 
 |---| 
@@ -274,7 +277,7 @@ Try symbolising this data and/or graphing the data - do you see any patterns her
 
 This is a lighter touch practical. You will need to work out some of the steps for yourself!
 
-## Polygon Polygon Overlay
+## Polygon polygon overlay
 
 We will be combining the layers using the Union tool, and we need to do some preparation for this. 
 

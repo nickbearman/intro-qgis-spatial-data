@@ -1,9 +1,12 @@
 ---
 title: 'Introduction to QGIS: Spatial Data and Spatial Analysis'
 output:
-  pdf_document: default
   html_document:
-    df_print: paged 
+    df_print: default 
+    toc: TRUE
+    toc_float: TRUE
+    self_containted: TRUE
+  pdf_document: default
 date: "Practicals 1 & 2: Tue 27th & Wed 28th February 2024"
 ---
 
@@ -119,7 +122,7 @@ The colours of the different layers will also need to be changed, so update the 
 
 Remember also to save the project file!
 
-## Adding point data from a delimited CSV file
+## Adding point data from a CSV file
 
 We have already added polygon data and line data, and now we are going to look at adding some point data. Open up the `world-cities.csv` file included in the zip file - it should open in Excel. You can see the file contains four columns: Name, Latitude, Longitude and Country. As this data has some coordinates, QGIS can plot the data on our map. Close the file (without saving, if Excel asks), and return to QGIS. 
 
@@ -138,7 +141,7 @@ We have already added polygon data and line data, and now we are going to look a
 
 You should now see the 15 cities added to the map. Update the symbols to a colour that fits in with your existing map. 
 
-### Optional Exercise
+**Optional Exercise**
 
 See if you can work out how to add a name to each of the cities. Look in the **Layer Properties** window under **Labels**. 
 
@@ -192,7 +195,7 @@ The join that we have made is not permanent; it is a temporary link between the 
 -	Right-click `world_countries` and select **Remove Layer**  
 -	If you like, **Save** your project.  
 
-## Adding a new field and calculating values
+## Adding new fields and calculating values
 
 We will now add a new field to the attribute table and calculate some values (the change in population between 2005 and 2015) using a simple mathematical operation. This can be useful when you want to create new data or undertake some analyses.
 
@@ -244,12 +247,16 @@ There are a number of things you can change to alter the classification:
 
 Once you have finished, remember to save your QGIS Project. 
 
-## Classifying % Population Change (optional exercise)
+## Optional exercises
+
+**Classifying % population change**
+
 What else might be wrong with the data we have calculated?
 
 Currently we are comparing the increase in numbers of people between 2005 and 2015 in each country. It might make more sense to compare the % increase. Calculate this and then show this on a map. Why is this a more logical way of representing this data?
 
-## Adding a Basemap (optional exercise)
+**Adding a basemap**
+
 We have the option of adding a base map to the data we have in QGIS. We can do this through XYZ Tiles (within the Browser panel). 
 
 We can also add Google Maps imagery to this as well (although this is not officially supported, and may break). 
@@ -259,6 +266,8 @@ We can also add Google Maps imagery to this as well (although this is not offici
 - In URL paste in `http://mt0.google.com/vt/lyrs=y&hl=en&x={x}&y={y}&z={z}&s=Ga` *(or copy and paste from the workbook)* 
 
 An alternative option is to use a plugin called QuickMapServices. To install it, click **Plugins > Manage and Install Plugins.**. Search for `QuickMapServices`. Then select the plugin and click **Install Plugin**. Once installed, try **Web > QuickMapServices > OSM > OSM Standard** to begin.  
+
+----
 
 \newpage
 
@@ -348,11 +357,11 @@ We can also add some outlines for the Local Authority Districts.
 
 This adds the Local Authority boundaries to give us some context for the IMD data.
 
-### Optional Exercise
+**Optional Exercise**
 
 Try experimenting with adjusting the transparency off - which do you think looks better?
 
-## Creating the Map Layout
+## Creating the map layout
 
 Now we are going to start constructing the map. Have a look at the example at the end of the handout to see what we are aiming to create. You don't have to stick to the design, feel free to adjust and change things as you see fit. 
 
@@ -447,14 +456,14 @@ To export a copy of your map:
 
 \newpage
 
-# Practical 2b: Adding data with coordinates
+# Practical 2b: Data with coordinates
 
 | **Learning outcomes:**  | 
 |---|
 | Be able to work with a range of different data sources |
 | Understand and be able to load XY coordinate data and postcode data into QGIS |
 
-## Data with Coordinates
+## Data with coordinates
 
 In practical 1 we added some world city data using latitude and longitude, but it is worth recapping this as it is something you are likely to need to do frequently. In this practical we are going to add some location data for UK football stadiums, with coordinates in the British National Grid system (Eastings and Northings). 
 
@@ -478,7 +487,7 @@ Now we have a choice - we can use the **Easting** & **Northing** fields (which a
 
 - This should show the football stadiums. To check they are in the correct place, add the OSM Basemap we used previously (*XYZ Tiles > OpenStreetMap or Web > QuickMapServices > OSM > OSM Standard*). 
 
-## Data with Postcodes (cloud-based)
+## Data with postcodes (cloud-based)
 
 In the session today we showed you how to plot data with XY coordinate data. We used the world-cities data which had coordinates in latitude-longitude and we used the Add XY data tool in QGIS to turn the coordinates into spatial data and to add them to the GIS project. 
 
@@ -530,7 +539,7 @@ The next step is to add the data to QGIS.
 - Check the data - do they look sensible for the addresses? *(You may need to add some base map data)* 
   
 
-## Data with Postcodes (non-cloud-based)
+## Data with postcodes (non-cloud-based)
    
 
 It may be that you don't want to share your data with another website, or you have too many rows for the Doogal website. If you don't, there is another option. 
