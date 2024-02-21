@@ -95,14 +95,16 @@ format:
 <!-- -   Photos for social media -->
 
 - Presentations, handouts and data on OneDrive
+
+- WhatsApp group for discussion
     
 
 ## Housekeeping - Practicals
 
 - Work through the workbook (questions, optional exercises)
-- Will split into groups of ~4-5 people (breakout rooms)
+- Will split into groups of ~4 people (breakout rooms)
 - Ask your group colleagues questions
-<!-- -  Post in Matrix/Element -->
+- Post in WhatsApp
 
 - Use the ‘Ask for help’ button in the Breakout room
 - I will ‘walk around’ and see how people are getting on
@@ -236,7 +238,7 @@ format:
 
 - QGIS has as many features as ArcGIS Pro
 - ArcGIS Pro is probably slightly more polished
-- QGIS is free (as is R)
+- QGIS is free (as is R & RStudio)
 - QGIS is popular in not for profit sector, academic and commercial
 - *All can be useful*
 
@@ -290,18 +292,6 @@ This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unp
 ##
 
 ![](images/mercator-2.png)
-
-##
-
-![](images/mercator-comparision.png)
-
-##
-
-![](images/mercator-comparision-1.png)
-
-##
-
-![](images/mercator-comparision-2.png)
 
 ##
 
@@ -490,6 +480,7 @@ https://twitter.com/zevross/status/1118967279864242176</font>
 - Is an issue in many different places  
 
  ![](images/irish-names.png){.absolute}  	
+
 <!-- Morning -->
 ## Outline
 
@@ -515,13 +506,13 @@ https://twitter.com/zevross/status/1118967279864242176</font>
 
 QGIS follow on screen
 
-make a folder, 
-download and save practical (PDF / HTML), 
-download zip file from Slack, 
-extract, 
-open QGIS, 
-load World countries, 
-pan, zoom
+- make a folder, 
+- download and save practical (PDF / HTML), 
+- download zip file from Slack, 
+- extract, 
+- open QGIS, 
+- load World countries, 
+- pan, zoom
 
 <!-- Morning -->
 ## Outline
@@ -599,10 +590,10 @@ Remember to show in the table which colours represent which countries!
 - How many classes we choose is important
   - Max of 5-7
 - What those classes are is important as well 
-  - Equal Interval: 0-10, 10-20, 20-30, ….
-  - Quantiles: first 10 data points, second 10 data points, ….
-  - Natural Breaks / Jenks / Fisher
-  - Standard Deviation: mean-1SD to mean, mean to mean+1SD, mean+1SD to mean+2SD, …
+  - Equal Interval: *0-10, 10-20, 20-30, ….*
+  - Quantiles: *first 10 data points, second 10 data points, ….*
+  - Natural Breaks *(Jenks / Fisher)*
+  - Standard Deviation: *mean-1SD to mean, mean to mean+1SD, mean+1SD to mean+2SD, …*
   - Unique
   
 ## Classification  
@@ -736,7 +727,11 @@ https://jcheshire.com/resources/different-maps-same-data/
 
 ## Next Session
 
-- Everyone post a question in Matrix that you have about GIS or todays work
+- Everyone post a question in Zoom or WhatsApp that you have about GIS or todays work
+
+## Next Session
+
+- Everyone post a question in Zoom or WhatsApp that you have about GIS or todays work
 
 - Next session tomorrow 10am
 
@@ -832,12 +827,10 @@ https://jcheshire.com/resources/different-maps-same-data/
 ::::
 :::
 
-## {.smaller}
+## Worldwide {.smaller}
 
 ::: columns
 :::: {.column width="30%"}
-
-Worldwide
 
 1:100,000,000  
 1:100m    
@@ -859,12 +852,10 @@ units in real world
 ::::
 :::
 
-## {.smaller}
+## Large Country/Continent {.smaller}
 
 ::: columns
 :::: {.column width="30%"}
-
-Large Country/Continent
 
 Brazil / South America
 
@@ -881,12 +872,10 @@ Brazil / South America
 ::::
 :::
 
-## {.smaller}
+## Small Country {.smaller}
 
 ::: columns
 :::: {.column width="30%"}
-
-Small Country
 
 UK
 
@@ -904,12 +893,10 @@ UK
 ::::
 :::
 
-## {.smaller}
+## Local / City {.smaller}
 
 ::: columns
 :::: {.column width="30%"}
-
-Local / City
 
 Hull	
 
@@ -928,12 +915,10 @@ Hull
 ::::
 :::
 
-## {.smaller}
+## Local / City {.smaller}
 
 ::: columns
 :::: {.column width="30%"}
-
-Local / City
 
 Hull	
 
@@ -953,7 +938,7 @@ Hull
 ::::
 :::
 
-## 
+## Scale
 
 ![](images/world.png){ width="20%" }
 ![](images/south-america.png){ width="20%" }
@@ -962,7 +947,7 @@ Hull
 
 ![](images/scale-range.png)
 
-##
+## Level of Detail
 
 ![](images/lod-range.png)
 
@@ -971,7 +956,7 @@ Hull
 ![](images/lego-bus-2.png){ width="30%" }
 ![](images/lego-bus-3.png){ width="30%" }
 
-## {.smaller}
+## Scale & Level of Detail {.smaller}
 
 ![](images/world.png){ width="20%" }
 ![](images/south-america.png){ width="20%" }
@@ -1049,7 +1034,7 @@ use it as a larger scale
 ::::
 :::
 
-##
+## Dynamic Data
 
 ![](images/world.png){ width="20%" }
 ![](images/south-america.png){ width="20%" }
@@ -1104,7 +1089,7 @@ use it as a larger scale
 
 - (One of) the most common spatial data file formats
 - ESRI 1990s, closed, 
-- → [opened July 1998](https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/whitepapers/pdfs/shapefile.pdf)
+- → [spec opened July 1998](https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/whitepapers/pdfs/shapefile.pdf)
 
 ## Geopackage
 
@@ -1503,9 +1488,15 @@ OS Code-Point Open
 
 ## Wrap Up
 
+- Two Stars, One Wish *poll*
+
 ## Next Session
 
-- Everyone post a question in Matrix that you have about GIS or todays work
+- Everyone post a question in WhatsApp that you have about GIS or todays work
+
+## Next Session
+
+- Everyone post a question in WhatsApp that you have about GIS or todays work
 
 - Next session Monday 4th March, 10am
 
