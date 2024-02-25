@@ -523,6 +523,21 @@ QGIS follow on screen
 - 11:45am – 12:15pm: Classification discussion
 - 12:15pm – 1:00pm: Practical 1
 
+## Break
+
+- We will resume in 15 min
+
+- Make sure you get away from the screen for a bit!
+
+# {background="#43464B" background-image="images/worlds-ocean-spilhaus-projection.jpg"}
+
+## Outline
+
+- ~~10:00am – 10:45am: What is GIS and Spatial Data?~~
+- ~~10:45am – 11:30am: Practical 1~~
+- 11:30am – 11:45am: break
+- 11:45am – 12:15pm: Classification discussion
+- 12:15pm – 1:00pm: Practical 1
 
 ## GIS can do many things
 
