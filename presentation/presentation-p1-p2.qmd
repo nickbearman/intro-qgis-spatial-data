@@ -118,7 +118,7 @@ format:
 
 ## What is GIS?
 
--   Geographic Information Systems
+-   Geographical Information Systems
 -   Turning (spatial) data into information ![](images/turning-data-into-information.png)
 -   Using this information to answer (research) questions
     -   *"How have housing conditions changed in the past ten years?"*
@@ -740,13 +740,13 @@ https://jcheshire.com/resources/different-maps-same-data/
 - 4:00pm - 4:30pm: P2 & Working with your own data
 -->
 
-## Next Session
+## Wrap-Up
+
+- What are your questions?
 
 - Everyone post a question in Zoom or WhatsApp that you have about GIS or todays work
 
 ## Next Session
-
-- Everyone post a question in Zoom or WhatsApp that you have about GIS or todays work
 
 - Next session tomorrow 10am
 
@@ -818,6 +818,7 @@ https://jcheshire.com/resources/different-maps-same-data/
 ::: columns
 :::: {.column width="33%"}
 ![](images/lego-bus-1.png)
+
 - Small number of bricks
 - Low level of detail
 
@@ -1094,7 +1095,7 @@ use it as a larger scale
 
 - `.shp` the geometry (polygons) themselves 
 - `.shx` extra geometry information
-- .`dbf` attribute information (dBase IV format)
+- `.dbf` attribute information (dBase IV format)
 - `.prj` projection & coordinate system info
 - `.qpj` QGIS version of projection & coordinate system information *[(more gory details)](https://gis.stackexchange.com/questions/55545/qpj-files-on-esri-software)*
 
@@ -1103,7 +1104,7 @@ use it as a larger scale
 ## Shapefiles
 
 - (One of) the most common spatial data file formats
-- ESRI 1990s, closed, 
+- ESRI 1990s, closed
 - → [spec opened July 1998](https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/whitepapers/pdfs/shapefile.pdf)
 
 ## Geopackage
@@ -1505,13 +1506,11 @@ OS Code-Point Open
 
 - Two Stars, One Wish *poll*
 
+## Wrap-Up
+
+- Everyone post a question in WhatsApp or Zoom that you have about GIS or todays work
+
 ## Next Session
-
-- Everyone post a question in WhatsApp that you have about GIS or todays work
-
-## Next Session
-
-- Everyone post a question in WhatsApp that you have about GIS or todays work
 
 - Next session Monday 4th March, 10am
 
