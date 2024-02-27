@@ -1275,6 +1275,12 @@ What makes a good map?
 
 ## Break
 
+- We will resume in 15 min
+
+- Make sure you get away from the screen for a bit!
+
+# {background="#43464B" background-image="images/polar-projections.png"}
+
 ## Outline
 
 - ~~10:00am – 10:20am: Recap and Cartography / Map Design~~
