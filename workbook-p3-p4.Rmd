@@ -148,7 +148,7 @@ Now our layer is ready to join.
 - Right click on the `prac3-data — LA-IMD-pop-count` layer and choose **Properties**.  
 - Click on **Joins** ![](images/joins.png){ height=20 }.  
 -	Click on the plus button ![](images/plus.png){ height=20 } to create a new join. The **Add Vector Join** dialogue box will now open  
-- prac3-data - refactored` should be selected in the **Join layer** dropdown box  
+- `prac3-data - refactored` should be selected in the **Join layer** dropdown box  
 -	`LAcode` should be selected in the **Join field** dropdown box  
 -	`lad19cd` should be selected in the **Target field** dropdown box  
 - Click **OK** and **OK** again.  
