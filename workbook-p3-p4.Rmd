@@ -328,13 +328,15 @@ There are various ways of doing this - the easiest is manually!
 - Use **New Field** ![](images/new-field.png){ height=20 } and set the data type to **Integer (32 bit)**.  
 - Then use **Field Calculator** ![Field Calculator](images/field-calculator.png){ height=20 } to set all the entries in this column to `1`.   
 - Find and open the **Union** tool in the **Processing Toolbox**.  
+<!-- Union, not Union (multiple). Add pic? --> 
+
 - Set the **Input layer** to `prac4-data lad-imd-pop-SUgreenspace` (our local authority data).  
 - Set the **Overlay layer** to `prac4-data SU_GreenspaceSite` (the greenspace site layer).  
 - Click **Run**, it may take a minute or two to run. Watch the progress bar, and while you wait, review the flowchart on the slides and make sure you know what output you are expecting (or have a short break!).   
 
 - Open the attribute table of the layer we have just created (`Union`).  
 
-Now we have an attribute table split by Local Authority and greenspace. Within each Local Authority we have one polygon that is non greenspace (where `greenspace` is NULL) and one or more polygons that are greenspace (where `greenspace` is `1`). The next step is to calculate the area for each polygon. 
+Now we have an attribute table split by Local Authority and greenspace. Within each Local Authority we have one polygon that is non greenspace (where the `greenspace` value is NULL) and one or more polygons that are greenspace (where the `greenspace` value is `1`). The next step is to calculate the area for each polygon. 
 
 *We do have quite a few completely blank rows (with greenspace data but no Local Authority data). These are the greenspace areas that are outside our local authority data. Try selecting one and using the Zoom To function.*
 

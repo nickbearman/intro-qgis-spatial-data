@@ -10,6 +10,8 @@ The material for this workshop is available in the latest release:  https://gith
 - [The session handout (PDF)](https://github.com/nickbearman/intro-qgis-spatial-data/blob/master/Handout-QGIS.pdf) -->
 <!-- - [The classification exercise (PDF)](https://github.com/nickbearman/intro-qgis-spatial-data/blob/master/classification-exercise-QGIS-NB.pdf) -->
 
+A video showing how to complete practical 3 is available on [YouTube](https://youtu.be/87kLJcEIORI). 
+
 [The GIS Glossary (PDF, 125B)](https://github.com/nickbearman/intro-qgis-spatial-data/blob/master/glossary.pdf) 
 
 This material was developed using QGIS 3.22.
