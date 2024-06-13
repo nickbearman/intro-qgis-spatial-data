@@ -39,7 +39,7 @@ File management is very important, so do spend a bit of time making sure you are
 - Open the OneDrive site and find the `prac1.zip` file.  
 - Download it and save the file in the new folder you created.  
 - As there are several files they have been compressed into a single zip file, and you will need to first copy this and then extract the data files. Choose somewhere sensible to extract the files to.  
-- Start QGIS by clicking on Start, then type **QGIS** and select **QGIS Desktop 3.28.15**. *Your version number might vary, **QGIS Desktop** is the key bit.*  
+- Start QGIS by clicking on Start, then type **QGIS** and select **QGIS Desktop 3.34.7**. *Your version number might vary, **QGIS Desktop** is the key bit.*  
 
 Let's start off by creating a blank map and adding some data. 
 
