@@ -217,7 +217,7 @@ Now we are going to group the data within each Local Authority. First, we will u
 - Some of the rows in this layer will have points in - remember, the SU grid square doesn't cover all of the local authorities, so some will be blank and some will be incomplete.  
 - You can sort the `NUMPOINTS` column by clicking on the column header. It will sort it first ascending, then if you click again, descending. *Note there are some entries with a 0 value in them. These are the local authorities outside the SU grid square.*  
 - If the calculation has worked, save this as a new GeoPackage layer.  
-- Remember to choose the GeoPackage file name and a sutiable name for the layer:
+- Remember to choose the GeoPackage file name and a suitable name for the layer:
 
 ![](images/save-layer-geopackage.png){ width=50% }													 
 
