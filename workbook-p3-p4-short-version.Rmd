@@ -27,7 +27,7 @@ I have done some preparatory work for you already with this data. Download the `
 ![](images/browser-window.png){ width=40% }
 
 - Add the 
-`LA-with-IMD-pop` layer by double clicking on it.  
+`LA-IMD-pop` layer by double clicking on it.  
 
 This will add a polygon layer of some local authorities in southern England. Explore the data a bit, and add a base map if you like. 
 
@@ -53,8 +53,6 @@ Using our Local Authority datasets, we are going to complete some calculations o
 
 <!-- Last checked 2022-03-02 -->
 
-Now we can move to QGIS and start a new project.  
-
 - Select from the menu **Layer > Add Layer > Add Vector Layer** ![Add Vector Layer tool](images/add-vector.png){ height=20 }.  
 - **Browse** ![Add Vector Layer tool](images/browse.png){ height=20 } to the `SU_AccessPoint.shp` file and add it.  
 - Pan to the Winchester local authority (try labelling them as we did with the World Cities yesterday if you need to).  
@@ -79,7 +77,7 @@ Now we are going to group the data within each Local Authority. First, we will u
 - This has created a new layer called `Count` with a new column called `NUMPOINTS` at the far right hand end of the attribute table. 
 - Some of the rows in this layer will have points in - remember, the SU grid square doesn't cover all of the local authorities, so some will be blank and some will be incomplete.  
 - You can sort the `NUMPOINTS` column by clicking on the column header. It will sort it first ascending, then if you click again, descending. *Note there are some entries with a 0 value in them. These are the local authorities outside the SU grid square.*  
-- If the calculation has worked, save this as a new GeoPackage layer.  
+- If the calculation has worked, save this as a new GeoPackage layer, by right-clicking on the layer and choosing **Export > Save Features As...**.  
 - Remember to choose the GeoPackage file name and a suitable name for the layer name:
 
 ![](images/save-layer-geopackage.png){ width=50% }
@@ -104,7 +102,7 @@ We can also use some of the graphing options within QGIS to explore this data.
 *If `IMD_IMD - Average score` isn't visible, you may have not done a join correctly earlier on. Try a different field, and try re-doing the join.*
 If you end up with multiple sets of points on your plot, you can use the ![](images/clean-plot-canvas.png){ height=20 } button on the main Plotly page ![](images/main-plotly-page.png){ height=20 } to clear the plot and start again. 
 
-Is there any sort of relation in this data? 
+Is there any sort of relationship in this data? 
 
 What might be a better calculation is to look at number of greenspace access points per population, so we can correct for the fact that some local authorities have bigger populations than others. 
 
@@ -122,7 +120,7 @@ What might be a better calculation is to look at number of greenspace access poi
 - Click **Multiply** `*` and type in `1000`. This will then calculate the number of greenspace access points per 1000 people.  
 - The Expression box should contain something like this:  
 `   "NUMPOINTS"  /  "Pop2019"  * 1000 `.   
-- It should give you a preview value for **Arun** of `1.25`.  
+- It should give you a preview value for **Arun** of `1.275`.  
 - Click **OK**.  
 - Save the data.  
    

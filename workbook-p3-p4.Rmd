@@ -75,7 +75,7 @@ Now our data is in, and joined to our spatial data, we can create a choropleth m
 
 - Try adding the football stadium data on top of the IMD data.  
 
-- Try loading in the Style template that we used before  `prac2-imd-d-style.qml` on to the LA-with-IMD layer. *Remember the option is under Properties > Symbology > Style > Load Style.... You will also need to update the column used for `Value`.*   
+- Try loading in the Style template that we used before  `prac2-imd-d-style.qml` on to the LA-IMD layer. *Remember the option is under Properties > Symbology > Style > Load Style.... You will also need to update the column used for `Value`.*   
 
 - How would you produce a map, showing both the IMD data and the football stadiums? What about showing context to people using the map can orientate themselves?  
 
@@ -244,7 +244,7 @@ We can also use some of the graphing options within QGIS to explore this data.
 
 If you end up with multiple sets of points on your plot, you can use the ![](images/clean-plot-canvas.png){ height=20 } button on the main Plotly page ![](images/main-plotly-page.png){ height=20 } to clear the plot and start again. 
 
-Is there any sort of relation in this data? 
+Is there any sort of relationship in this data? 
 
 What might be a better calculation is to look at number of greenspace access points per population, so we can correct for the fact that some local authorities have bigger populations than others. 
 
@@ -262,7 +262,7 @@ What might be a better calculation is to look at number of greenspace access poi
 - Click **Multiply** `*` and type in `1000`. This will then calculate the number of greenspace access points per 1000 people.  
 - The Expression box should contain something like this:  
 `   "NUMPOINTS"  /  "Pop2019"  * 1000 `.   
-- It should give you a preview value for **Arun** of `1.25`.  
+- It should give you a preview value for **Arun** of `1.275`.  
 - Click **OK**.  
 - Save the data.  
    
