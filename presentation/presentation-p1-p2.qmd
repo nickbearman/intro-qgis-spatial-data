@@ -209,7 +209,10 @@ format:
 :::
 
 ::: {.fragment}
+ ![](images/ijgis-1987.jpg){.absolute bottom="0" right="250" width="250"} 
  ![](images/ijgis.png){.absolute bottom="0" right="0" width="250"} 
+
+<font size="2">Thanks to Nick Tate for the IGJIS 1987 photo</font>
 :::
  
  
