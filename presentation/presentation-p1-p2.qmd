@@ -98,6 +98,7 @@ format:
 
 - WhatsApp group for discussion
     
+<!-- Move to later on?
 
 ## Housekeeping - Practicals
 
@@ -110,6 +111,8 @@ format:
 - I will ‘walk around’ and see how people are getting on
 - Can share screens – in groups, or individually
 - Poll - All setup ok?
+
+-->
 
 ## Any Questions?
 
@@ -231,6 +234,8 @@ format:
 
 ::: {.fragment}
 - GeoAI
+  - Geographical Analysis
+  - LLM / ChatGPT / assistant
 :::
  
 ---
@@ -304,6 +309,8 @@ This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unp
 
 ![](images/ch2-projections.png)
 
+[YouTube - Why all world maps are wrong](https://www.youtube.com/watch?v=kIID5FDi2JQ)
+
 ## Why are Projections important?
 
 1. The map(s) may not be as they appear
@@ -375,6 +382,7 @@ We can split these coordinate systems into two groups:
   - Where on the Earth’s surface something is
   - 52°N 37’ 30.32’’ (52.6250)	1°E 14’ 2.05’’ (1.2339) 
   - Usually in angular units (degrees)
+  - But measuring distances is hard
 
 ## Geographic and Projected Coordinate Systems
 
@@ -493,21 +501,19 @@ https://twitter.com/zevross/status/1118967279864242176</font>
 - 11:45am – 12:15pm: Classification discussion
 - 12:15pm – 1:00pm: Practical 1
 
-
 ## QGIS Practical
 
 - Short Demo
-
 ::: fragment
 - (Primarily) self-led practical  
 - Good to explore the options
 - Ask questions as we go through
 - Try things
 :::
- 
+
 ## QGIS Practical 
 
-QGIS follow on screen
+QGIS Demo
 
 - make a folder, 
 - download and save practical (PDF / HTML), 
@@ -517,7 +523,17 @@ QGIS follow on screen
 - load World countries, 
 - pan, zoom
 
-<!-- Morning -->
+## QGIS Practical
+
+- (Primarily) self-led practical  
+- Good to explore the options
+- Ask questions as we go through
+- Try things
+- If you get stuck, ask for help
+<!-- - Green post-it - I am ok
+- Orange post-it - I need help -->
+
+
 ## Outline
 
 - ~~10:00am – 10:45am: What is GIS and Spatial Data?~~
@@ -542,20 +558,22 @@ QGIS follow on screen
 - 11:45am – 12:15pm: Classification discussion
 - 12:15pm – 1:00pm: Practical 1
 
+
 ## GIS can do many things
 
 ## Visualsation is key
 
 - how do we show data on a map? 
 
-<!--
+<!-- In person classification exercise
+
 ## Classification
 
-- Colour in the map to show the Total Vaccinations per 100 data
+- Colour in the map to show the Forest Percent Cover data
   - *10 min*
 
 
-![](images/map.png){.absolute bottom="0" right="0" width="750"}
+![](images/classification-exercise-map.png)
 
 ::: footer
 Remember to show in the table which colours represent which countries!
@@ -564,18 +582,20 @@ Remember to show in the table which colours represent which countries!
 
 ## Classification
 
-- Colour in the map to show the Total Vaccinations per 100 data
+- Colour in the map to show the Forest Percent Cover data
 - Discuss your choices
 
 
 ## Classification
 
-- Colour in the map to show the Total Vaccinations per 100 data
+- Colour in the map to show the Forest Percent Cover data
 - Discuss your choices
   - Colours
   - Classification (how you grouped the data)
 
---> 
+-->
+
+<!-- Online classification exercise -->
 
 ## Classification
 
@@ -602,6 +622,8 @@ Remember to show in the table which colours represent which countries!
 - How many classes?
 - What are those classes?
 - Which colour scheme?
+
+<!-- End of online classifcation exercise -->
 
 ## Classification - Classes
 
@@ -756,7 +778,7 @@ https://jcheshire.com/resources/different-maps-same-data/
 - More on Cartography and Map Design (beyond colours)
 
 - If you are working with some of your own data, bring it along
-
+-->
 <!-- 
 ## Next Steps
 
@@ -779,7 +801,7 @@ https://jcheshire.com/resources/different-maps-same-data/
   - GIS: Research Methods, £13, available today
   
 -->
-
+<!--
 ## Day 2
 
 ## 
@@ -798,6 +820,8 @@ https://jcheshire.com/resources/different-maps-same-data/
 - 10:20am – 11:30am: Practical 2a
 - 11:30am – 11:45am: break
 - 11:45am – 1:00pm: Practical 2b & Working with your own data
+
+-->
 
 ## Spatial Data
 
@@ -1258,6 +1282,38 @@ What makes a good map?
 
 ![](images/imd-map.png)
 
+## Outline {.smaller}
+<!-- ESS
+Time | Content 
+---|--- 
+~~10:00am – 11:15am~~ | ~~Presentation: Introduction and What is GIS?~~  
+~~11:15am – 12:00pm~~ | ~~Practical 1: Intro to QGI~~  
+~~12:00pm – 12:15pm~~ | ~~break~~  
+~~12:15pm - 12:45pm~~ | ~~Presentation: Classification~~  
+~~12:45pm - 1:00pm~~ | ~~Practical 1: Introduction to QGIS ctd.~~  
+1:00pm – 1:15pm | Presentation: Making a Map  
+1:15pm – 1:30pm | Wrap up and questions
+
+ESS end -->
+
+## Wrap Up
+
+- Two Stars, One Wish *poll*
+
+## Wrap-Up
+
+- Everyone post a question in WhatsApp or Zoom that you have about GIS or todays work
+
+## Next Session
+
+- Next session tomorrow, 10am
+
+- More on Spatial Analysis in QGIS
+
+- If you are working with some of your own data, bring it along
+
+<!--
+
 ## Outline
 
 - ~~10:00am – 10:20am: Recap and Cartography / Map Design~~
@@ -1410,7 +1466,7 @@ Spatial data can come from various locations
 - [Ordnance Survey / OS Open Data](https://osdatahub.os.uk/downloads/open)
 - [Census & Census Boundary]( https://borders.ukdataservice.ac.uk)
 - [EuroStat](https://ec.europa.eu/eurostat)
-- [Free GIS Data, Robert Wilson](http://freegisdata.rtwilson.com/)
+- [Free GIS Data, Robin Wilson](http://freegisdata.rtwilson.com/)
 - [GeoBoundaries.org](https://GeoBoundaries.org)
 - [OpenStreetMap](http://openstreetmap.org)
 - Google Search – shapefile / GIS

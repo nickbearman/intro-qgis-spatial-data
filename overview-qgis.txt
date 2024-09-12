@@ -1,0 +1,29 @@
+Introduction to QGIS: Understanding and Presenting Spatial Data
+
+In this two part introductory course we will give you an overview on how GIS works, and what we can and can’t do with spatial data. We assume no prior knowledge of GIS and will explain how to get data into the GIS as well as how to produce maps using your own data.
+
+Learning Outcomes
+- Be able to set up QGIS and add data
+- Understand how to add data with a latitude & longitude coordinate
+- Join tabular data to spatial data
+- Understand how to undertake simple calculations
+- Understand how to classify data for representation on a map
+- Understand how to design and produce a publication-ready map in QGIS
+- Be able to add maps, scale bar, legends and labels to a map
+- Know why scale is important in map design
+- Know how to save and export maps as PDFs or images
+
+Confident Spatial Analysis in QGIS
+
+This intermediate two part course will develop your skills of using spatial data, including collating data from a variety of sources including XY coordinate data and address or postcode based data. We will also cover using spatial overlays, point-in-polygon analysis and spatial joins.
+
+With either option we will also have some time to discuss their own work and talk about how they might apply some of this to their work.
+
+Learning Outcomes:
+- Be able to join data from a variety of sources
+- Know how to change data from one data type to another
+- Know how to download data from Ordnance Survey Open Data
+- Be able to complete point in polygon analysis in QGIS
+- Understand how to create graphs in QGIS
+- Be able to perform a polygon polygon overlay
+- Critique the analysis process we have undertaken 
