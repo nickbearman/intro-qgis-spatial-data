@@ -1,12 +1,13 @@
 ---
-title: "Introduction to QGIS: Spatial Data and Spatial Analysis"
-subtitle: "Tue 27th Feb 2024"
+title: "Introduction to QGIS: Understanding and Presenting Spatial Data"
+subtitle: "Thu 14th Nov 2024"
 author: "Nick Bearman"
 format: 
   revealjs
     
 ---
 
+<!--
 
 ## 
 
@@ -18,7 +19,14 @@ format:
 ![](images/ncrm-welcome-slide-2.png)
 
 
+-->
 
+## Recording
+
+- I will record the session on Zoom
+- Share the recording with you
+- Feel free to download and use for your reference
+- But please don't pass on to other people
 
 ## What are we covering?
 
@@ -31,7 +39,7 @@ format:
 
 ![](images/qgis-screenshot.png){.absolute bottom="0" right="0" width="550"}
 
-
+<!-- 
 ## What are we covering?
  - Point in Polygon Analysis
  - Spatial Overlays
@@ -39,15 +47,16 @@ format:
  
  ![](images/point-in-polygon-spatial-overlays.png){.absolute bottom="0" width="1024"}
 
- 
-<!-- 
+--> 
+
+
 ## Housekeeping
 
 -   Introductions
     -   Name / background / area of interest
     -   Have you done any GIS before? (no is fine!)
     -   What are you hoping to achieve in the course? 
--->
+
 
 <!-- afternoon 
 ## Outline
@@ -94,9 +103,9 @@ format:
 <!-- -   Be aware of trailing wires -->
 <!-- -   Photos for social media -->
 
-- Presentations, handouts and data on OneDrive
+- Presentations, handouts and data via email and on OneDrive
 
-- WhatsApp group for discussion
+<!-- - WhatsApp group for discussion -->
     
 <!-- Move to later on?
 
@@ -504,6 +513,7 @@ https://twitter.com/zevross/status/1118967279864242176</font>
 ## QGIS Practical
 
 - Short Demo
+
 ::: fragment
 - (Primarily) self-led practical  
 - Good to explore the options
@@ -517,11 +527,24 @@ QGIS Demo
 
 - make a folder, 
 - download and save practical (PDF / HTML), 
-- download zip file from Slack, 
+- download zip file, 
 - extract, 
 - open QGIS, 
 - load World countries, 
 - pan, zoom
+
+## Housekeeping - Practicals
+
+- Work through the workbook (questions, optional exercises)
+- Will split into groups of ~2-3 people (breakout rooms)
+- Ask your group colleagues questions
+<!-- - Post in WhatsApp -->
+
+- Use the ‘Ask for help’ button in the Breakout room
+- I will ‘walk around’ and see how people are getting on
+- Can share screens – in groups, or individually
+
+
 
 ## QGIS Practical
 
@@ -769,7 +792,7 @@ https://jcheshire.com/resources/different-maps-same-data/
 
 - What are your questions?
 
-- Everyone post a question in Zoom or WhatsApp that you have about GIS or todays work
+- Everyone post a question in Zoom <!-- or WhatsApp --> that you have about GIS or todays work
 
 ## Next Session
 
@@ -778,7 +801,9 @@ https://jcheshire.com/resources/different-maps-same-data/
 - More on Cartography and Map Design (beyond colours)
 
 - If you are working with some of your own data, bring it along
--->
+
+##
+
 <!-- 
 ## Next Steps
 
@@ -801,17 +826,25 @@ https://jcheshire.com/resources/different-maps-same-data/
   - GIS: Research Methods, £13, available today
   
 -->
-<!--
-## Day 2
 
+## Introduction to QGIS: Understanding and Presenting Spatial Data
+
+#### Day 2
+
+Thu 14th Nov 2024
+
+Nick Bearman
+
+<!--
 ## 
+
 
 ![](images/ncrm-welcome-slide-1.png)
 
 ##
 
 ![](images/ncrm-welcome-slide-2.png)
-
+-->
 ## Recap Quiz
 
 ## Outline
@@ -821,7 +854,7 @@ https://jcheshire.com/resources/different-maps-same-data/
 - 11:30am – 11:45am: break
 - 11:45am – 1:00pm: Practical 2b & Working with your own data
 
--->
+
 
 ## Spatial Data
 
@@ -1295,7 +1328,7 @@ Time | Content
 1:15pm – 1:30pm | Wrap up and questions
 
 ESS end -->
-
+<!-- 
 ## Wrap Up
 
 - Two Stars, One Wish *poll*
@@ -1303,6 +1336,8 @@ ESS end -->
 ## Wrap-Up
 
 - Everyone post a question in WhatsApp or Zoom that you have about GIS or todays work
+-->
+<!--
 
 ## Next Session
 
@@ -1312,7 +1347,9 @@ ESS end -->
 
 - If you are working with some of your own data, bring it along
 
-<!--
+-->
+
+
 
 ## Outline
 
@@ -1573,15 +1610,19 @@ OS Code-Point Open
 
 ## Wrap-Up
 
-- Everyone post a question in WhatsApp or Zoom that you have about GIS or todays work
+- Everyone post a question in <!-- WhatsApp or --> Zoom that you have about GIS or todays work
+
+
 
 ## Next Session
 
-- Next session Monday 4th March, 10am
+- Next session Tuesday 8th March, 10am
 
 - More on Spatial Analysis
 
 - If you are working with some of your own data, bring it along
+
+
 
 <!--
 
@@ -1590,18 +1631,22 @@ OS Code-Point Open
 - Repeat this material in 2-3 weeks / 2-3 months
 - Lots of free tutorials available online
 - GIS Training Courses
-  - [www.geospatialtrainingsolutions.co.uk](www.geospatialtrainingsolutions.co.uk)
+  - [www.nickbearman.com](www.nickbearman.com)
 - Books:
-  - GIS: Research Methods, £13, available today
-  - QGIS Map Design
+  - GIS: Research Methods, £13 <!-- available today -->
+<!--  - QGIS Map Design
   - An Introduction to R for Spatial Analysis and Mapping
   - Cartography: An Introduction
   
 ## Thank you & questions
 
 - Repeat this material in 2-3 weeks / 2-3 months
+- Feedback forms via email
+
+--> 
+
+<!--
 - GIS Training Courses
 - Books:
   - GIS: Research Methods, £13, available today
-  
--->
+-->  

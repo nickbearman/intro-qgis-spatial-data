@@ -1,13 +1,13 @@
 ---
 title: 'Introduction to QGIS: Spatial Data and Spatial Analysis'
 output:
+  pdf_document: default
   html_document:
     df_print: default 
     toc: TRUE
     toc_float: TRUE
     self_containted: TRUE
-  pdf_document: default
-date: "Practicals 1 & 2: Tue 27th & Wed 28th February 2024"
+date: "Practicals 1 & 2: Tue 1st and Wed 2nd March 2025"
 ---
 
 <!-- title: "Introduction to QGIS: Understanding and Presenting Spatial Data" -->
@@ -39,7 +39,7 @@ File management is very important, so do spend a bit of time making sure you are
 - Open the OneDrive site and find the `prac1.zip` file.  
 - Download it and save the file in the new folder you created.  
 - As there are several files they have been compressed into a single zip file, and you will need to first copy this and then extract the data files. Choose somewhere sensible to extract the files to.  
-- Start QGIS by clicking on Start, then type **QGIS** and select **QGIS Desktop 3.34.7**. *Your version number might vary, **QGIS Desktop** is the key bit.*  
+- Start QGIS by clicking on Start, then type **QGIS** and select **QGIS Desktop 3.40.4**. *Your version number might vary, **QGIS Desktop** is the key bit.*  
 
 Let's start off by creating a blank map and adding some data. 
 
@@ -556,12 +556,12 @@ The GeoPackage version is much much larger, but contains all the data in one geo
 
 ----
 
-*This practical was written using QGIS 3.28 on Windows 11, last updated on 08/02/2024 by Dr Nick Bearman, [nick@nickbearman.com](mailto:nick@nickbearman.com). Thanks to Chris Bell for providing the geocoding resource at https://www.doogal.co.uk.*
+*This practical was written using QGIS 3.40 on Windows 11, last updated on 06/03/2025 by Dr Nick Bearman, [nick@nickbearman.com](mailto:nick@nickbearman.com). Thanks to Chris Bell for providing the geocoding resource at https://www.doogal.co.uk.*
 
 This work (Introduction to QGIS: Spatial Data and Spatial Analysis by Nick Bearman) is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/. <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1">
 
 
-The latest version of the PDF is available from https://github.com/nickbearman/intro-qgis-spatial-data. This is v6.1 and this was created on `r format(Sys.time(), '%d %B %Y')`. 
+The latest version of the PDF is available from https://github.com/nickbearman/intro-qgis-spatial-data. This is v6.2 and this was created on `r format(Sys.time(), '%d %B %Y')`. 
 
 
 
