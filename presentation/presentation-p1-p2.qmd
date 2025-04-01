@@ -1,13 +1,17 @@
 ---
-title: "Introduction to QGIS: Understanding and Presenting Spatial Data"
-subtitle: "Thu 14th Nov 2024"
+title: "Introduction to QGIS: Spatial Data and Spatial Analysis"
+subtitle: "Tue 1st April 2025"
 author: "Nick Bearman"
 format: 
   revealjs
     
 ---
 
-<!--
+<!-- 
+title: "Introduction to QGIS: Understanding and Presenting Spatial Data"
+-->
+
+
 
 ## 
 
@@ -19,7 +23,7 @@ format:
 ![](images/ncrm-welcome-slide-2.png)
 
 
--->
+<!--
 
 ## Recording
 
@@ -27,6 +31,8 @@ format:
 - Share the recording with you
 - Feel free to download and use for your reference
 - But please don't pass on to other people
+
+-->
 
 ## What are we covering?
 
@@ -39,7 +45,7 @@ format:
 
 ![](images/qgis-screenshot.png){.absolute bottom="0" right="0" width="550"}
 
-<!-- 
+
 ## What are we covering?
  - Point in Polygon Analysis
  - Spatial Overlays
@@ -47,8 +53,8 @@ format:
  
  ![](images/point-in-polygon-spatial-overlays.png){.absolute bottom="0" width="1024"}
 
---> 
 
+<!--
 
 ## Housekeeping
 
@@ -56,7 +62,8 @@ format:
     -   Name / background / area of interest
     -   Have you done any GIS before? (no is fine!)
     -   What are you hoping to achieve in the course? 
-
+    
+-->
 
 <!-- afternoon 
 ## Outline
@@ -105,7 +112,7 @@ format:
 
 - Presentations, handouts and data via email and on OneDrive
 
-<!-- - WhatsApp group for discussion -->
+- WhatsApp group for discussion
     
 <!-- Move to later on?
 
@@ -245,6 +252,7 @@ format:
 - GeoAI
   - Geographical Analysis
   - LLM / ChatGPT / assistant
+    - [Kue Plugin: An AI Chatbot for QGIS, LinkedIn Post Feb 2025](https://www.linkedin.com/posts/jvdkwast_exploring-the-kue-plugin-an-ai-chatbot-for-activity-7286496279147237377-9KpP/)
 :::
  
 ---
@@ -514,12 +522,6 @@ https://twitter.com/zevross/status/1118967279864242176</font>
 
 - Short Demo
 
-::: fragment
-- (Primarily) self-led practical  
-- Good to explore the options
-- Ask questions as we go through
-- Try things
-:::
 
 ## QGIS Practical 
 
@@ -826,16 +828,18 @@ https://jcheshire.com/resources/different-maps-same-data/
   - GIS: Research Methods, £13, available today
   
 -->
-
+<!--
 ## Introduction to QGIS: Understanding and Presenting Spatial Data
+
+
 
 #### Day 2
 
 Thu 14th Nov 2024
 
 Nick Bearman
+-->
 
-<!--
 ## 
 
 
@@ -844,7 +848,7 @@ Nick Bearman
 ##
 
 ![](images/ncrm-welcome-slide-2.png)
--->
+
 ## Recap Quiz
 
 ## Outline

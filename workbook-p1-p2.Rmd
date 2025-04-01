@@ -7,7 +7,7 @@ output:
     toc: TRUE
     toc_float: TRUE
     self_containted: TRUE
-date: "Practicals 1 & 2: Tue 1st and Wed 2nd March 2025"
+date: "Practicals 1 & 2: Tue 1st and Wed 2nd April 2025"
 ---
 
 <!-- title: "Introduction to QGIS: Understanding and Presenting Spatial Data" -->
@@ -102,6 +102,8 @@ image
 You should now have a big empty space with a few toolbars. 
 
 -->
+
+## Add the other shapefiles
 
 -	Using the same process as previously (or select **Layer > Add Layer > Add Vector Layer... > Vector > ...**) add three more shapefiles to the map.  
 -	The files to add are: `world_deg30.shp`, `world_lakes.shp` and `world_rivers.shp` shapefiles.  
@@ -208,7 +210,7 @@ We will now add a new field to the attribute table and calculate some values (th
 -	Click on **New field** ![](images/new-field.png){ height=20 } button  
 - -	Set **Name** to `POP_DIFF`  
 - -	Leave **Comment** blank  
-- -	Set **Type** to `Whole number (integer)`, change **Length** to `10`.  
+- -	Set **Type** to `Integer (32-bit))`, change **Length** to `10`.  
 -	Click **OK**  
 
 You will see that the new field contains values, by default, as *NULL*. We now need to populate this new field (column) with some data.

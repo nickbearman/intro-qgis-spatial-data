@@ -1,13 +1,13 @@
 ---
 title: 'Introduction to QGIS: Spatial Data and Spatial Analysis'
 output:
+  pdf_document: default
   html_document:
     df_print: default 
     toc: TRUE
     toc_float: TRUE
     self_contained: TRUE
-  pdf_document: default
-date: 'Practicals 3 & 4: Tue 8th and Wed 9th March 2025'
+date: 'Practicals 3 & 4: Tue 8th and Wed 9th April 2025'
 ---
 
 
