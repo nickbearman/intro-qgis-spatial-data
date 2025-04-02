@@ -1593,6 +1593,62 @@ OS Code-Point Open
 ::::
 :::
 
+## Postcodes were designed for delivering post
+
+- Unit: SY23 3LE
+- Sector: SY23 3
+- District: SY23
+- Area: SY (Shrewsbury)
+
+- Postcode Unit covers about 15 houses
+- Can be ~100m or many square km
+
+## Postcodes
+
+:::{.columns}
+:::: {.column width="50%"}
+
+- SY23 3LE:
+  - 54,046,449 m<sup>2</sup>
+  - 5,404 hectares
+  - 54 km<sup>2</sup> 
+  
+::::
+:::: {.column width="50%"}
+  
+![](images/sy23-3le.png)
+
+::::
+:::
+
+## Postcodes
+
+:::{.columns}
+:::: {.column width="50%"}
+
+- CF14 3DS:
+  - 6,703 m<sup>2</sup>
+  - 6 hectares
+  - 0.006 km<sup>2</sup> 
+  
+::::
+:::: {.column width="50%"}
+
+![](images/cf14-3ds.png)
+
+::::
+:::
+
+## Postcodes – useful for joining data, but….
+
+- Remember their size can vary, sometimes dramatically
+
+- OS Code-Point Open (free, centroid only)
+
+- CodePoint with Polygons (paid, GSMA, Digimap)
+
+
+
 ## Practical 2b: Creating Data
 
 - Continue with Practical 2: Making a Map
