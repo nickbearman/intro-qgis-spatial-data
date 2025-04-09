@@ -17,6 +17,8 @@ date: 'Practicals 3 & 4: Tue 8th and Wed 9th April 2025'
 |---| 
 | Remember how to load data, join data and symbolise data | 
 
+*If you get stuck, a video recording of me working through this practical is available on [YouTube](https://www.youtube.com/watch?v=87kLJcEIORI).* 
+
 We are going to start with a quick recap of QGIS, including loading data and creating a choropleth map. Create a folder in Documents where you can save files relating to your GIS practical. 
 
 We are working with the IMD (Index of Multiple Deprivation) data again, but this time at the Local Authority level. 
@@ -238,7 +240,7 @@ We can also use some of the graphing options within QGIS to explore this data.
 - Set **Y field** to `IMD_IMD - Average score`.  
 - Choose **Create Plot** *it might take a few seconds to run*.  
 
-*If `IMD_IMD - Average score` isn't visible, you may have not done a join correctly earlier on. Try a different field, and try re-doing the join.*
+*If `IMD_IMD - Average score` isn't visible, you may have not done a join correctly earlier on. Try a different field, and try re-doing the join and exporting the joined layer.*
 
 <!-- If you need it, the layer `prac3-data-nb lad-imd-pop-SUgreenspace` will all the information is available in the `prac3-complete.gpkg` GeoPackage - ask me for it. -->
 
@@ -268,6 +270,8 @@ What might be a better calculation is to look at number of greenspace access poi
    
 
 Try symbolising this data and/or graphing the data - do you see any patterns here?
+
+*If you get stuck, a video recording of me working through this practical is available on [YouTube](https://www.youtube.com/watch?v=87kLJcEIORI).* 
 
 \newpage
 
