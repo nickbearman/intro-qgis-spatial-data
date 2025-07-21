@@ -1237,6 +1237,8 @@ use it as a larger scale
 
 - Rank - *1st to 32,844th*
 
+*[IMD 2025: due Oct/Nov 2025](https://ocsi.uk/consultancy/indices-of-deprivation/)* 
+
 ![](images/imd-england-map.png){.absolute right=0 bottom=0 height=600}
 
 ## 
