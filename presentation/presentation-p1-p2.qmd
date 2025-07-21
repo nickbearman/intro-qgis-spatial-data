@@ -654,12 +654,12 @@ Remember to show in the table which colours represent which countries!
 
 - How many classes we choose is important
   - Max of 5-7
+   - <font size= "5">[**Miller, 1956**](https://psycnet.apa.org/doi/10.1037/h0043158) The magical number seven, plus or minus two: Some limits on our capacity for processing information. Psychological Review</font>
 - What those classes are is important as well 
   - Equal Interval: *0-10, 10-20, 20-30, ….*
   - Quantiles: *first 10 data points, second 10 data points, ….*
-  - Natural Breaks *(Jenks / Fisher)*
+  - Natural Breaks *(Jenks / Fisher)* | Unique
   - Standard Deviation: *mean-1SD to mean, mean to mean+1SD, mean+1SD to mean+2SD, …*
-  - Unique
   
 ## Classification  
   
