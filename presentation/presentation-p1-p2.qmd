@@ -3,12 +3,14 @@ title: "Introduction to QGIS: Spatial Data and Spatial Analysis"
 subtitle: "Tue 1st April 2025"
 author: "Nick Bearman"
 format: 
-  revealjs
+  revealjs:
+    embed-resources: true
     
 ---
 
 <!-- 
 title: "Introduction to QGIS: Understanding and Presenting Spatial Data"
+title: "Introduction to QGIS: Spatial Data and Spatial Analysis"
 -->
 
 
@@ -1259,7 +1261,13 @@ use it as a larger scale
 ## 
 
 ![](images/uk-geographies-lsoa.png)
+##
 
+## Boundr
+
+[https://app.boundr.dev/map](https://app.boundr.dev/map)
+
+![](images/boundr.png)
 
 ## 
 
