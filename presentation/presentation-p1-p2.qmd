@@ -326,6 +326,12 @@ This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unp
 
 ##
 
+![](images/reuters-mercator.png)
+
+<font size = "2">[https://www.reuters.com/graphics/AFRICA-MAP/lgpdaqrdyvo](https://www.reuters.com/graphics/AFRICA-MAP/lgpdaqrdyvo)</font>
+
+##
+
 ![](images/ch2-projections.png)
 
 [YouTube - Why all world maps are wrong](https://www.youtube.com/watch?v=kIID5FDi2JQ)
