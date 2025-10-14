@@ -1,6 +1,6 @@
 ---
-title: "Introduction to QGIS: Spatial Data and Spatial Analysis"
-subtitle: "Tue 1st April 2025"
+title: "Introduction to QGIS & Spatial Data"
+subtitle: "Tue 21st and Wed 22nd Oct 2025"
 author: "Nick Bearman"
 format: 
   revealjs:
@@ -11,10 +11,11 @@ format:
 <!-- 
 title: "Introduction to QGIS: Understanding and Presenting Spatial Data"
 title: "Introduction to QGIS: Spatial Data and Spatial Analysis"
+title: "Introduction to QGIS & Spatial Data"
 -->
 
 
-
+<!--
 ## 
 
 
@@ -23,7 +24,7 @@ title: "Introduction to QGIS: Spatial Data and Spatial Analysis"
 ##
 
 ![](images/ncrm-welcome-slide-2.png)
-
+-->
 
 <!--
 
@@ -36,6 +37,67 @@ title: "Introduction to QGIS: Spatial Data and Spatial Analysis"
 
 -->
 
+## Introduction to QGIS & Spatial Data
+
+### InStats
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Dr Nick Bearman
+
+[nick@nickbearman.com]{style="text-decoration: underline;"}
+
+<font size = 6>
+*GIS Trainer & Consultant (freelance) 
+<br>UCL Geography*
+</font>
+
+21st October 2025
+
+:::
+
+::: {.column width="50%"}
+
+While we wait, please introduce yourself in the chat:
+
+- Name
+
+- Where you are
+
+- What subject / area do you work in?
+
+- What would you like to know after this workshop?
+
+:::
+
+::::
+
+
+## <!-- Start slide -->
+
+![](images/InStatsStart.png)
+
+<!-- InStats -->
+## Welcome
+
+- Day 1: Introduction to QGIS and Spatial Data
+
+- Session 1: Getting started with QGIS: Loading and Exploring Spatial Data
+
+- Dr Nick Bearman
+
+<!-- InStats -->
+
+## Outline  {.smaller}
+
+-   **Day 1** - **Session 1: Getting started with QGIS: Loading and Exploring Spatial Data**
+-   Day 1 - Session 2: Data Analysis in QGIS: Joins, Calculations and Classifications
+-   Day 2 - Session 3: Data Preparation and Basic Map Styling in QGIS
+-   Day 2 - Session 4: Creating Publication-Ready Map Layouts in QGIS
+
+
 ## What are we covering?
 
 -   What is GIS and spatial data?
@@ -47,7 +109,7 @@ title: "Introduction to QGIS: Spatial Data and Spatial Analysis"
 
 ![](images/qgis-screenshot.png){.absolute bottom="0" right="0" width="550"}
 
-
+<!-- 
 ## What are we covering?
  - Point in Polygon Analysis
  - Spatial Overlays
@@ -55,17 +117,17 @@ title: "Introduction to QGIS: Spatial Data and Spatial Analysis"
  
  ![](images/point-in-polygon-spatial-overlays.png){.absolute bottom="0" width="1024"}
 
+-->
 
 <!--
-
 ## Housekeeping
 
 -   Introductions
     -   Name / background / area of interest
     -   Have you done any GIS before? (no is fine!)
     -   What are you hoping to achieve in the course? 
-    
--->
+-->    
+
 
 <!-- afternoon 
 ## Outline
@@ -79,15 +141,21 @@ title: "Introduction to QGIS: Spatial Data and Spatial Analysis"
 -   1510 Finish
 -->
 <!-- Morning -->
-## Outline
+<!-- ## Outline
 
 - 10:00am – 10:45am: What is GIS and Spatial Data?
 - 10:45am – 11:30am: Practical 1
 - 11:30am – 11:45am: break
 - 11:45am – 12:15pm: Classification discussion
 - 12:15pm – 1:00pm: Practical 1
+-->
+<!--
+## Outline
 
-
+- 10:00am – 12:30pm: What is GIS and Spatial Data? & Practical 1
+- 1:30pm – 4:00pm: Cartography / Map Design & Practical 2 and/or own data
+- 4:00pm - 5:00pm: Extra discussion if people want to
+-->
 <!-- All day
 ## Outline
 
@@ -112,9 +180,9 @@ title: "Introduction to QGIS: Spatial Data and Spatial Analysis"
 <!-- -   Be aware of trailing wires -->
 <!-- -   Photos for social media -->
 
-- Presentations, handouts and data via email and on OneDrive
+- Presentations, handouts and data via InStats <!-- and on OneDrive -->
 
-- WhatsApp group for discussion
+<!-- - WhatsApp group for discussion -->
     
 <!-- Move to later on?
 
@@ -143,6 +211,7 @@ title: "Introduction to QGIS: Spatial Data and Spatial Analysis"
 -   Turning (spatial) data into information ![](images/turning-data-into-information.png)
 -   Using this information to answer (research) questions
     -   *"How have housing conditions changed in the past ten years?"*
+    -   *"Where are groups of patients more likely to be suffering from obesity?"*
 
 ## What can a GIS can answer?
 
@@ -253,6 +322,7 @@ title: "Introduction to QGIS: Spatial Data and Spatial Analysis"
 ::: {.fragment}
 - GeoAI
   - Geographical Analysis
+      - Some incremental developments from existing statistical methods
   - LLM / ChatGPT / assistant
     - [Kue Plugin: An AI Chatbot for QGIS, LinkedIn Post Feb 2025](https://www.linkedin.com/posts/jvdkwast_exploring-the-kue-plugin-an-ai-chatbot-for-activity-7286496279147237377-9KpP/)
 :::
@@ -518,13 +588,23 @@ https://twitter.com/zevross/status/1118967279864242176</font>
  ![](images/irish-names.png){.absolute}  	
 
 <!-- Morning -->
-## Outline
+<!--## Outline
 
 - ~~10:00am – 10:45am: What is GIS and Spatial Data?~~
 - 10:45am – 11:30am: Practical 1
 - 11:30am – 11:45am: break
 - 11:45am – 12:15pm: Classification discussion
 - 12:15pm – 1:00pm: Practical 1
+-->
+
+## Practical 1: Getting started with QGIS: Loading and Exploring Spatial Data
+
+### Practical Approach
+
+- (Primarily) self-led practical  
+- Good to explore the options
+- Ask questions as we go through
+- Try things
 
 ## QGIS Practical
 
@@ -543,6 +623,8 @@ QGIS Demo
 - load World countries, 
 - pan, zoom
 
+
+
 ## Housekeeping - Practicals
 
 - Work through the workbook (questions, optional exercises)
@@ -552,9 +634,11 @@ QGIS Demo
 
 - Use the ‘Ask for help’ button in the Breakout room
 - I will ‘walk around’ and see how people are getting on
-- Can share screens – in groups, or individually
+- Can share screens – in groups, or individually 
 
 
+
+<!--
 
 ## QGIS Practical
 
@@ -562,10 +646,20 @@ QGIS Demo
 - Good to explore the options
 - Ask questions as we go through
 - Try things
-- If you get stuck, ask for help
+- If you get stuck, ask for help -->
 <!-- - Green post-it - I am ok
 - Orange post-it - I need help -->
 
+## Outline  {.smaller}
+
+-   **Day 1** - **~~Session 1: Getting started with QGIS: Loading and Exploring Spatial Data~~**
+-   Day 1 - Session 2: Data Analysis in QGIS: Joins, Calculations and Classifications
+-   Day 2 - Session 3: Data Preparation and Basic Map Styling in QGIS
+-   Day 2 - Session 4: Creating Publication-Ready Map Layouts in QGIS
+
+## 
+
+![](images/InStatsStop.png)
 
 ## Outline
 
@@ -590,6 +684,21 @@ QGIS Demo
 - 11:30am – 11:45am: break
 - 11:45am – 12:15pm: Classification discussion
 - 12:15pm – 1:00pm: Practical 1
+
+## 
+
+![](images/InStatsStart.png)
+
+<!-- InStats -->
+## Welcome
+
+- Day 1: Introduction to QGIS and Spatial Data
+
+- Session 2: Data Analysis in QGIS: Joins, Calculations and Classifications
+
+- Dr Nick Bearman
+
+
 
 
 ## GIS can do many things
@@ -662,7 +771,7 @@ Remember to show in the table which colours represent which countries!
 
 - How many classes we choose is important
   - Max of 5-7
-   - <font size= "5">[**Miller, 1956**](https://psycnet.apa.org/doi/10.1037/h0043158) The magical number seven, plus or minus two: Some limits on our capacity for processing information. Psychological Review</font>
+   - <font size= "5">[**Miller, 1956**](https://psycnet.apa.org/doi/10.1037/h0043158) The magical number seven, plus or minus two ... Psychological Review</font>
 - What those classes are is important as well 
   - Equal Interval: *0-10, 10-20, 20-30, ….*
   - Quantiles: *first 10 data points, second 10 data points, ….*
@@ -775,7 +884,18 @@ https://jcheshire.com/resources/different-maps-same-data/
 
 ![](images/glossary.png)
 
-<!-- Morning -->
+## Outline  {.smaller}
+
+-   **Day 1** - ~~Session 1: Getting started with QGIS: Loading and Exploring Spatial Data~~
+-   Day 1 - ~~Session 2: Data Analysis in QGIS: Joins, Calculations and Classifications~~
+-   Day 2 - Session 3: Data Preparation and Basic Map Styling in QGIS
+-   Day 2 - Session 4: Creating Publication-Ready Map Layouts in QGIS
+
+## 
+
+![](images/InStatsStop.png)
+
+<!-- Morning 
 ## Outline
 
 - ~~10:00am – 10:45am: What is GIS and Spatial Data?~~
@@ -783,7 +903,7 @@ https://jcheshire.com/resources/different-maps-same-data/
 - ~~11:30am – 11:45am: break~~
 - ~~11:45am – 12:15pm: Classification discussion~~
 - 12:15pm – 1:00pm: Practical 1
-
+-->
 <!-- All day
 ## Outline
 
@@ -802,8 +922,9 @@ https://jcheshire.com/resources/different-maps-same-data/
 
 - What are your questions?
 
-- Everyone post a question in Zoom <!-- or WhatsApp --> that you have about GIS or todays work
+<!-- - Everyone post a question in Zoom <!-- or WhatsApp --> <!-- that you have about GIS or todays work -->
 
+<!--
 ## Next Session
 
 - Next session tomorrow 10am
@@ -811,7 +932,7 @@ https://jcheshire.com/resources/different-maps-same-data/
 - More on Cartography and Map Design (beyond colours)
 
 - If you are working with some of your own data, bring it along
-
+-->
 ##
 
 <!-- 
@@ -847,7 +968,7 @@ Thu 14th Nov 2024
 
 Nick Bearman
 -->
-
+<!--
 ## 
 
 
@@ -857,7 +978,7 @@ Nick Bearman
 
 ![](images/ncrm-welcome-slide-2.png)
 
-## Recap Quiz
+## Recap Quiz 
 
 ## Outline
 
@@ -866,7 +987,74 @@ Nick Bearman
 - 11:30am – 11:45am: break
 - 11:45am – 1:00pm: Practical 2b & Working with your own data
 
+-->
 
+## Introduction to QGIS & Spatial Data
+
+### InStats
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Dr Nick Bearman
+
+[nick@nickbearman.com]{style="text-decoration: underline;"}
+
+<font size = 6>
+*GIS Trainer & Consultant (freelance) 
+<br>UCL Geography*
+</font>
+
+22nd October 2025
+
+:::
+
+::: {.column width="50%"}
+
+While we wait, please introduce yourself in the chat:
+
+- Name
+
+- Where you are
+
+- What subject / area do you work in?
+
+- What would you like to know after this workshop?
+
+:::
+
+::::
+
+
+## <!-- Start slide -->
+
+![](images/InStatsStart.png)
+
+<!-- InStats -->
+## Welcome
+
+- Day 2: Introduction to QGIS and Spatial Data
+
+- Session 3: Data Preparation and Basic Map Styling in QGIS
+
+- Dr Nick Bearman
+
+<!-- InStats -->
+
+## Outline  {.smaller}
+
+-   Day 1 - Session 1: Getting started with QGIS: Loading and Exploring Spatial Data
+-   Day 1 - Session 2: Data Analysis in QGIS: Joins, Calculations and Classifications
+-   **Day 2 - Session 3: Data Preparation and Basic Map Styling in QGIS**
+-   Day 2 - Session 4: Creating Publication-Ready Map Layouts in QGIS
+
+
+<!--
+##
+
+Lunch
+-->
 
 ## Spatial Data
 
@@ -1266,8 +1454,7 @@ use it as a larger scale
 
 ## 
 
-![](images/uk-geographies-lsoa.png)
-##
+![](images/uk-geographies-lsoa.png){width=500}
 
 ## Boundr
 
@@ -1335,6 +1522,18 @@ What makes a good map?
 
 ![](images/imd-map.png)
 
+## Outline  {.smaller}
+
+-   Day 1 - ~~Session 1: Getting started with QGIS: Loading and Exploring Spatial Data~~
+-   Day 1 - ~~Session 2: Data Analysis in QGIS: Joins, Calculations and Classifications~~
+-   Day 2 - ~~Session 3: Data Preparation and Basic Map Styling in QGIS~~
+-   Day 2 - Session 4: Creating Publication-Ready Map Layouts in QGIS
+
+## 
+
+![](images/InStatsStop.png)
+
+
 ## Outline {.smaller}
 <!-- ESS
 Time | Content 
@@ -1368,6 +1567,28 @@ ESS end -->
 - If you are working with some of your own data, bring it along
 
 -->
+
+## <!-- Start slide -->
+
+![](images/InStatsStart.png)
+
+<!-- InStats -->
+## Welcome
+
+- Day 2: Introduction to QGIS and Spatial Data
+
+- Session 4: Creating Publication-Ready Map Layouts in QGIS
+
+- Dr Nick Bearman
+
+<!-- InStats -->
+
+## Outline  {.smaller}
+
+-   Day 1 - Session 1: Getting started with QGIS: Loading and Exploring Spatial Data
+-   Day 1 - Session 2: Data Analysis in QGIS: Joins, Calculations and Classifications
+-   Day 2 - Session 3: Data Preparation and Basic Map Styling in QGIS
+-   **Day 2 - Session 4: Creating Publication-Ready Map Layouts in QGIS**
 
 
 
@@ -1673,6 +1894,25 @@ OS Code-Point Open
 
 - Try Practical 2b: Coordinates & Postcodes
 
+## Next Seminar
+
+- Advanced QGIS: Spatial Analysis
+- https://instats.org/seminar/advanced-qgis-spatial-analysis
+- spatial overlays 
+- point-based access analysis
+
+## Next Steps
+
+- Repeat this material in 2-3 weeks / 2-3 months
+- Lots of free tutorials available online
+- GIS Training Courses
+  - [www.nickbearman.com](www.nickbearman.com)
+- Books:
+  - GIS: Research Methods, £13 
+  - QGIS Map Design
+  - Using R as a GIS
+  - Cartography: An Introduction
+
 ## Outline
 
 - ~~10:00am – 10:20am: Recap and Cartography / Map Design~~
@@ -1680,15 +1920,36 @@ OS Code-Point Open
 - ~~11:30am – 11:45am: break~~
 - 11:45am – 1:00pm: Practical 2b & Working with your own data
 
+
+
+## Outline  {.smaller}
+
+-   Day 1 - ~~Session 1: Getting started with QGIS: Loading and Exploring Spatial Data~~
+-   Day 1 - ~~Session 2: Data Analysis in QGIS: Joins, Calculations and Classifications~~
+-   Day 2 - ~~Session 3: Data Preparation and Basic Map Styling in QGIS~~
+-   Day 2 - Session 4: Creating Publication-Ready Map Layouts in QGIS
+
+## 
+
+![](images/InStatsStop.png)
+
 ## Wrap Up
 
 - Two Stars, One Wish *poll*
+
+### Next Seminar
+
+- Advanced QGIS: Spatial Analysis
+- Tue 28th & Wed 29th Oct, 1pm - 4pm (UK/London)
+- https://instats.org/seminar/advanced-qgis-spatial-analysis
+- spatial overlays 
+- point-based access analysis
 
 ## Wrap-Up
 
 - Everyone post a question in <!-- WhatsApp or --> Zoom that you have about GIS or todays work
 
-
+<!-- 
 
 ## Next Session
 
@@ -1698,7 +1959,7 @@ OS Code-Point Open
 
 - If you are working with some of your own data, bring it along
 
-
+-->
 
 <!--
 

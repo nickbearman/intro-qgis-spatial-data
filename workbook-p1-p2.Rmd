@@ -1,5 +1,5 @@
 ---
-title: 'Introduction to QGIS: Spatial Data and Spatial Analysis'
+title: 'Introduction to QGIS & Spatial Data'
 output:
   pdf_document: default
   html_document:
@@ -7,14 +7,15 @@ output:
     toc: TRUE
     toc_float: TRUE
     self_containted: TRUE
-date: "Practicals 1 & 2: Tue 1st and Wed 2nd April 2025"
+date: "Practicals 1 & 2: Tue 21st and Wed 22nd October 2025"
 ---
 
 <!-- title: "Introduction to QGIS: Understanding and Presenting Spatial Data" -->
 <!-- title: 'Introduction to QGIS: Spatial Data and Spatial Analysis' -->
+<!-- title: "Introduction to QGIS & Spatial Data" -->
 
 
-# Practical 1: Introduction to QGIS
+# Practical 1: Getting started with QGIS: Loading and Exploring Spatial Data
 
 | **Learning outcomes:**  | 
 |---| 
@@ -36,10 +37,10 @@ Many commands require the OK button to be clicked or the Enter key to be pressed
 File management is very important, so do spend a bit of time making sure you are happy with where the files are stored. If you have questions, please ask!
 
 - Create a new folder in your **Documents** folder called **GIS** (or something similar that you know where it is).  
-- Open the OneDrive site and find the `prac1.zip` file.  
+- Open the InStats site and find the `prac1.zip` file.  
 - Download it and save the file in the new folder you created.  
 - As there are several files they have been compressed into a single zip file, and you will need to first copy this and then extract the data files. Choose somewhere sensible to extract the files to.  
-- Start QGIS by clicking on Start, then type **QGIS** and select **QGIS Desktop 3.40.4**. *Your version number might vary, **QGIS Desktop** is the key bit.*  
+- Start QGIS by clicking on Start, then type **QGIS** and select **QGIS Desktop 3.40.11**. *Your version number might vary, **QGIS Desktop** is the key bit.*  
 
 Let's start off by creating a blank map and adding some data. 
 
