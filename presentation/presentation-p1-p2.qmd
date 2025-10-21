@@ -56,6 +56,8 @@ Dr Nick Bearman
 
 21st October 2025
 
+Starting 1pm (UK/London)
+
 :::
 
 ::: {.column width="50%"}
@@ -74,6 +76,14 @@ While we wait, please introduce yourself in the chat:
 
 ::::
 
+
+## Outline
+
+- 1:00pm – 1:45pm: What is GIS and Spatial Data?
+- 1:45pm – 2:30pm: Practical 1
+- 2:30pm – 2:45pm: break
+- 2:45pm – 3:15pm: Classification discussion
+- 3:15pm – 4:00pm: Practical 1
 
 ## <!-- Start slide -->
 
@@ -200,10 +210,11 @@ While we wait, please introduce yourself in the chat:
 
 -->
 
+<!-- 
 ## Any Questions?
 
 - ?
-
+-->
 
 ## What is GIS?
 
@@ -597,6 +608,14 @@ https://twitter.com/zevross/status/1118967279864242176</font>
 - 12:15pm – 1:00pm: Practical 1
 -->
 
+## Outline
+
+- ~~1:00pm – 1:45pm: What is GIS and Spatial Data?~~
+- 1:45pm – 2:30pm: Practical 1
+- 2:30pm – 2:45pm: break
+- 2:45pm – 3:15pm: Classification discussion
+- 3:15pm – 4:00pm: Practical 1
+
 ## Practical 1: Getting started with QGIS: Loading and Exploring Spatial Data
 
 ### Practical Approach
@@ -660,7 +679,7 @@ QGIS Demo
 ## 
 
 ![](images/InStatsStop.png)
-
+<!-- Morning
 ## Outline
 
 - ~~10:00am – 10:45am: What is GIS and Spatial Data?~~
@@ -668,6 +687,15 @@ QGIS Demo
 - 11:30am – 11:45am: break
 - 11:45am – 12:15pm: Classification discussion
 - 12:15pm – 1:00pm: Practical 1
+-->
+
+## Outline
+
+- ~~1:00pm – 1:45pm: What is GIS and Spatial Data?~~
+- ~~1:45pm – 2:30pm: Practical 1~~
+- 2:30pm – 2:45pm: break
+- 2:45pm – 3:15pm: Classification discussion
+- 3:15pm – 4:00pm: Practical 1
 
 ## Break
 
@@ -677,6 +705,7 @@ QGIS Demo
 
 # {background="#43464B" background-image="images/worlds-ocean-spilhaus-projection.jpg"}
 
+<!--
 ## Outline
 
 - ~~10:00am – 10:45am: What is GIS and Spatial Data?~~
@@ -684,6 +713,15 @@ QGIS Demo
 - 11:30am – 11:45am: break
 - 11:45am – 12:15pm: Classification discussion
 - 12:15pm – 1:00pm: Practical 1
+-->
+
+## Outline
+
+- ~~1:00pm – 1:45pm: What is GIS and Spatial Data?~~
+- ~~1:45pm – 2:30pm: Practical 1~~
+- 2:30pm – 2:45pm: break
+- 2:45pm – 3:15pm: Classification discussion
+- 3:15pm – 4:00pm: Practical 1
 
 ## 
 
@@ -918,7 +956,15 @@ https://jcheshire.com/resources/different-maps-same-data/
 - 4:00pm - 4:30pm: P2 & Working with your own data
 -->
 
+
+
 ## Wrap-Up
+
+- Two Stars, One Wish:
+
+  - First Star - What did you learn today?
+  - Second Star - What else did you learn?
+  - One Wish - What do you wish we could have covered or done differently?
 
 - What are your questions?
 
@@ -1008,24 +1054,24 @@ Dr Nick Bearman
 
 22nd October 2025
 
+Starting 1pm (UK/London)
+
 :::
 
 ::: {.column width="50%"}
 
-While we wait, please introduce yourself in the chat:
-
-- Name
-
-- Where you are
-
-- What subject / area do you work in?
-
-- What would you like to know after this workshop?
+While we wait, please say Hi in the chat, and ask any questions you have from yesterday.
 
 :::
 
 ::::
 
+## Outline
+
+- 1:00pm – 1:20pm: Scale and Cartography / Map Design
+- 1:20pm – 2:30pm: Practical 2a
+- 2:30pm – 2:45pm: break
+- 2:45pm – 4:00pm: Practical 2b & Working with your own data
 
 ## <!-- Start slide -->
 
@@ -1456,11 +1502,25 @@ use it as a larger scale
 
 ![](images/uk-geographies-lsoa.png){width=500}
 
-## Boundr
+## Boundr {.smaller}
+
+:::{.columns}
+:::: {.column width="70%"}
 
 [https://app.boundr.dev/map](https://app.boundr.dev/map)
 
 ![](images/boundr.png)
+::::
+:::: {.column width="30%"}
+
+- Greater London Authority
+- Camden (London Borough)
+- Bloomsbury (London Borough Ward)
+- Middlesex (Historic County)
+- Greater London (Ceremonial County)
+
+::::
+:::
 
 ## 
 
@@ -1568,6 +1628,30 @@ ESS end -->
 
 -->
 
+## Outline
+
+- ~~1:00pm – 1:20pm: Scale and Cartography / Map Design~~
+- ~~1:20pm – 2:30pm: Practical 2a~~
+- 2:30pm – 2:45pm: break
+- 2:45pm – 4:00pm: Practical 2b & Working with your own data
+
+
+
+## Break
+
+- We will resume in 15 min
+
+- Make sure you get away from the screen for a bit!
+
+# {background="#43464B" background-image="images/polar-projections.png"}
+
+## Outline
+
+- ~~1:00pm – 1:20pm: Scale and Cartography / Map Design~~
+- ~~1:20pm – 2:30pm: Practical 2a~~
+- ~~2:30pm – 2:45pm: break~~
+- 2:45pm – 4:00pm: Practical 2b & Working with your own data
+
 ## <!-- Start slide -->
 
 ![](images/InStatsStart.png)
@@ -1591,39 +1675,37 @@ ESS end -->
 -   **Day 2 - Session 4: Creating Publication-Ready Map Layouts in QGIS**
 
 
-
+<!-- Morning
 ## Outline
 
-- ~~10:00am – 10:20am: Recap and Cartography / Map Design~~
+- ~~10:00am – 10:20am: Scale and Cartography / Map Design~~
 - 10:20am – 11:30am: Practical 2a
 - 11:30am – 11:45am: break
 - 11:45am – 1:00pm: Practical 2b & Working with your own data
+-->
+
+
 
 ## Practical 2a: Making a Map
 
 ![](images/imd-map.png)
-
+<!--
 ## Outline
 
 - ~~10:00am – 10:20am: Recap and Cartography / Map Design~~
 - ~~10:20am – 11:30am: Practical 2a~~
 - 11:30am – 11:45am: break
 - 11:45am – 1:00pm: Practical 2b & Working with your own data
+-->
 
-## Break
-
-- We will resume in 15 min
-
-- Make sure you get away from the screen for a bit!
-
-# {background="#43464B" background-image="images/polar-projections.png"}
-
+<!--
 ## Outline
 
 - ~~10:00am – 10:20am: Recap and Cartography / Map Design~~
 - ~~10:20am – 11:30am: Practical 2a~~
 - ~~11:30am – 11:45am: break~~
 - 11:45am – 1:00pm: Practical 2b & Working with your own data
+-->
 
 ## Data Types: Vector & Raster
 
@@ -1913,14 +1995,20 @@ OS Code-Point Open
   - Using R as a GIS
   - Cartography: An Introduction
 
+<!--
 ## Outline
 
 - ~~10:00am – 10:20am: Recap and Cartography / Map Design~~
 - ~~10:20am – 11:30am: Practical 2a~~
 - ~~11:30am – 11:45am: break~~
 - 11:45am – 1:00pm: Practical 2b & Working with your own data
+-->
+## Outline
 
-
+- ~~1:00pm – 1:20pm: Scale and Cartography / Map Design~~
+- ~~1:20pm – 2:30pm: Practical 2a~~
+- ~~2:30pm – 2:45pm: break~~
+- 2:45pm – 4:00pm: Practical 2b & Working with your own data
 
 ## Outline  {.smaller}
 
