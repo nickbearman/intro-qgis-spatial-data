@@ -211,7 +211,7 @@ We will now add a new field to the attribute table and calculate some values (th
 -	Click on **New field** ![](images/new-field.png){ height=20 } button  
 - -	Set **Name** to `POP_DIFF`  
 - -	Leave **Comment** blank  
-- -	Set **Type** to `Integer (32-bit))`, change **Length** to `10`.  
+- -	Set **Type** to `Integer (32-bit)`, change **Length** to `10`.  
 -	Click **OK**  
 
 You will see that the new field contains values, by default, as *NULL*. We now need to populate this new field (column) with some data.
