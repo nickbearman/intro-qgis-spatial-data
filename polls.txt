@@ -11,6 +11,8 @@ Windows?
 OSX / Mac?
 Other?
 
+Classification
+
 How many classes did you choose?
 1
 2
@@ -64,3 +66,10 @@ UTM (Universal Transverse Mercator) Zone 37 N EPSG = 32630
 Latitude and Longitude (WGS 1984) EPSG = 4326
 
 /poll "What coordinate system are these coordinates likely to be in? 52°N 37’ 30.32’’ 1°E 14’ 2.05’’" "British National Grid (Eastings & Northings) EPSG = 27700" "UTM (Universal Transverse Mercator) Zone 37 N EPSG = 32630" "Latitude and Longitude (WGS 1984) EPSG = 4326" anonymous
+
+Two Stars, One Wish:
+
+
+First Star - What did you learn today?
+Second Star - What else did you learn?
+One Wish - What do you wish we could have covered or done differently?
