@@ -370,7 +370,7 @@ Now we can merge the polygons so we have a dataset that lists each Local Authori
 - Save as `dissolved-greenspace-LAs`.  
 - Open the attribute table and use **Select features using an expression** ![](images/select-features-expression.png){ height=20 } to select the rows where `greenspace = 1`.  
 - Save this as a new layer `dissolved-greenspace-LAs-single` using **Save Selected Features As...**.  																																	  
-- Open the attribute table for the `dissolved-greenspace-LAs` layer.  
+- Open the attribute table for the `dissolved-greenspace-LAs-single` layer.  
 - Turn on **Editing** ![](images/edit-icon.png){ height=20 } and click **Add Field** (![Add Column](images/add-column.png){ height=20 }).  
 - Set the **Name** to `greenspace-area`.  
 - Set **Type** to `Decimal number (real)`.  
