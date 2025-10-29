@@ -289,7 +289,7 @@ This is a lighter touch practical. You will need to work out some of the steps f
 
 We will be combining the layers using the Union tool, and we need to do some preparation for this. 
 
-- Open up your project file from the previous practical, and save it as a new file (e.g. `prac4-NB-v1.qgz`).  
+- Open up your project file from the previous practical, and save it as a new file (e.g. `prac4-v1.qgz`).  
 - Add the `SU_GreenspaceSite.shp` to our project.  Now is also a good time to remove any layers we don't need, for example many of the Excel datasets we joined.  
 - It is always good practice to work on a copy of your data, so take a copy of our geopackage from the previous practical (by copying it in Windows Explorer / My Computer / Finder) and save it in the `prac4` folder. I have called mine `prac4-data.gpkg`.  
 - Then add your new GeoPackage to QGIS.  
@@ -345,6 +345,8 @@ Now we have an attribute table split by Local Authority and greenspace. Within e
 *We do have quite a few completely blank rows (with greenspace data but no Local Authority data). These are the greenspace areas that are outside our local authority data. Try selecting one and using the Zoom To function.*
 
 - Save this as a new layer called `greenspace-LAs`. You will get this error message if you save it in a GeoPackage:
+
+<!-- This is only a problem in QGIS 3.38 or below. It is fine and doesn't give an error in QGIS 3.40.12 or 3.44.4 -->
 
 ![](images/save-error.png){ width=40% }
 
