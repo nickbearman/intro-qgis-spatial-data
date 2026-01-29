@@ -335,7 +335,7 @@ While we wait, please introduce yourself in the chat:
 - GeoAI
   - Geographical Analysis
       - Some incremental developments from existing statistical methods
-      - Interesting [GeoAI Plugin for QGIS by Qiusheng Wu, LinkedIn Post, Jan 2026](https://www.linkedin.com/posts/milan-janosov_geoai-activity-7418204192130973696-wTWQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAASXC6wBRv0w74LkW4jBxSVP-9ldgbYpLRk), segmentation analysis
+      - Interesting [GeoAI Plugin for QGIS by Qiusheng Wu, LinkedIn Post, Jan 2026](https://www.linkedin.com/posts/milan-janosov_geoai-activity-7418204192130973696-wTWQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAASXC6wBRv0w74LkW4jBxSVP-9ldgbYpLRk) and [Review](https://www.linkedin.com/posts/jvdkwast_review-of-the-qgis-geoai-plugin-activity-7408545135950675968-0l5R?utm_source=share&utm_medium=member_desktop&rcm=ACoAAASXC6wBRv0w74LkW4jBxSVP-9ldgbYpLRk)
   - LLM / ChatGPT / assistant
     - [Kue Plugin: An AI Chatbot for QGIS, LinkedIn Post, Feb 2025](https://www.linkedin.com/posts/jvdkwast_exploring-the-kue-plugin-an-ai-chatbot-for-activity-7286496279147237377-9KpP/)
  
