@@ -1486,6 +1486,16 @@ use it as a larger scale
 
 ## 
 
+![](images/wimd.png)
+
+##  Scotland & Northern Ireland
+
+
+
+##
+
+
+
 ![](images/uk-geographies.png)
 
 <font size=2>https://geoportal.statistics.gov.uk/documents/db2a0b3bee594f96a4869644fc32395b/explore</font>
