@@ -474,9 +474,9 @@ To export a copy of your map:
 
 ### Highlight an area of interest (optional exercise)
 
-![](images/highlight-area-example.png)
+![](images/layout-london.png)
 
-If you have time, you can update the London map so it just shows the London Boroughs rather than the whole area. The example above is for Utah in the US, and we can apply the same technique to London. 
+If you have time, you can update the London map so it just shows the London Boroughs rather than the whole area. 
 
 Have a look at this video from Map Academy to see the process: https://www.youtube.com/watch?v=SbQGg4GSpPc
 
