@@ -1561,7 +1561,7 @@ use it as a larger scale
 
 ![](images/imd-map.png)
 
-Local Authorities Districts
+County & Unitary Authorities | Regions
 
 LSOAs
 
