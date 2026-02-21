@@ -16,6 +16,44 @@ title: "Introduction to QGIS & Spatial Data"
 
 
 <!-- NCRM -->
+
+## Introduction to QGIS: Understanding and Presenting Spatial Data
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Dr Nick Bearman
+
+[nick@nickbearman.com]{style="text-decoration: underline;"}
+
+<font size = 6>
+*GIS Trainer & Consultant (freelance) 
+<br>UCL Geography*
+</font>
+
+Tue 24th Feb 2026
+
+Starting 10am (UK/London)
+
+:::
+
+::: {.column width="50%"}
+
+While we wait, please introduce yourself in the chat:
+
+- Name
+
+- Where you are
+
+- What subject / area do you work in?
+
+- What would you like to know after this workshop?
+
+:::
+
+::::
+
 ## 
 
 
@@ -193,7 +231,7 @@ While we wait, please introduce yourself in the chat:
 <!-- -   Be aware of trailing wires -->
 <!-- -   Photos for social media -->
 
-- Presentations, handouts and data <!-- via InStats --> on Google Drive
+- Presentations, handouts and data <!-- via InStats --> on OneDrive
 
 <!-- - WhatsApp group for discussion -->
     
@@ -1579,10 +1617,11 @@ What makes a good map?
 ## Copyright / Acknowledgements
 
 - Some data we must show copyright:
-  - OS Open Data:
-    - Contains National Statistics data © Crown copyright and database right 2024. 
   - IMD Data:
-    - MHCLD, 2019.
+    - Office for National Statistics licensed under the Open Government Licence v.3.0
+  - OS Open Data:
+    - Contains OS data © Crown copyright and database right 2026
+
 
 ## Data source
 
