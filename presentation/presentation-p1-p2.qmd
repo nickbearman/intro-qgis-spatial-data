@@ -842,12 +842,13 @@ Remember to show in the table which colours represent which countries!
 
 ## Classification {.smaller}
 
-![](images/classification-exercise-map.png){.absolute bottom="0" width="1000"}
+![](images/classification-exercise-map.png){.absolute bottom="-50" width="1000"}
 
 - Go to [www.colorbrewer2.org](http://www.colorbrewer2.org)
 - How many classes would you use to categorise the data?
 - What are those classes?
 - What colour scheme would you use? Why?
+- Please share the ColorBrewer link in the chat
 
 ## Classification
 
