@@ -353,7 +353,7 @@ We can also add some outlines for the Local Authority Districts.
 
 - Open the Local Authority layer **Properties** again and this time choose **Labels** ![](images/labels.png){ height=20 }  
 - Change **No Labels** to **Single Labels**.  
-- Set **Value** to `CTYUA24NM` and choose **OK**.  
+- Set **Value** to `CTYUA24NM` and choose **OK**. *This is the column from the attribute table of the Local Authority layer that we are using for the labels. If you want, have a look at the attribute table and see what is in each column.*  
 - *If nothing appears, make sure you have selected `CTYUA24NM`*.  
 
 This adds the Local Authority boundaries to give us some context for the IMD data.
