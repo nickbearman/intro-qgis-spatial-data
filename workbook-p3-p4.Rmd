@@ -18,7 +18,7 @@ date: 'Practicals 3 & 4: Tue 3rd and Wed 4th March 2026'
 |---| 
 | Remember how to load data, join data and symbolise data | 
 
-*If you get stuck, a video recording of me working through this practical is available on [YouTube](https://www.youtube.com/watch?v=87kLJcEIORI).* 
+*If you get stuck, a video recording of me working through this practical is available on [YouTube](https://youtu.be/Gvg-YzUWSDA).* 
 
 We are going to start with a quick recap of QGIS, including loading data and creating a choropleth map. Create a folder in Documents where you can save files relating to your GIS practical (e.g. `prac3`). 
 
@@ -327,7 +327,7 @@ Try symbolising this data and/or graphing the data - do you see any patterns her
 
 Now we have something - there are no deprived areas (low RAvgRank) with lots of greenspace access points per pop. 
 
-*If you get stuck, a video recording of me working through this practical is available on [YouTube](https://www.youtube.com/watch?v=87kLJcEIORI).* 
+*If you get stuck, a video recording of me working through this practical is available on [YouTube](https://youtu.be/Gvg-YzUWSDA).* 
 
 \newpage
 
