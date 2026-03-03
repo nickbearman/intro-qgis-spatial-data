@@ -74,11 +74,15 @@ We are working with the IMD (Index of Multiple Deprivation) data, and rather tha
 
 The join that we have made is not permanent; it is a temporary link between the two datasets. To make the Join permanent we need to save a new copy of the local authorities layer. Try saving this into a new GeoPackage. 
 
-- Save our joined layer as a new layer called `southern_englandcounties_unitary_authorities_dec_2024_imd` in a new GeoPackage called `prac3-data.gpkg`.  
+Save our joined layer as a new layer called `southern_englandcounties_unitary_authorities_dec_2024_imd` in a new GeoPackage called `prac3-data.gpkg`. We can create a new Geopackage and save the layer at the same time.
 
-- Remember to choose the GeoPackage file name (click Browse) and the layer name:
+- Right click on the layer and choose **Export > Save Features As...**
+- In the **Save Vector Layer As...** window choose Browse ![](images/browse.png){ height=20 } and type the name of the new Geopackage in `prac3-data.gpkg`.
+- Click **OK** and then update layer name (I added `imd` to the end of the existing file name):
 
 ![](images/save-layer-geopackage.png){ width=40% }
+
+- Click **OK** to save the data. 
 
 Now our data is in, and joined to our spatial data, let's tidy up the column names.
 
@@ -184,7 +188,7 @@ The join that we have made is not permanent; it is a temporary link between the 
 
 Try symbolising the different data - IMD and population on the map. What colours / classification works best?
 
-This is also a great opportunity to tidy up your data. We have a lot of columns we don't need. Feel free to remove them. We will need `FID`, `CTYUA24CD`, `CTYUA24NM`, `RAvgRank`, `RAvgScor` and `Pop2024`. Everything else can go. 
+This is also a great opportunity to tidy up your data. We have a lot of columns we don't need. Feel free to remove them. We will need `FID`, `CTYUA24CD`, `CTYUA24NM`, `RAvgRank`, `RAvgScor` and `Pop2024`. Everything else can go. You can do this by right clicking on the layer, choosing **Properties > Fields** and turning editing on. 
 
 ----
 
