@@ -345,6 +345,8 @@ Now we have something - there are no deprived areas (low RAvgRank) with lots of 
 
 This is a lighter touch practical. You will need to work out some of the steps for yourself!
 
+*If you get stuck, a video recording of me working through this practical is available on [YouTube](https://youtu.be/hPYEnXPKWyk).* 
+
 ## Polygon polygon overlay
 
 We will be combining the layers using the Union tool, and we need to do some preparation for this. 
@@ -403,7 +405,8 @@ Now we have an attribute table split by Local Authority and greenspace. Within e
 *It won't save in the geopackage (because `fid` is not unique, one of the requirements). We could save it as an ESRI Shapefile which will be fine. The better way is to remove and recalculate the `fid` field, which will then be unique, so we can save it in a geopakcage.*
 
 - Open the Attribute Table for the `Union` layer and delete the `fid` field. Then try saving again.  
-_ You might then also get this error:
+
+- You might then also get this error:
 
 ![](images/save-error-overwrite-layer.png){ width=50% }
 
@@ -447,7 +450,7 @@ Try creating a plotly graph with this - is there any relationship now? What abou
 
 We could perform a similar process, but with the greenspace buffered. This would be a proxy for 'accessible' green space. Try buffering the greenspace data at 300m, and repeat the process. 
 
-
+*If you get stuck, a video recording of me working through this practical is available on [YouTube](https://youtu.be/hPYEnXPKWyk).* 
 
 
 ----
