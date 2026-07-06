@@ -1,6 +1,6 @@
 ---
-title: "Introduction to QGIS: Understanding and Presenting Spatial Data"
-subtitle: "Tue 24th and Wed 25th Feb 2026"
+title: "Introduction to QGIS & Spatial Data"
+subtitle: "Tue 4th & Wed 5th August 2026"
 author: "Nick Bearman"
 format: 
   revealjs:
@@ -15,7 +15,7 @@ title: "Introduction to QGIS & Spatial Data"
 -->
 
 
-<!-- NCRM -->
+<!-- NCRM
 
 ## Introduction to QGIS: Understanding and Presenting Spatial Data
 
@@ -73,7 +73,9 @@ While we wait, please introduce yourself in the chat:
 - Feel free to download and use for your reference
 - But please don't pass on to other people
 
-<!-- InStats
+-->
+
+<!-- InStats -->
 
 ## Introduction to QGIS & Spatial Data
 
@@ -92,7 +94,7 @@ Dr Nick Bearman
 <br>UCL Geography*
 </font>
 
-21st October 2025
+4th August 2026
 
 Starting 1pm (UK/London)
 
@@ -115,7 +117,7 @@ While we wait, please introduce yourself in the chat:
 ::::
 
 
-
+<!--
 ## Outline
 
 - 1:00pm – 1:45pm: What is GIS and Spatial Data?
@@ -124,12 +126,22 @@ While we wait, please introduce yourself in the chat:
 - 2:45pm – 3:15pm: Classification discussion
 - 3:15pm – 4:00pm: Practical 1
 -->
-<!--
-##  Start slide 
+
+## Outline
+
+- 2:00pm – 2:45pm: What is GIS and Spatial Data?
+- 2:45pm – 3:30pm: Practical 1
+- 3:30pm – 3:45pm: break
+- 3:45pm – 4:15pm: Classification discussion
+- 4:15pm – 5:00pm: Practical 1
+
+<!-- -->
+##  
 
 ![](images/InStatsStart.png)
--->
-<!-- InStats 
+
+<!-- InStats -->
+
 ## Welcome
 
 - Day 1: Introduction to QGIS and Spatial Data
@@ -137,8 +149,8 @@ While we wait, please introduce yourself in the chat:
 - Session 1: Getting started with QGIS: Loading and Exploring Spatial Data
 
 - Dr Nick Bearman
--->
-<!-- InStats 
+
+<!-- InStats -->
 
 ## Outline  {.smaller}
 
@@ -147,7 +159,7 @@ While we wait, please introduce yourself in the chat:
 -   Day 2 - Session 3: Data Preparation and Basic Map Styling in QGIS
 -   Day 2 - Session 4: Creating Publication-Ready Map Layouts in QGIS
 
--->
+
 
 ## What are we covering?
 
@@ -191,7 +203,7 @@ While we wait, please introduce yourself in the chat:
 -   1450 - 1500 Coordinate Systems & Next Steps
 -   1510 Finish
 -->
-<!-- Morning -->
+<!-- Morning 
 ## Outline
 
 - 10:00am – 10:45am: What is GIS and Spatial Data?
@@ -199,7 +211,16 @@ While we wait, please introduce yourself in the chat:
 - 11:30am – 11:45am: break
 - 11:45am – 12:15pm: Classification discussion
 - 12:15pm – 1:00pm: Practical 1
+-->
+<!-- Afternoon 
+## Outline
 
+- 2:00pm – 2:45am: What is GIS and Spatial Data?
+- 2:45pm – 3:30pm: Practical 1
+- 3:30pm – 3:45pm: break
+- 3:45pm – 4:15pm: Classification discussion
+- 4:15pm – 5:00pm: Practical 1
+-->
 <!--
 ## Outline
 
@@ -231,7 +252,7 @@ While we wait, please introduce yourself in the chat:
 <!-- -   Be aware of trailing wires -->
 <!-- -   Photos for social media -->
 
-- Presentations, handouts and data <!-- via InStats --> on OneDrive
+- Presentations, handouts and data via InStats <!-- on OneDrive -->
 
 <!-- - WhatsApp group for discussion -->
     
@@ -279,12 +300,16 @@ While we wait, please introduce yourself in the chat:
 
 -   Nearly all human activities & decisions involve geography
     -   the "**where?**"
--   Working with geographic information is **different** to working with a **CSV** or **Excel** file
+-   GIS is bit like a spreadsheet, row ~ an geographic area
+    -   But it is also so much more than this
+
+## GIS 
+
+-   Working with geographic information is **different** to working with an **Excel** or **CSV** file
 -   This is why we need specialized **GIS** software to:
-    -   **organize** and **store**
-    -   **access** and **retrieve**
-    -   **present** and **manage** spatial data
--   But ultimately to apply to the solution of our **problem**
+    -   **access** and **relate**
+    -   **change** and **visualise** spatial data
+-   And ultimately to apply to the solution of our **problem**
 
 ## GIS can be applied to many many many different areas
 
@@ -645,7 +670,7 @@ https://twitter.com/zevross/status/1118967279864242176</font>
 - Is something AI might be able to help with 
   - Not seen any examples yet... 
 
-<!-- Morning -->
+<!-- Morning 
 ## Outline
 
 - ~~10:00am – 10:45am: What is GIS and Spatial Data?~~
@@ -653,7 +678,7 @@ https://twitter.com/zevross/status/1118967279864242176</font>
 - 11:30am – 11:45am: break
 - 11:45am – 12:15pm: Classification discussion
 - 12:15pm – 1:00pm: Practical 1
-
+-->
 <!-- Afternoon
 ## Outline
 
@@ -663,7 +688,15 @@ https://twitter.com/zevross/status/1118967279864242176</font>
 - 2:45pm – 3:15pm: Classification discussion
 - 3:15pm – 4:00pm: Practical 1
 -->
-
+<!-- Afternoon
+## Outline
+- ~~2:00pm – 2:45am: What is GIS and Spatial Data?~~
+- 2:45pm – 3:30pm: Practical 1
+- 3:30pm – 3:45pm: break
+- 3:45pm – 4:15pm: Classification discussion
+- 4:15pm – 5:00pm: Practical 1
+ -->
+ 
 ## Practical 1: Getting started with QGIS: Loading and Exploring Spatial Data
 
 ### Practical Approach
@@ -717,7 +750,8 @@ QGIS Demo
 <!-- - Green post-it - I am ok
 - Orange post-it - I need help -->
 
-<!-- InStats 
+
+<!-- InStats -->
 
 ## Outline  {.smaller}
 
@@ -729,9 +763,9 @@ QGIS Demo
 ## 
 
 ![](images/InStatsStop.png)
--->
 
-<!-- Morning -->
+
+<!-- Morning 
 ## Outline
 
 - ~~10:00am – 10:45am: What is GIS and Spatial Data?~~
@@ -739,7 +773,7 @@ QGIS Demo
 - 11:30am – 11:45am: break
 - 11:45am – 12:15pm: Classification discussion
 - 12:15pm – 1:00pm: Practical 1
-
+00>
 <!-- 
 ## Outline
 
@@ -750,6 +784,14 @@ QGIS Demo
 - 3:15pm – 4:00pm: Practical 1
 --> 
 
+<!-- Afternoon -->
+## Outline
+- ~~2:00pm – 2:45am: What is GIS and Spatial Data?~~
+- ~~2:45pm – 3:30pm: Practical 1~~
+- 3:30pm – 3:45pm: break
+- 3:45pm – 4:15pm: Classification discussion
+- 4:15pm – 5:00pm: Practical 1
+
 ## Break
 
 - We will resume in 15 min
@@ -758,7 +800,7 @@ QGIS Demo
 
 # {background="#43464B" background-image="images/worlds-ocean-spilhaus-projection.jpg"}
 
-<!-- NCRM -->
+<!-- NCRM 
 ## Outline
 
 - ~~10:00am – 10:45am: What is GIS and Spatial Data?~~
@@ -766,7 +808,7 @@ QGIS Demo
 - 11:30am – 11:45am: break
 - 11:45am – 12:15pm: Classification discussion
 - 12:15pm – 1:00pm: Practical 1
-
+-->
 <!-- 
 ## Outline
 
@@ -776,11 +818,19 @@ QGIS Demo
 - 2:45pm – 3:15pm: Classification discussion
 - 3:15pm – 4:00pm: Practical 1
 
+<!-- Afternoon -->
+## Outline
+- ~~2:00pm – 2:45am: What is GIS and Spatial Data?~~
+- ~~2:45pm – 3:30pm: Practical 1~~
+- 3:30pm – 3:45pm: break
+- 3:45pm – 4:15pm: Classification discussion
+- 4:15pm – 5:00pm: Practical 1
+
 ## 
 
 ![](images/InStatsStart.png)
--->
-<!-- InStats
+
+<!-- InStats -->
 ## Welcome
 
 - Day 1: Introduction to QGIS and Spatial Data
@@ -790,7 +840,7 @@ QGIS Demo
 - Dr Nick Bearman
 
 
- -->
+ 
 
 ## GIS can do many things
 
@@ -976,7 +1026,9 @@ https://jcheshire.com/resources/different-maps-same-data/
 
 ![](images/glossary.png)
 
-<!-- InStats
+## Continute with the pratical
+
+<!-- InStats -->
 ## Outline  {.smaller}
 
 -   **Day 1** - ~~Session 1: Getting started with QGIS: Loading and Exploring Spatial Data~~
@@ -987,8 +1039,8 @@ https://jcheshire.com/resources/different-maps-same-data/
 ## 
 
 ![](images/InStatsStop.png)
--->
-<!-- Morning -->
+
+<!-- Morning 
 
 ## Outline
 
@@ -997,7 +1049,7 @@ https://jcheshire.com/resources/different-maps-same-data/
 - ~~11:30am – 11:45am: break~~
 - ~~11:45am – 12:15pm: Classification discussion~~
 - 12:15pm – 1:00pm: Practical 1
-
+-->
 <!-- All day
 ## Outline
 
@@ -1012,8 +1064,14 @@ https://jcheshire.com/resources/different-maps-same-data/
 - 4:00pm - 4:30pm: P2 & Working with your own data
 -->
 
+## Outline
+- ~~2:00pm – 2:45am: What is GIS and Spatial Data?~~
+- ~~2:45pm – 3:30pm: Practical 1~~
+- ~~3:30pm – 3:45pm: break~~
+- ~~3:45pm – 4:15pm: Classification discussion~~
+- 4:15pm – 5:00pm: Practical 1
 
-
+<!-- 
 ## Wrap-Up
 
 - Two Stars, One Wish:
@@ -1024,12 +1082,14 @@ https://jcheshire.com/resources/different-maps-same-data/
 
 - What are your questions?
 
+-->
+
 <!-- - Everyone post a question in Zoom <!-- or WhatsApp --> <!-- that you have about GIS or todays work -->
 
 <!-- NCRM -->
 ## Next Session
 
-- Next session tomorrow 10am
+- Next session Wed 5th Aug, 2pm (London/UK)
 
 - More on Cartography and Map Design (beyond colours)
 
@@ -1061,7 +1121,7 @@ https://jcheshire.com/resources/different-maps-same-data/
   - GIS: Research Methods, £13, available today
   
 -->
-<!-- NCRM -->
+<!-- NCRM 
 ## Introduction to QGIS: Understanding and Presenting Spatial Data
 
 
@@ -1072,7 +1132,9 @@ Wed 25th Feb 2026
 
 Nick Bearman
 
-<!-- -->
+ -->
+
+<!--
 ## 
 
 
@@ -1081,17 +1143,25 @@ Nick Bearman
 ##
 
 ![](images/ncrm-welcome-slide-2.png)
-
+-->
+<!--
 ## Recap Quiz 
 
-## Outline
-
+## Outline -->
+<!--
 - 10:00am – 10:20am: Recap and Cartography / Map Design
 - 10:20am – 11:30am: Practical 2a
 - 11:30am – 11:45am: break
 - 11:45am – 1:00pm: Practical 2b & Working with your own data
 
-<!-- InStats 
+
+- 2:00pm – 2:20pm: Recap and Cartography / Map Design
+- 2:20pm – 3:30pm: Practical 2a
+- 3:30pm – 3:45pm: break
+- 3:45pm – 5:00pm: Practical 2b & Working with your own data
+-->
+
+<!-- InStats -->
 
 ## Introduction to QGIS & Spatial Data
 
@@ -1110,9 +1180,9 @@ Dr Nick Bearman
 <br>UCL Geography*
 </font>
 
-22nd October 2025
+5th August 2026
 
-Starting 1pm (UK/London)
+Starting 2pm (UK/London)
 
 :::
 
@@ -1126,17 +1196,23 @@ While we wait, please say Hi in the chat, and ask any questions you have from ye
 
 ## Outline
 
+<!--
 - 1:00pm – 1:20pm: Scale and Cartography / Map Design
 - 1:20pm – 2:30pm: Practical 2a
 - 2:30pm – 2:45pm: break
 - 2:45pm – 4:00pm: Practical 2b & Working with your own data
 -->
-<!--
-## Start slide 
+- 2:00pm – 2:20pm: Scale and Cartography / Map Design
+- 2:20pm – 3:30pm: Practical 2a
+- 3:30pm – 3:45pm: break
+- 3:45pm – 5:00pm: Practical 2b & Working with your own data
+
+<!-- -->
+## 
 
 ![](images/InStatsStart.png)
--->
-<!-- InStats 
+
+<!-- InStats -->
 ## Welcome
 
 - Day 2: Introduction to QGIS and Spatial Data
@@ -1144,8 +1220,8 @@ While we wait, please say Hi in the chat, and ask any questions you have from ye
 - Session 3: Data Preparation and Basic Map Styling in QGIS
 
 - Dr Nick Bearman
--->
-<!-- InStats 
+
+<!-- InStats -->
 
 ## Outline  {.smaller}
 
@@ -1153,7 +1229,7 @@ While we wait, please say Hi in the chat, and ask any questions you have from ye
 -   Day 1 - Session 2: Data Analysis in QGIS: Joins, Calculations and Classifications
 -   **Day 2 - Session 3: Data Preparation and Basic Map Styling in QGIS**
 -   Day 2 - Session 4: Creating Publication-Ready Map Layouts in QGIS
--->
+
 
 <!--
 ##
@@ -1654,7 +1730,7 @@ What makes a good map?
 ##
 
 ![](images/imd-map.png)
-<!-- InStats
+<!-- InStats -->
 ## Outline  {.smaller}
 
 -   Day 1 - ~~Session 1: Getting started with QGIS: Loading and Exploring Spatial Data~~
@@ -1665,9 +1741,9 @@ What makes a good map?
 ## 
 
 ![](images/InStatsStop.png)
--->
 
-## Outline {.smaller}
+
+## Outline
 <!-- ESS
 Time | Content 
 ---|--- 
@@ -1708,11 +1784,16 @@ ESS end -->
 - 2:30pm – 2:45pm: break
 - 2:45pm – 4:00pm: Practical 2b & Working with your own data
 -->
-
+<!--
 - ~~10:00am – 10:20am: Recap and Cartography / Map Design~~
 - ~~10:20am – 11:30am: Practical 2a~~
 - 11:30am – 11:45am: break
 - 11:45am – 1:00pm: Practical 2b & Working with your own data
+-->
+- ~~2:00pm – 2:20pm: Recap and Cartography / Map Design~~
+- ~~2:20pm – 3:30pm: Practical 2a~~
+- 3:30pm – 3:45pm: break
+- 3:45pm – 5:00pm: Practical 2b & Working with your own data
 
 
 ## Break
@@ -1730,18 +1811,24 @@ ESS end -->
 - ~~2:30pm – 2:45pm: break~~
 - 2:45pm – 4:00pm: Practical 2b & Working with your own data
 -->
+<!--
 
 - ~~10:00am – 10:20am: Recap and Cartography / Map Design~~
 - ~~10:20am – 11:30am: Practical 2a~~
 - ~~11:30am – 11:45am: break~~
 - 11:45am – 1:00pm: Practical 2b & Working with your own data
+-->
+- ~~2:00pm – 2:20pm: Recap and Cartography / Map Design~~
+- ~~2:20pm – 3:30pm: Practical 2a~~
+- ~~3:30pm – 3:45pm: break~~
+- 3:45pm – 5:00pm: Practical 2b & Working with your own data
 
-<!--
-## Start slide 
+<!-- -->
+## 
 
 ![](images/InStatsStart.png)
--->
-<!-- InStats 
+
+<!-- InStats -->
 ## Welcome
 
 - Day 2: Introduction to QGIS and Spatial Data
@@ -1749,8 +1836,8 @@ ESS end -->
 - Session 4: Creating Publication-Ready Map Layouts in QGIS
 
 - Dr Nick Bearman
--->
-<!-- InStats 
+
+<!-- InStats -->
 
 ## Outline  {.smaller}
 
@@ -1758,7 +1845,7 @@ ESS end -->
 -   Day 1 - Session 2: Data Analysis in QGIS: Joins, Calculations and Classifications
 -   Day 2 - Session 3: Data Preparation and Basic Map Styling in QGIS
 -   **Day 2 - Session 4: Creating Publication-Ready Map Layouts in QGIS**
--->
+
 
 <!-- Morning
 ## Outline
@@ -1914,7 +2001,7 @@ Spatial data can come from various locations
 - [Free GIS Data, Robin Wilson](http://freegisdata.rtwilson.com/)
 - [GeoBoundaries.org](https://GeoBoundaries.org)
 - [OpenStreetMap](http://openstreetmap.org)
-- Google Search – shapefile / GIS
+- Web Search – shapefile / GIS
 
 ## Working with your own data
 
@@ -2062,23 +2149,27 @@ OS Code-Point Open
 - Try Practical 2b: Coordinates & Postcodes
 
 ## Outline
-
+<!--
 - ~~10:00am – 10:20am: Recap and Cartography / Map Design~~
 - ~~10:20am – 11:30am: Practical 2a~~
 - ~~11:30am – 11:45am: break~~
 - 11:45am – 1:00pm: Practical 2b & Working with your own data
+-->
+- ~~2:00pm – 2:20pm: Recap and Cartography / Map Design~~
+- ~~2:20pm – 3:30pm: Practical 2a~~
+- ~~3:30pm – 3:45pm: break~~
+- 3:45pm – 5:00pm: Practical 2b & Working with your own data
 
-
-
-<!-- InStats
+<!-- InStats -->
 ## Next Seminar
 
 - Advanced QGIS: Spatial Analysis
-- https://instats.org/seminar/advanced-qgis-spatial-analysis
+- https://instats.org/seminar/advanced-qgis-spatial-analysis-20
+- next week
 - spatial overlays 
 - point-based access analysis
--->
 
+<!--
 ## Next Seminar
 
 - Advanced QGIS: Spatial Analysis
@@ -2086,6 +2177,7 @@ OS Code-Point Open
 - Next week
 - spatial overlays 
 - point-based access analysis
+-->
 
 ## Next Steps
 
@@ -2098,6 +2190,16 @@ OS Code-Point Open
   - QGIS Map Design, $35
   - Using R as a GIS, $35
   - Cartography: An Introduction, £10
+
+## QGIS Certification
+
+- QGIS is an open source project - **Free to use**
+- It needs funding
+- Opportunity to support QGIS by getting a QGIS Certificate of Completion for this course (€20, £17.75, $23.50)
+- Nick Bearman (Geospatial Training Solutions) is a QGIS approved training organisation
+- [qgis.org/community/certification/](https://qgis.org/community/certification/)
+- Email me [nick@nickbearman.com](mailto:nick@nickbearman.com) if you are interested
+
 
 <!--
 ## Outline
@@ -2114,33 +2216,41 @@ OS Code-Point Open
 - ~~1:20pm – 2:30pm: Practical 2a~~
 - ~~2:30pm – 2:45pm: break~~
 - 2:45pm – 4:00pm: Practical 2b & Working with your own data
+-->
 
 ## Outline  {.smaller}
 
 -   Day 1 - ~~Session 1: Getting started with QGIS: Loading and Exploring Spatial Data~~
 -   Day 1 - ~~Session 2: Data Analysis in QGIS: Joins, Calculations and Classifications~~
 -   Day 2 - ~~Session 3: Data Preparation and Basic Map Styling in QGIS~~
--   Day 2 - Session 4: Creating Publication-Ready Map Layouts in QGIS
+-   Day 2 - ~~Session 4: Creating Publication-Ready Map Layouts in QGIS~~
 
 ## 
 
 ![](images/InStatsStop.png)
--->
+
 <!-- 
 ## Wrap Up
 
 - Two Stars, One Wish *poll*
 -->
-
+<!--
 ## Wrap-Up
 
 - Feedback form
+-->
 
 ## Wrap-Up
 
 - Everyone post a question in <!-- WhatsApp or --> Zoom that you have about GIS or todays work
 
-- Feel free to connect on [LinkedIn.com/in/nickbearman/](https://www.linkedin.com/in/nickbearman/)
+- More questions welcome on the forum
+
+- Next course:
+  - [Advanced QGIS: Spatial Analysis](https://instats.org/seminar/advanced-qgis-spatial-analysis-20)
+  - Tue 11th and Wed 12th Aug 2026, 2pm - 5pm (UK/London)
+
+- Feel free to connect on [linkedIn.com/in/nickbearman/](https://www.linkedin.com/in/nickbearman/)
 
 - Thank you
 

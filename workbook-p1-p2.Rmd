@@ -1,5 +1,5 @@
 ---
-title: 'Introduction to QGIS: Understanding and Presenting Spatial Data'
+title: "Introduction to QGIS & Spatial Data"
 output:
   html_document:
     df_print: default 
@@ -7,7 +7,7 @@ output:
     toc_float: TRUE
     self_containted: TRUE
   pdf_document: default
-date: "Practicals 1 & 2: Tue 24th and Wed 25th February 2026"
+date: "Practicals 1 & 2: Tue 4th & Wed 5th August 2026"
 ---
 
 <!-- title: "Introduction to QGIS: Understanding and Presenting Spatial Data" -->
@@ -37,10 +37,10 @@ Many commands require the OK button to be clicked or the Enter key to be pressed
 File management is very important, so do spend a bit of time making sure you are happy with where the files are stored. If you have questions, please ask!
 
 - Create a new folder in your **Documents** folder called **GIS** (or something similar that you know where it is).  
-- Open the OneDrive folder and find the `prac1.zip` file.  
+- Open the InStats site <!-- OneDrive folder --> and find the `prac1.zip` file.  
 - Download it and save the file in the new folder you created.  
 - As there are several files they have been compressed into a single zip file, and you will need to first copy this and then extract the data files. Choose somewhere sensible to extract the files to.  
-- Start QGIS by clicking on Start, then type **QGIS** and select **QGIS Desktop 3.40.11**. *Your version number might vary, **QGIS Desktop** is the key bit.*  
+- Start QGIS by clicking on Start, then type **QGIS** and select **QGIS Desktop 3.44.11**. *Your version number might vary, **QGIS Desktop** is the key bit.*  
 
 Let's start off by creating a blank map and adding some data. 
 
@@ -588,7 +588,7 @@ The GeoPackage version is much much larger, but contains all the data in one geo
 
 ----
 
-*This practical was written using QGIS 3.40 on Windows 11, last updated on 10/02/2026 by Dr Nick Bearman, [nick@nickbearman.com](mailto:nick@nickbearman.com). Thanks to Chris Bell for providing the geocoding resource at https://www.doogal.co.uk.*
+*This practical was written using QGIS 3.44 on Windows 11, last updated on 06/07/2026 by Dr Nick Bearman, [nick@nickbearman.com](mailto:nick@nickbearman.com). Thanks to Chris Bell for providing the geocoding resource at https://www.doogal.co.uk.*
 
 This work (Introduction to QGIS: Spatial Data and Spatial Analysis by Nick Bearman) is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/. <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1">
 
